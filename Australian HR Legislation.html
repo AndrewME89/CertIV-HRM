@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Australian HR Legislation — Quick Reference Card</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --surface2: #f0ede6;
+    --border: rgba(0,0,0,0.09);
+    --border-strong: rgba(0,0,0,0.16);
+    --text: #1c1b18;
+    --text-mid: #52504a;
+    --text-soft: #8a8880;
+    --accent-recruit: #1a5fa8;
+    --accent-recruit-bg: #e8f0fb;
+    --accent-recruit-border: #b3cef0;
+    --accent-perf: #7b3fa0;
+    --accent-perf-bg: #f2ecf9;
+    --accent-perf-border: #d4b8eb;
+    --accent-er: #b84c12;
+    --accent-er-bg: #fdf0e8;
+    --accent-er-border: #f0c49a;
+    --accent-whs: #c8271f;
+    --accent-whs-bg: #fdecea;
+    --accent-whs-border: #f5b8b5;
+    --accent-ld: #1a7a55;
+    --accent-ld-bg: #e7f5ee;
+    --accent-ld-border: #a8dfc2;
+    --accent-wfp: #7a6200;
+    --accent-wfp-bg: #fdf8e3;
+    --accent-wfp-border: #e8d87a;
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #181714;
+      --surface: #222018;
+      --surface2: #2a2820;
+      --border: rgba(255,255,255,0.07);
+      --border-strong: rgba(255,255,255,0.14);
+      --text: #e8e5dc;
+      --text-mid: #a8a59c;
+      --text-soft: #68665e;
+      --accent-recruit: #5b9ee8;
+      --accent-recruit-bg: #0d2340;
+      --accent-recruit-border: #1f4070;
+      --accent-perf: #c080f0;
+      --accent-perf-bg: #2a1540;
+      --accent-perf-border: #5a2880;
+      --accent-er: #f09050;
+      --accent-er-bg: #3a1a08;
+      --accent-er-border: #7a3810;
+      --accent-whs: #f07070;
+      --accent-whs-bg: #3a0e0e;
+      --accent-whs-border: #7a2020;
+      --accent-ld: #50c890;
+      --accent-ld-bg: #082a1a;
+      --accent-ld-border: #105830;
+      --accent-wfp: #d4b040;
+      --accent-wfp-bg: #282008;
+      --accent-wfp-border: #584808;
+    }
+  }
+
+  html { font-size: 17px; }
+  body {
+    font-family: 'Calibri', 'Carlito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 28px 20px 60px;
+    line-height: 1.6;
+  }
+
+  .page { max-width: 960px; margin: 0 auto; }
+
+  /* ── Header ── */
+  .header {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border-strong);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .header-title { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+  .header-sub { font-size: 15px; color: var(--text-mid); margin-top: 4px; }
+  .header-tag {
+    font-size: 13px; font-weight: 700; padding: 5px 12px;
+    background: var(--text); color: var(--bg);
+    border-radius: 20px; white-space: nowrap;
+  }
+
+  /* ── Tabs ── */
+  .tab-bar {
+    display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 24px;
+  }
+  .tab {
+    padding: 8px 16px; font-size: 15px; font-weight: 600;
+    border-radius: var(--radius); cursor: pointer;
+    border: 1.5px solid var(--border-strong);
+    background: var(--surface); color: var(--text-mid);
+    font-family: 'Calibri', 'Carlito', sans-serif;
+    transition: all .15s;
+    display: flex; align-items: center; gap: 7px;
+  }
+  .tab:hover { color: var(--text); background: var(--surface2); }
+  .tab.active { color: var(--bg); border-color: transparent; }
+  .tab-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  .tab[data-unit="recruit"].active { background: var(--accent-recruit); }
+  .tab[data-unit="perf"].active    { background: var(--accent-perf); }
+  .tab[data-unit="er"].active      { background: var(--accent-er); }
+  .tab[data-unit="whs"].active     { background: var(--accent-whs); }
+  .tab[data-unit="ld"].active      { background: var(--accent-ld); }
+  .tab[data-unit="wfp"].active     { background: var(--accent-wfp); }
+
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* ── Unit header strip ── */
+  .unit-header {
+    border-radius: var(--radius-lg);
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border: 1.5px solid;
+  }
+  .unit-title { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .unit-desc { font-size: 15px; margin-top: 4px; opacity: 0.85; }
+
+  /* ── Act cards ── */
+  .act-grid { display: flex; flex-direction: column; gap: 12px; }
+  .act-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .act-header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 12px; padding: 16px 20px 14px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .act-header:hover { background: var(--surface2); }
+  .act-name { font-size: 17px; font-weight: 800; }
+  .act-full { font-size: 14px; color: var(--text-mid); margin-top: 2px; }
+  .act-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .act-tag {
+    font-size: 12px; font-weight: 700; padding: 2px 9px;
+    border-radius: 20px; border: 1.5px solid;
+  }
+  .chevron {
+    font-size: 18px; color: var(--text-soft);
+    transition: transform .2s; flex-shrink: 0; margin-top: 2px;
+  }
+  .act-card.open .chevron { transform: rotate(180deg); }
+  .act-body {
+    display: none;
+    padding: 0 20px 18px;
+    border-top: 1px solid var(--border);
+  }
+  .act-card.open .act-body { display: block; }
+
+  .act-section-title {
+    font-size: 13px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text-soft);
+    margin: 14px 0 6px;
+  }
+  .act-body p { font-size: 16px; color: var(--text-mid); line-height: 1.65; margin-bottom: 6px; }
+  .act-body ul { padding-left: 18px; }
+  .act-body li { font-size: 16px; color: var(--text-mid); line-height: 1.65; margin-bottom: 4px; }
+  .act-body li strong { color: var(--text); font-weight: 700; }
+
+  .ppg-box {
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    margin-top: 14px;
+    border: 1.5px solid;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .ppg-box-label {
+    font-size: 12px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 5px;
+  }
+
+  /* ── Colour helpers per unit ── */
+  .recruit .unit-header { background: var(--accent-recruit-bg); border-color: var(--accent-recruit-border); color: var(--accent-recruit); }
+  .recruit .act-tag { background: var(--accent-recruit-bg); border-color: var(--accent-recruit-border); color: var(--accent-recruit); }
+  .recruit .ppg-box { background: var(--accent-recruit-bg); border-color: var(--accent-recruit-border); color: var(--text-mid); }
+  .recruit .ppg-box-label { color: var(--accent-recruit); }
+
+  .perf .unit-header { background: var(--accent-perf-bg); border-color: var(--accent-perf-border); color: var(--accent-perf); }
+  .perf .act-tag { background: var(--accent-perf-bg); border-color: var(--accent-perf-border); color: var(--accent-perf); }
+  .perf .ppg-box { background: var(--accent-perf-bg); border-color: var(--accent-perf-border); color: var(--text-mid); }
+  .perf .ppg-box-label { color: var(--accent-perf); }
+
+  .er .unit-header { background: var(--accent-er-bg); border-color: var(--accent-er-border); color: var(--accent-er); }
+  .er .act-tag { background: var(--accent-er-bg); border-color: var(--accent-er-border); color: var(--accent-er); }
+  .er .ppg-box { background: var(--accent-er-bg); border-color: var(--accent-er-border); color: var(--text-mid); }
+  .er .ppg-box-label { color: var(--accent-er); }
+
+  .whs .unit-header { background: var(--accent-whs-bg); border-color: var(--accent-whs-border); color: var(--accent-whs); }
+  .whs .act-tag { background: var(--accent-whs-bg); border-color: var(--accent-whs-border); color: var(--accent-whs); }
+  .whs .ppg-box { background: var(--accent-whs-bg); border-color: var(--accent-whs-border); color: var(--text-mid); }
+  .whs .ppg-box-label { color: var(--accent-whs); }
+
+  .ld .unit-header { background: var(--accent-ld-bg); border-color: var(--accent-ld-border); color: var(--accent-ld); }
+  .ld .act-tag { background: var(--accent-ld-bg); border-color: var(--accent-ld-border); color: var(--accent-ld); }
+  .ld .ppg-box { background: var(--accent-ld-bg); border-color: var(--accent-ld-border); color: var(--text-mid); }
+  .ld .ppg-box-label { color: var(--accent-ld); }
+
+  .wfp .unit-header { background: var(--accent-wfp-bg); border-color: var(--accent-wfp-border); color: var(--accent-wfp); }
+  .wfp .act-tag { background: var(--accent-wfp-bg); border-color: var(--accent-wfp-border); color: var(--accent-wfp); }
+  .wfp .ppg-box { background: var(--accent-wfp-bg); border-color: var(--accent-wfp-border); color: var(--text-mid); }
+  .wfp .ppg-box-label { color: var(--accent-wfp); }
+
+  .divider { height: 1px; background: var(--border); margin: 16px 0; }
+
+  .disclaimer {
+    margin-top: 36px; padding: 14px 18px;
+    background: var(--surface2); border-radius: var(--radius);
+    font-size: 14px; color: var(--text-soft); line-height: 1.6;
+    border: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .header { flex-direction: column; align-items: flex-start; }
+    .tab { font-size: 14px; padding: 7px 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="header-title">Australian HR Legislation</div>
+      <div class="header-sub">Quick reference card — Cert IV Human Resource Management</div>
+    </div>
+    <div class="header-tag">Pinnacle Pacific Group · FY2025</div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab active" data-unit="recruit" onclick="show('recruit',this)">
+      <span class="tab-dot" style="background:#1a5fa8"></span>Recruitment &amp; Selection
+    </button>
+    <button class="tab" data-unit="perf" onclick="show('perf',this)">
+      <span class="tab-dot" style="background:#7b3fa0"></span>Performance Management
+    </button>
+    <button class="tab" data-unit="er" onclick="show('er',this)">
+      <span class="tab-dot" style="background:#b84c12"></span>Employee Relations
+    </button>
+    <button class="tab" data-unit="whs" onclick="show('whs',this)">
+      <span class="tab-dot" style="background:#c8271f"></span>WHS &amp; Compliance
+    </button>
+    <button class="tab" data-unit="ld" onclick="show('ld',this)">
+      <span class="tab-dot" style="background:#1a7a55"></span>Learning &amp; Development
+    </button>
+    <button class="tab" data-unit="wfp" onclick="show('wfp',this)">
+      <span class="tab-dot" style="background:#7a6200"></span>Workforce Planning
+    </button>
+  </div>
+
+  <!-- ══════════════ RECRUITMENT ══════════════ -->
+  <div id="view-recruit" class="view recruit active">
+    <div class="unit-header">
+      <div class="unit-title">Recruitment &amp; Selection</div>
+      <div class="unit-desc">Laws governing how you attract, assess, and appoint workers — and what you cannot do along the way.</div>
+    </div>
+    <div class="act-grid">
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act 2009 (Cth)</div>
+            <div class="act-full">The primary federal workplace law</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Employment contracts</span>
+              <span class="act-tag">NES</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What it does</div>
+          <p>Establishes the National Employment Standards (NES) — 11 minimum entitlements that apply to all national system employees from the moment of engagement. Employment contracts and enterprise agreements cannot undercut them.</p>
+          <div class="act-section-title">Key sections for recruitment</div>
+          <ul>
+            <li><strong>s.44</strong> — Employer must not contravene the NES; applies from day one of employment.</li>
+            <li><strong>s.65–67</strong> — Flexible work requests; relevant when advertising roles or setting terms.</li>
+            <li><strong>s.536</strong> — Requirement to give Fair Work Information Statement to new employees on commencement.</li>
+            <li><strong>s.340</strong> — General protections: you cannot take adverse action against a person because they have a workplace right (e.g. don't penalise someone for asking about salary).</li>
+          </ul>
+          <div class="act-section-title">The 11 National Employment Standards</div>
+          <ul>
+            <li>Maximum weekly hours (38 + reasonable additional)</li>
+            <li>Requests for flexible working arrangements</li>
+            <li>Parental leave &amp; related entitlements</li>
+            <li>Annual leave (4 weeks / year)</li>
+            <li>Personal / carer's leave &amp; compassionate leave</li>
+            <li>Family &amp; domestic violence leave (10 days paid)</li>
+            <li>Community service leave</li>
+            <li>Long service leave</li>
+            <li>Public holidays</li>
+            <li>Notice of termination &amp; redundancy pay</li>
+            <li>Fair Work Information Statement</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's Operations &amp; Transport staff are covered by the Road Transport and Distribution Award 2020. When hiring into these roles, HR must ensure employment contracts reflect the Award minimum rates — not just the NES — and that the Fair Work Information Statement is issued on day one.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Age Discrimination Act 2004 (Cth)</div>
+            <div class="act-full">+ Sex Discrimination Act 1984 · Racial Discrimination Act 1975 · Disability Discrimination Act 1992</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Anti-discrimination</span>
+              <span class="act-tag">Selection criteria</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What they do</div>
+          <p>Prohibit direct and indirect discrimination on protected attributes in employment — including during recruitment, selection, and offer stages. Complaints go to the Australian Human Rights Commission (AHRC).</p>
+          <div class="act-section-title">Protected attributes in recruitment</div>
+          <ul>
+            <li><strong>Direct discrimination</strong> — treating a candidate less favourably because of a protected attribute (e.g. not shortlisting a candidate because they're over 55).</li>
+            <li><strong>Indirect discrimination</strong> — a requirement that appears neutral but disproportionately disadvantages a group (e.g. requiring a physical standard that isn't genuinely necessary).</li>
+            <li><strong>Key attributes:</strong> age, sex/gender, race, disability, pregnancy, religion, political opinion, national origin, sexual orientation, marital/family status.</li>
+          </ul>
+          <div class="act-section-title">In practice</div>
+          <ul>
+            <li>Selection criteria must be genuinely role-relevant — keep records showing the link.</li>
+            <li>Interview questions must not elicit information about protected attributes (avoid "do you have kids?", "where are you from originally?").</li>
+            <li>Reasonable adjustments must be provided unless they cause unjustifiable hardship.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's warehouse roles have historically attracted few women (Operations gender split is skewed male). Any physical selection criteria must be validated as genuinely necessary — otherwise PPG risks an indirect discrimination complaint. This is relevant to the gender pay gap and diversity targets.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Equal Opportunity Act 2010 (Vic)</div>
+            <div class="act-full">Victorian state-level anti-discrimination law</div>
+            <div class="act-tags">
+              <span class="act-tag">Victoria</span>
+              <span class="act-tag">Anti-discrimination</span>
+              <span class="act-tag">Positive duty</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What it does</div>
+          <p>Mirrors federal anti-discrimination law but at Victorian level (applies to PPG's Melbourne HQ). Critically, it includes a <strong>positive duty</strong> — employers must proactively take reasonable and proportionate steps to eliminate discrimination, sexual harassment, and victimisation, not just respond to complaints.</p>
+          <div class="act-section-title">Key obligations</div>
+          <ul>
+            <li>Proactive policies and training — not just reactive complaint handling.</li>
+            <li>Broader protected attributes than federal law, including physical features and political belief.</li>
+            <li>Complaints go to the Victorian Equal Opportunity and Human Rights Commission (VEOHRC).</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Applies to PPG Melbourne HQ (224 staff). The positive duty means CHRO Dr. Priya Sharma cannot simply wait for a discrimination complaint — she must demonstrate proactive steps, e.g. structured interviews, panel diversity, and documented selection decisions.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Privacy Act 1988 (Cth)</div>
+            <div class="act-full">Including the Australian Privacy Principles (APPs)</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Candidate data</span>
+              <span class="act-tag">Background checks</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What it does</div>
+          <p>Governs how organisations collect, store, use, and disclose personal information. In recruitment, this covers resumes, referee reports, psychometric test results, background check outcomes, and interview notes.</p>
+          <div class="act-section-title">Key APPs for recruitment</div>
+          <ul>
+            <li><strong>APP 3</strong> — Only collect information that is reasonably necessary for the role.</li>
+            <li><strong>APP 5</strong> — Notify candidates at or before collection what you're collecting and why.</li>
+            <li><strong>APP 6</strong> — Don't use or disclose information for a purpose other than recruitment without consent.</li>
+            <li><strong>APP 11</strong> — Securely destroy or de-identify unsuccessful candidate records once no longer needed.</li>
+            <li><strong>Sensitive information</strong> (health, criminal history) requires explicit consent to collect.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG conducts police checks and medicals for Transport roles. Under APP 3 and APP 5, candidates must be told upfront what checks will occur, why they're necessary, and how results will be stored. Unsuccessful candidate files should be destroyed after a defined retention period (commonly 12 months).
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ PERFORMANCE ══════════════ -->
+  <div id="view-perf" class="view perf">
+    <div class="unit-header">
+      <div class="unit-title">Performance Management</div>
+      <div class="unit-desc">Legal framework for managing, improving, and — where necessary — ending employment based on performance.</div>
+    </div>
+    <div class="act-grid">
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act 2009 — Unfair Dismissal</div>
+            <div class="act-full">Part 3-2: Unfair dismissal regime</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Dismissal</span>
+              <span class="act-tag">Procedural fairness</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Who is eligible to claim</div>
+          <ul>
+            <li>Employees who have completed the minimum employment period: <strong>6 months</strong> (small business: 12 months).</li>
+            <li>Must be national system employees earning below the high income threshold (~$175,000 p.a.).</li>
+            <li>Must not be covered only by a Modern Award or Enterprise Agreement that has its own dismissal procedure.</li>
+          </ul>
+          <div class="act-section-title">The two-part test (s.387)</div>
+          <ul>
+            <li><strong>Valid reason</strong> — Was there a genuine, sound, and defensible reason related to the employee's conduct or capacity?</li>
+            <li><strong>Procedural fairness</strong> — Was the employee notified of the reason, given an opportunity to respond, and allowed a support person? Was there a genuine consideration of their response?</li>
+          </ul>
+          <div class="act-section-title">Procedural fairness checklist</div>
+          <ul>
+            <li>Issue written notice of the performance concern.</li>
+            <li>Give reasonable time to respond.</li>
+            <li>Allow a support person at all formal meetings.</li>
+            <li>Consider the response genuinely before deciding.</li>
+            <li>Issue warnings progressively (except serious misconduct).</li>
+            <li>Document every step contemporaneously.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Aaliyah Wong (HRBP) is managing 4 active performance cases in Operations. Each needs a documented PIP, formal warnings issued in writing, and evidence that the employee had a genuine opportunity to improve. If PPG skips steps — even with a valid reason — the Fair Work Commission can find the dismissal unfair on procedural grounds alone.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act 2009 — General Protections</div>
+            <div class="act-full">Part 3-1: Adverse action and workplace rights</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Adverse action</span>
+              <span class="act-tag">Whistleblower</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What it does</div>
+          <p>Prohibits adverse action (demotion, dismissal, altered duties, injury) against an employee because they exercised a <strong>workplace right</strong> — such as making a complaint, filing a workers' comp claim, or participating in union activity.</p>
+          <div class="act-section-title">Key risks in performance management</div>
+          <ul>
+            <li>Placing an employee on a PIP shortly after they raised a bullying complaint = likely adverse action claim.</li>
+            <li>Dismissing someone while they are on workers' compensation or parental leave is extremely high risk.</li>
+            <li><strong>Reverse onus</strong> — the employer must prove the adverse action was NOT taken for a prohibited reason. This is harder than it sounds.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Operations engagement is low (58/100) and staff are raising grievances. Any performance action taken against an employee who has recently lodged a complaint must be carefully documented to show the PIP was based on pre-existing performance data — not triggered by the complaint.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Anti-Discrimination Laws — Performance Context</div>
+            <div class="act-full">Federal &amp; state: applying protected attributes in performance decisions</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal + Vic</span>
+              <span class="act-tag">Disability</span>
+              <span class="act-tag">Reasonable adjustment</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Intersection with performance</div>
+          <ul>
+            <li>Before managing performance related to attendance or output, consider whether a <strong>disability or medical condition</strong> is a contributing factor.</li>
+            <li>Employer may be required to make <strong>reasonable adjustments</strong> (modified duties, adjusted targets, flexible hours) before taking performance action.</li>
+            <li>Failure to make reasonable adjustments can make a subsequent dismissal discriminatory — even if the performance reason is genuine.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            If a warehouse worker's performance declines due to a disclosed physical injury, PPG must explore modified duties before initiating a PIP. Jumping straight to disciplinary action without considering adjustment is a Disability Discrimination Act risk.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ EMPLOYEE RELATIONS ══════════════ -->
+  <div id="view-er" class="view er">
+    <div class="unit-header">
+      <div class="unit-title">Employee Relations &amp; ER</div>
+      <div class="unit-desc">The legal architecture governing the employment relationship — bargaining, disputes, union rights, and termination.</div>
+    </div>
+    <div class="act-grid">
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act 2009 — Enterprise Bargaining</div>
+            <div class="act-full">Part 2-4: Enterprise agreements &amp; bargaining obligations</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Enterprise Agreement</span>
+              <span class="act-tag">Union bargaining</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Key concepts</div>
+          <ul>
+            <li><strong>Good faith bargaining obligations (s.228)</strong> — both parties must attend meetings, disclose relevant information, genuinely consider proposals, and not engage in surface bargaining.</li>
+            <li><strong>Better off overall test (BOOT)</strong> — every employee must be better off under the EA than under the relevant Award. Fair Work Commission applies the BOOT before approving any EA.</li>
+            <li><strong>Protected industrial action</strong> — employees may take protected industrial action during bargaining if specific procedural steps have been followed (s.408–415).</li>
+            <li><strong>Nominal expiry date</strong> — EAs don't automatically terminate; they continue in force until replaced, but parties can bargain for a replacement from the nominal expiry date.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's current Enterprise Agreement expires June 2027. Union membership in Operations is 61%. The 2023 renegotiation was tense (6.5% wage increase, damaged engagement). Early preparation — understanding BOOT obligations, running employee listening sessions, and modelling pay scenarios against the Road Transport Award — will be critical.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act 2009 — Termination &amp; Redundancy</div>
+            <div class="act-full">Part 2-2 NES: Redundancy pay + notice obligations</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Redundancy</span>
+              <span class="act-tag">Consultation</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Redundancy pay scale (NES)</div>
+          <ul>
+            <li>1–2 years service: 4 weeks</li>
+            <li>2–3 years: 6 weeks</li>
+            <li>3–4 years: 7 weeks</li>
+            <li>4–5 years: 8 weeks</li>
+            <li>5–6 years: 10 weeks</li>
+            <li>6–7 years: 11 weeks</li>
+            <li>7–8 years: 13 weeks</li>
+            <li>8–9 years: 14 weeks</li>
+            <li>9–10 years: 16 weeks</li>
+            <li>10+ years: 12 weeks</li>
+          </ul>
+          <div class="act-section-title">Consultation obligations</div>
+          <ul>
+            <li>Most Modern Awards and EAs require genuine consultation before making positions redundant.</li>
+            <li>Employer must notify and consult with affected employees (and their union if applicable) as soon as the decision is made to consider redundancies.</li>
+            <li>Genuine redundancy defence to unfair dismissal = the role is genuinely no longer required AND consultation obligations were met AND redeployment was genuinely considered.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            The AI/automation rollout in Operations could lead to role changes or redundancies. If PPG eliminates roles due to warehouse automation, it must consult, consider redeployment (reskilling is relevant here), and pay NES redundancy entitlements. Skipping consultation exposes PPG to unfair dismissal claims even if the redundancy is genuine.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Workplace Gender Equality Act 2012 (Cth)</div>
+            <div class="act-full">WGEA reporting obligations for employers 100+ staff</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Gender pay gap</span>
+              <span class="act-tag">WGEA reporting</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What it requires</div>
+          <ul>
+            <li>Employers with 100+ employees must report annually to the Workplace Gender Equality Agency (WGEA) on gender composition, pay, and flexible work.</li>
+            <li>Since 2024, <strong>employer-level gender pay gaps are publicly published</strong> by WGEA — reputational risk is now real.</li>
+            <li>Must report across six gender equality indicators (GEIs): gender composition, remuneration, flexible work, consultation, sexual harassment, and overall strategy.</li>
+          </ul>
+          <div class="act-section-title">Employer of choice</div>
+          <ul>
+            <li>Organisations can apply for WGEA Employer of Choice for Gender Equality (EOCGE) citation — a recruitment and EVP differentiator.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG (480 staff, ASX-listed) has a 9.1% gender pay gap at executive level — this is now publicly visible on WGEA's employer portal. Dr. Priya Sharma's pay equity review is not just an internal HR goal; it's a reputational and compliance imperative. Failure to show progress risks negative media and EVP damage during recruitment.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Sex Discrimination Act 1984 — Sexual Harassment</div>
+            <div class="act-full">Amended by the Respect@Work Act 2022</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Positive duty</span>
+              <span class="act-tag">Harassment</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Respect@Work changes (2022)</div>
+          <ul>
+            <li><strong>Positive duty</strong> — employers must take reasonable and proportionate measures to <em>eliminate</em> sexual harassment, not merely respond to it.</li>
+            <li>The Australian Human Rights Commission can now investigate systemic issues proactively (without a complaint).</li>
+            <li>Hostile work environment harassment is now explicitly covered — doesn't require a specific target.</li>
+          </ul>
+          <div class="act-section-title">Employer obligations</div>
+          <ul>
+            <li>Written sexual harassment policy (reviewed regularly)</li>
+            <li>Training for all staff, not just managers</li>
+            <li>Clear and safe reporting pathways</li>
+            <li>Prompt and impartial investigation of all complaints</li>
+            <li>Consideration of workplace design, culture, and power dynamics</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Operations has low engagement (58/100) and low psychological safety (63/100). In male-dominated warehouse environments, these scores can mask unreported harassment. PPG's positive duty means Aaliyah Wong must proactively assess risk — not wait for complaints.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ WHS ══════════════ -->
+  <div id="view-whs" class="view whs">
+    <div class="unit-header">
+      <div class="unit-title">WHS &amp; Compliance</div>
+      <div class="unit-desc">Duties of care, incident management, and the regulatory framework that keeps workers safe.</div>
+    </div>
+    <div class="act-grid">
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Work Health and Safety Act 2011 (Cth)</div>
+            <div class="act-full">Model WHS Act — adopted in Vic as Occupational Health and Safety Act 2004</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal / State</span>
+              <span class="act-tag">Primary duty of care</span>
+              <span class="act-tag">PCBUs</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Who has duties</div>
+          <ul>
+            <li><strong>Person Conducting a Business or Undertaking (PCBU)</strong> — the entity running the operation (PPG). Must ensure health and safety so far as is reasonably practicable.</li>
+            <li><strong>Officers</strong> (directors, CEO, senior executives) — must exercise <em>due diligence</em>: acquire WHS knowledge, understand hazards, ensure resources, and verify controls.</li>
+            <li><strong>Workers</strong> — must take reasonable care for their own health and safety and comply with reasonable instructions.</li>
+            <li><strong>Other persons</strong> (visitors, contractors, labour hire) — also owe and are owed duties.</li>
+          </ul>
+          <div class="act-section-title">Primary duty of care obligations</div>
+          <ul>
+            <li>Safe work systems and processes</li>
+            <li>Safe plant, structures, and substances</li>
+            <li>Adequate facilities and welfare</li>
+            <li>Adequate information, training, and supervision</li>
+            <li>Monitoring of health and conditions</li>
+          </ul>
+          <div class="act-section-title">Victoria: OHS Act 2004 differences</div>
+          <ul>
+            <li>Victoria has not yet adopted the model WHS Act — it runs its own OHS Act 2004, administered by WorkSafe Victoria.</li>
+            <li>Core obligations are equivalent but terminology differs: "employer" rather than "PCBU"; "employee" rather than "worker".</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's Melbourne HQ warehouse operates under Victoria's OHS Act 2004 (WorkSafe Vic). Sydney and Brisbane operate under the model WHS Act (SafeWork NSW / Workplace Health and Safety Qld). PPG's HSE team (16 staff) must maintain state-specific compliance across all three jurisdictions.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">WHS Regulations &amp; Codes of Practice</div>
+            <div class="act-full">Subsidiary instruments under the WHS / OHS Acts</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal / State</span>
+              <span class="act-tag">Hazard management</span>
+              <span class="act-tag">Safe work method</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Regulations</div>
+          <ul>
+            <li>Prescribe specific requirements for high-risk activities: confined spaces, working at heights, hazardous chemicals, plant and equipment.</li>
+            <li><strong>Mandatory</strong> — breach of a regulation is an offence regardless of outcome.</li>
+          </ul>
+          <div class="act-section-title">Codes of Practice</div>
+          <ul>
+            <li>Provide practical guidance on how to meet duties. Not legally mandatory, but if you don't follow them, you need to show an equivalent or better approach.</li>
+            <li>Relevant codes for logistics/warehousing: <em>Labelling of Workplace Hazardous Chemicals</em>, <em>Managing the Work Environment and Facilities</em>, <em>Preventing and Responding to Workplace Bullying</em>, <em>Managing Psychosocial Hazards at Work</em>.</li>
+          </ul>
+          <div class="act-section-title">Psychosocial hazards (new focus)</div>
+          <ul>
+            <li>Since 2023, psychosocial hazards (workload, bullying, poor support, role conflict) are explicitly regulated under WHS frameworks.</li>
+            <li>Employers must identify, assess, and control psychosocial risks — not just physical ones.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Operations staff face high overtime (8.4%), change anxiety from AI rollout, and low psychological safety (63/100). Under the 2023 psychosocial hazard regulations, these are not just engagement issues — they are WHS risks that PPG must formally assess and control.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Workers' Compensation Legislation</div>
+            <div class="act-full">Vic: Workplace Injury Rehabilitation &amp; Compensation Act 2013 · NSW: Workers Compensation Act 1987 · Qld: Workers' Compensation and Rehabilitation Act 2003</div>
+            <div class="act-tags">
+              <span class="act-tag">State-based</span>
+              <span class="act-tag">Injury management</span>
+              <span class="act-tag">Return to work</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Key obligations</div>
+          <ul>
+            <li>Employers must hold a current workers' compensation insurance policy.</li>
+            <li>Must report notifiable incidents to the regulator (WorkSafe Vic / SafeWork NSW / WHS Qld).</li>
+            <li><strong>Return to Work (RTW) obligations</strong> — employer must provide suitable duties and actively support an injured worker's return, in consultation with their treating practitioner.</li>
+            <li>Terminating an injured worker while on workers' comp is heavily restricted and triggers adverse action risk under the Fair Work Act.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Transport and warehouse roles carry high physical injury risk. PPG must have state-specific return-to-work coordinators, documented RTW plans, and clear referral pathways to EAP. Absence rate (3.2%) is below national average — maintaining this requires active injury prevention and RTW programs.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ L&D ══════════════ -->
+  <div id="view-ld" class="view ld">
+    <div class="unit-header">
+      <div class="unit-title">Learning &amp; Development</div>
+      <div class="unit-desc">Regulatory and compliance obligations that shape how organisations train, credential, and develop their people.</div>
+    </div>
+    <div class="act-grid">
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">National Vocational Education and Training Regulator Act 2011 (Cth)</div>
+            <div class="act-full">ASQA — Australian Skills Quality Authority</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">RTOs</span>
+              <span class="act-tag">Qualifications framework</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">What it does</div>
+          <p>Establishes and regulates Registered Training Organisations (RTOs) and the Australian Qualifications Framework (AQF). Ensures nationally recognised qualifications are delivered consistently.</p>
+          <div class="act-section-title">Relevance to HR practitioners</div>
+          <ul>
+            <li>When purchasing training for employees, only RTOs can issue nationally recognised qualifications and statements of attainment.</li>
+            <li>The AQF governs qualification levels — Certificate I through IV, Diploma, Advanced Diploma, degree, etc.</li>
+            <li>Training needs analysis should map skills gaps to AQF-recognised units where possible to give employees portable credentials.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG spends $1,240/FTE on L&D (18.2 hrs/FTE). As warehouse automation rolls out, reskilling programs should ideally lead to AQF credentials (e.g. Certificate III in Warehousing Operations) — making the investment portable and meaningful to workers, improving engagement and reducing resistance to change.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">WHS Act — Training as a Legal Obligation</div>
+            <div class="act-full">Duty to provide information, training, instruction &amp; supervision</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal / State</span>
+              <span class="act-tag">Mandatory training</span>
+              <span class="act-tag">Competency</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Training as a WHS duty</div>
+          <ul>
+            <li>The WHS Act (and Vic OHS Act) require employers to provide adequate <strong>information, training, instruction, and supervision</strong> — not just policy documents.</li>
+            <li>Training must be role-specific, documented, and repeated when roles, tasks, or hazards change.</li>
+            <li>High-risk work licences (forklift, EWP, crane) are <strong>legally required</strong> — operating without one is a breach regardless of competency.</li>
+          </ul>
+          <div class="act-section-title">Training records</div>
+          <ul>
+            <li>Maintain records of: what training was delivered, who attended, when, by whom, and competency outcome.</li>
+            <li>Records are key evidence in a WHS investigation — "we trained them" is only defensible if documented.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            New warehouse automation equipment requires verified operator training before use. PPG cannot simply have workers read a manual — they need documented, assessed, competency-based training. HR must work with HSE to build a training matrix for the new systems as part of the AI rollout change management plan.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act — Training &amp; Development in EAs</div>
+            <div class="act-full">Enterprise Agreement provisions for L&D entitlements</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Enterprise Agreement</span>
+              <span class="act-tag">Study leave</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">EA provisions to know</div>
+          <ul>
+            <li>Enterprise Agreements may include provisions for paid study leave, training allowances, or employer-funded qualifications — these become enforceable entitlements.</li>
+            <li>Modern Awards may include training-related provisions (e.g. apprenticeship wage rates, toolbox talks).</li>
+            <li>If an employee is required to complete mandatory training outside ordinary hours, they may be entitled to overtime or penalty rates.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's EA is due for renegotiation in 2027. As part of the change management strategy for AI rollout, committing to reskilling provisions in the next EA could be a strong bargaining offering — reducing union resistance while meeting the legal duty to consult about changes to work systems.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ WORKFORCE PLANNING ══════════════ -->
+  <div id="view-wfp" class="view wfp">
+    <div class="unit-header">
+      <div class="unit-title">Workforce Planning</div>
+      <div class="unit-desc">Legal and compliance obligations that shape how organisations plan, structure, change, and rightsize their workforce.</div>
+    </div>
+    <div class="act-grid">
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Fair Work Act — Consultation &amp; Major Workplace Change</div>
+            <div class="act-full">s.202–205 and Modern Award consultation term</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Consultation</span>
+              <span class="act-tag">Structural change</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">When consultation is required</div>
+          <ul>
+            <li>A <strong>major workplace change</strong> is defined as one likely to have a significant effect on employees — including changes to composition, structure, or technology that affect roles.</li>
+            <li>Modern Awards and Enterprise Agreements must include a consultation term (or the model consultation term applies).</li>
+            <li>Consultation must be <strong>genuine</strong> — the decision to consult must occur while the employer can still be influenced. Telling employees after the decision is made is not consultation.</li>
+          </ul>
+          <div class="act-section-title">Minimum consultation steps</div>
+          <ul>
+            <li>Written notice to affected employees as soon as practicable.</li>
+            <li>Provide relevant information about the change (nature, expected effects, timing).</li>
+            <li>Invite employees and their representatives to discuss and propose alternatives.</li>
+            <li>Genuinely consider their input before finalising decisions.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            The AI/automation rollout and the planned Perth/Adelaide expansion are both major workplace changes. CEO Marcus Okafor's "direct style" risks skipping consultation. HR must ensure both changes go through a documented consultation process — particularly critical given the 61% union membership in Operations.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Privacy Act 1988 — Workforce Data</div>
+            <div class="act-full">APPs 3, 6, 10, 11 — collecting and using employee data</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Employee data</span>
+              <span class="act-tag">HR analytics</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Workforce planning data obligations</div>
+          <ul>
+            <li>Workforce analytics and HRIS data (tenure, salary, performance ratings, skills) is personal information — the APPs apply.</li>
+            <li><strong>APP 10</strong> — Ensure data quality: workforce planning built on inaccurate HRIS data can lead to poor decisions and discrimination claims if it affects individual employees.</li>
+            <li><strong>APP 6</strong> — Data collected for one purpose (e.g. payroll) cannot be used for another (e.g. AI-based performance scoring) without employee awareness.</li>
+            <li>Aggregated, de-identified data for workforce planning is lower risk — identify individuals only when necessary.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's HRIS feeds the workforce plan, turnover analysis, and gender pay gap reporting. If PPG uses HRIS data to build predictive flight-risk models, employees should be informed — using their data in ways they wouldn't expect is an APP 6 breach.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Superannuation Guarantee (Administration) Act 1992</div>
+            <div class="act-full">SGA Act — employer super obligations</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal</span>
+              <span class="act-tag">Superannuation</span>
+              <span class="act-tag">Total remuneration</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Key obligations</div>
+          <ul>
+            <li>Employers must contribute <strong>11.5% of ordinary time earnings</strong> (FY2025 rate; rises to 12% from 1 July 2025) to an employee's nominated super fund.</li>
+            <li>Applies to employees earning $450+ per month (threshold removed — now all employees regardless of earnings).</li>
+            <li>Super must be paid quarterly at minimum (new requirement: payday super from 1 July 2026 — payable on every payday).</li>
+            <li>Failure to pay = Superannuation Guarantee Charge (SGC) — which is not tax-deductible and includes penalties.</li>
+          </ul>
+          <div class="act-section-title">Workforce planning relevance</div>
+          <ul>
+            <li>Super is part of total employment cost — must be modelled in workforce planning budgets, not just base salary.</li>
+            <li>When comparing contractor vs employee cost, super (and payroll tax) must be factored in.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            PPG's planned Perth expansion (~60 FTE) will add approximately $500K+ in super obligations annually at current rates. The workforce plan must include super in total employment cost modelling — understating headcount costs is a common planning error.
+          </div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-header" onclick="toggle(this)">
+          <div>
+            <div class="act-name">Modern Awards — Road Transport &amp; Logistics</div>
+            <div class="act-full">Road Transport and Distribution Award 2020 · Clerks — Private Sector Award 2020</div>
+            <div class="act-tags">
+              <span class="act-tag">Federal Award</span>
+              <span class="act-tag">Classification</span>
+              <span class="act-tag">Minimum rates</span>
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="act-body">
+          <div class="act-section-title">Why awards matter for workforce planning</div>
+          <ul>
+            <li>Award classification structures define how roles are graded and what minimum rates apply — workforce plans must map headcount to Award classifications.</li>
+            <li>Annual wage reviews by the Fair Work Commission adjust minimum Award rates — this must be built into forward salary cost modelling.</li>
+            <li>Penalty rates, shift allowances, and overtime loadings under the Award can significantly increase labour cost above base rate — relevant for Operations planning.</li>
+          </ul>
+          <div class="ppg-box">
+            <div class="ppg-box-label">PPG context</div>
+            Operations warehouse staff likely fall under the Road Transport and Distribution Award 2020. Workforce planners at PPG must model shift rosters against Award penalty rates to accurately project labour costs — especially for a 24/7 operation where penalty rates apply on weekends and public holidays.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Study note:</strong> This reference card is designed for Cert IV HRM study purposes using the fictional Pinnacle Pacific Group as a case study anchor. Legislation and rates are current as at early 2025 but may change. Always verify current provisions at <em>legislation.gov.au</em>, <em>fairwork.gov.au</em>, and your relevant state regulator's website before applying in a real workplace.
+  </div>
+
+</div>
+
+<script>
+  function show(id, btn) {
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('view-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
+  function toggle(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  }
+</script>
+</body>
+</html>
