@@ -217,6 +217,14 @@
   .lu-wfp .ppg-box-label { color:var(--acc-wfp); }
 
   .leg-disclaimer { margin-top: 24px; padding: 12px 16px; background: var(--bg-secondary); border-radius: var(--radius-md); font-size:15px; color:var(--text-tertiary); line-height:1.6; border: 1px solid var(--border); }
+  .embed-frame {
+    width: 100%;
+    min-height: 1500px;
+    border: 0;
+    border-radius: var(--radius-lg);
+    background: var(--bg-primary);
+    box-shadow: var(--shadow);
+  }
 
   @media (max-width:600px) {
     .metric-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -252,6 +260,7 @@
     <button class="tab" onclick="show('risks',this)">HR risks</button>
     <button class="tab" onclick="show('people',this)">Key people</button>
     <button class="tab" onclick="show('legislation',this)">Legislation</button>
+    <button class="tab" onclick="show('orgChart',this)">Org Chart</button>
   </div>
 
   <!-- OVERVIEW -->
@@ -532,6 +541,235 @@
     </div>
 
     <div class="leg-disclaimer"><strong>Study note:</strong> This reference card is for Cert IV HRM study purposes using Pinnacle Pacific Group as a fictional case study anchor. Legislation and rates current as at early 2025 — verify at <em>legislation.gov.au</em>, <em>fairwork.gov.au</em>, and your relevant state regulator before applying in a real workplace.</div>
+  </div>
+
+  <div id="view-org" class="view active">
+    <div class="org-legend">
+      <div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>Executive</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--amber)"></div>Operations &amp; Transport</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>Human Resources</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>Technology</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--teal)"></div>Finance &amp; Procurement</div>
+      <div class="leg-item"><div class="leg-dot" style="background:var(--red)"></div>Sales &amp; Client Services</div>
+    </div>
+    <p class="hint">Click any card to see role details below.</p>
+
+    <div class="org-scroll">
+    <div class="org-tree">
+
+      <!-- CEO -->
+      <div style="display:flex;justify-content:center;margin-bottom:0;">
+        <div class="tier-wrap">
+          <div class="org-node n-exec" onclick="showProfile('ceo')" id="node-ceo">
+            <div class="node-initials">MO</div>
+            <div class="node-name">Marcus Okafor</div>
+            <div class="node-title">Chief Executive Officer</div>
+            <div class="node-dept">Executive</div>
+          </div>
+          <div class="v-line"></div>
+        </div>
+      </div>
+
+      <!-- L2 — direct reports row -->
+      <div style="display:flex;justify-content:center;position:relative;margin-bottom:0;">
+        <!-- horizontal bar spanning L2 -->
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);height:2px;background:var(--border-strong);width:740px;"></div>
+
+        <div style="display:flex;gap:12px;padding-top:0;">
+
+          <!-- COO branch -->
+          <div class="tier-wrap">
+            <div class="v-line"></div>
+            <div class="org-node n-exec" onclick="showProfile('coo')" id="node-coo">
+              <div class="node-initials">RB</div>
+              <div class="node-name">Rachel Burns</div>
+              <div class="node-title">Chief Operating Officer</div>
+              <div class="node-dept">Executive</div>
+            </div>
+          </div>
+
+          <!-- CHRO branch -->
+          <div class="tier-wrap">
+            <div class="v-line"></div>
+            <div class="org-node n-exec" onclick="showProfile('chro')" id="node-chro">
+              <div class="node-initials">PS</div>
+              <div class="node-name">Dr. Priya Sharma</div>
+              <div class="node-title">Chief HR Officer</div>
+              <div class="node-dept">Executive</div>
+            </div>
+          </div>
+
+          <!-- CFO branch -->
+          <div class="tier-wrap">
+            <div class="v-line"></div>
+            <div class="org-node n-exec" onclick="showProfile('cfo')" id="node-cfo">
+              <div class="node-initials">LN</div>
+              <div class="node-name">Liam Nguyen</div>
+              <div class="node-title">Chief Financial Officer</div>
+              <div class="node-dept">Executive</div>
+            </div>
+          </div>
+
+          <!-- CTO branch -->
+          <div class="tier-wrap">
+            <div class="v-line"></div>
+            <div class="org-node n-exec" onclick="showProfile('cto')" id="node-cto">
+              <div class="node-initials">KP</div>
+              <div class="node-name">Kevin Park</div>
+              <div class="node-title">Chief Technology Officer</div>
+              <div class="node-dept">Executive</div>
+            </div>
+          </div>
+
+          <!-- CCO branch -->
+          <div class="tier-wrap">
+            <div class="v-line"></div>
+            <div class="org-node n-exec" onclick="showProfile('cco')" id="node-cco">
+              <div class="node-initials">DM</div>
+              <div class="node-name">Diana Mills</div>
+              <div class="node-title">Chief Commercial Officer</div>
+              <div class="node-dept">Executive</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- L3 — managers under COO -->
+      <div style="margin-top:0;display:flex;justify-content:center;">
+        <div style="display:flex;gap:0;align-items:flex-start;position:relative;">
+          <!-- Connector from COO downward — offset to align with COO node -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:170px;margin-right:4px;">
+            <div class="v-line"></div>
+            <div style="position:relative;display:flex;align-items:flex-start;">
+              <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);height:2px;background:var(--border-strong);width:332px;"></div>
+              <div style="display:flex;gap:12px;padding-top:0;">
+                <div class="tier-wrap">
+                  <div class="v-line"></div>
+                  <div class="org-node n-ops" onclick="showProfile('gm_ops_mel')" id="node-gm_ops_mel">
+                    <div class="node-initials">SC</div>
+                    <div class="node-name">Sandra Cortez</div>
+                    <div class="node-title">GM Operations (MEL)</div>
+                    <div class="node-dept">Operations</div>
+                  </div>
+                  <!-- Sandra's reports -->
+                  <div class="v-line"></div>
+                  <div style="position:relative;">
+                    <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);height:2px;background:var(--border-strong);width:322px;"></div>
+                    <div style="display:flex;gap:12px;padding-top:0;">
+                      <div class="tier-wrap"><div class="v-line"></div>
+                        <div class="org-node n-ops" onclick="showProfile('tl_wh')" id="node-tl_wh" style="min-width:130px;max-width:148px;">
+                          <div class="node-initials">—</div>
+                          <div class="node-name">Team Leader ×4</div>
+                          <div class="node-title">Warehouse Operations</div>
+                          <div class="node-dept">Operations</div>
+                        </div>
+                        <div class="v-line"></div>
+                        <div class="org-node n-ops" style="min-width:130px;max-width:148px;opacity:0.7;">
+                          <div class="node-name">WH Team Members</div>
+                          <div class="node-title">~180 staff</div>
+                          <div class="node-dept">Operations</div>
+                        </div>
+                      </div>
+                      <div class="tier-wrap"><div class="v-line"></div>
+                        <div class="org-node n-ops" onclick="showProfile('hse_mgr')" id="node-hse_mgr" style="min-width:130px;max-width:148px;">
+                          <div class="node-initials">TW</div>
+                          <div class="node-name">Tom Walsh</div>
+                          <div class="node-title">HSE Manager</div>
+                          <div class="node-dept">HSE &amp; Compliance</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tier-wrap">
+                  <div class="v-line"></div>
+                  <div class="org-node n-ops" onclick="showProfile('gm_trans')" id="node-gm_trans">
+                    <div class="node-initials">BT</div>
+                    <div class="node-name">Barry Tran</div>
+                    <div class="node-title">GM Transport &amp; Fleet</div>
+                    <div class="node-dept">Transport</div>
+                  </div>
+                  <div class="v-line"></div>
+                  <div class="org-node n-ops" style="opacity:0.7;">
+                    <div class="node-name">Fleet Coordinators</div>
+                    <div class="node-title">+ Drivers ~80 staff</div>
+                    <div class="node-dept">Transport</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHRO reports — offset -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:170px;margin-right:4px;margin-left:180px;">
+            <div class="v-line"></div>
+            <div style="position:relative;display:flex;align-items:flex-start;">
+              <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);height:2px;background:var(--border-strong);width:322px;"></div>
+              <div style="display:flex;gap:12px;padding-top:0;">
+                <div class="tier-wrap"><div class="v-line"></div>
+                  <div class="org-node n-hr" onclick="showProfile('hpe')" id="node-hpe">
+                    <div class="node-initials">JB</div>
+                    <div class="node-name">Jordan Bell</div>
+                    <div class="node-title">Head of People Experience</div>
+                    <div class="node-dept">Human Resources</div>
+                  </div>
+                  <div class="v-line"></div>
+                  <div class="org-node n-hr" onclick="showProfile('hr_adv')" id="node-hr_adv" style="min-width:130px;max-width:148px;">
+                    <div class="node-initials">—</div>
+                    <div class="node-name">HR Advisor ×2</div>
+                    <div class="node-title">Generalist support</div>
+                    <div class="node-dept">Human Resources</div>
+                  </div>
+                </div>
+                <div class="tier-wrap"><div class="v-line"></div>
+                  <div class="org-node n-hr" onclick="showProfile('hrbp')" id="node-hrbp">
+                    <div class="node-initials">AW</div>
+                    <div class="node-name">Aaliyah Wong</div>
+                    <div class="node-title">HRBP — Operations</div>
+                    <div class="node-dept">Human Resources</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTO reports -->
+          <div style="display:flex;flex-direction:column;align-items:center;width:170px;margin-left:120px;">
+            <div class="v-line"></div>
+            <div class="org-node n-tech" onclick="showProfile('lead_eng')" id="node-lead_eng">
+              <div class="node-initials">—</div>
+              <div class="node-name">Lead Engineers ×3</div>
+              <div class="node-title">Platform · Data · Infra</div>
+              <div class="node-dept">Technology</div>
+            </div>
+            <div class="v-line"></div>
+            <div class="org-node n-tech" style="opacity:0.7;">
+              <div class="node-name">Dev Team</div>
+              <div class="node-title">~48 staff</div>
+              <div class="node-dept">Technology</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- end org-tree -->
+    </div><!-- end org-scroll -->
+
+    <!-- Profile panel -->
+    <div class="profile-panel" id="profile-panel">
+      <div class="pp-header">
+        <div class="pp-avatar" id="pp-avatar"></div>
+        <div>
+          <div class="pp-name" id="pp-name"></div>
+          <div class="pp-role" id="pp-role"></div>
+        </div>
+      </div>
+      <div class="pp-grid" id="pp-grid"></div>
+      <div class="pp-reports" id="pp-reports"></div>
+      <div class="pp-note" id="pp-note"></div>
+    </div>
   </div>
 
 </div><!-- end wrapper -->
