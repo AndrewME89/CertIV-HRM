@@ -230,6 +230,10 @@
     font-size: 14px; color: var(--text-soft); line-height: 1.6;
     border: 1px solid var(--border);
   }
+    .tab-bar {
+    display: flex; gap: 4px; flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
 
   @media (max-width: 600px) {
     .header { flex-direction: column; align-items: flex-start; }
@@ -239,6 +243,15 @@
 </head>
 <body>
 <div class="page">
+
+  <div class="tab-bar">
+    <button class="tab active"><a href="https://andrewme89.github.io/CertIV-HRM/">Pinnacle Pacific Group</a></button>
+    <button class="tab"><a href="https://andrewme89.github.io/CertIV-HRM/Australian%20HR%20Legislation.html">Australian HR Legislation</a></button>
+    <button class="tab" onclick="show('UNLINKED',this)">UNLINKED</button>
+    <button class="tab" onclick="show('UNLINKED',this)">UNLINKED</button>
+    <button class="tab" onclick="show('UNLINKED',this)">UNLINKED</button>
+    <button class="tab" onclick="show('UNLINKED',this)">UNLINKED</button>
+  </div>
 
   <div class="header">
     <div>
