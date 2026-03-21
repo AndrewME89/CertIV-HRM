@@ -65,7 +65,7 @@
   .wrapper { max-width: 1320px; margin: 0 auto; }
 
   /* ── Company header ── */
-  .company-header { background: var(--bg-primary); border: 0.5px solid var(--border-strong); border-radius: var(--radius-lg); padding: 20px 24px; display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; box-shadow: var(--shadow); }
+  .company-header { background: var(--bg-primary); border: 0.5px solid var(--border-strong); border-radius: var(--radius-lg); padding: 20px 24px; display: flex; align-items: center; gap: 16px; margin-bottom: 20px; box-shadow: var(--shadow); flex-wrap: wrap; }
   .logo { width: 52px; height: 52px; border-radius: var(--radius-md); background: var(--blue); color: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; flex-shrink: 0; }
   .company-name { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
   .company-tagline { font-size: 17px; color: var(--text-secondary); margin-top: 3px; font-style: italic; }
@@ -77,6 +77,17 @@
   .badge-red { background: var(--red-light); color: var(--red-text); }
 
   /* ── Main tabs ── */
+    .sops-link-btn {
+    display: inline-flex; align-items: center;
+    padding: 8px 18px; border-radius: 8px;
+    background: var(--blue); color: #fff !important;
+    font-size: 14px; font-weight: 700;
+    text-decoration: none; white-space: nowrap;
+    transition: opacity .15s, transform .1s;
+    flex-shrink: 0; margin-left: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  }
+  .sops-link-btn:hover { opacity: .84; transform: translateY(-1px); }
   .tab-bar { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 16px; }
   .tab { padding: 7px 14px; font-size: 15px; border-radius: var(--radius-md); cursor: pointer; border: 0.5px solid var(--border-strong); background: var(--bg-primary); color: var(--text-secondary); transition: all .15s; }
   .tab:hover { background: var(--bg-secondary); color: var(--text-primary); }
@@ -214,8 +225,8 @@
   .org-scroll { overflow-x: auto; padding-bottom: 16px; }
 
   /* Fixed org tree - no position:absolute, pure flexbox */
-  .org-tree { display: flex; flex-direction: column; align-items: center; padding: 20px 60px 40px; min-width: 1320px; width: max-content; gap: 0; }
-  .org-tier { display: flex; flex-direction: row; align-items: flex-start; justify-content: center; gap: 28px; width: 100%; }
+  .org-tree { display: flex; flex-direction: column; align-items: center; padding: 20px 40px 40px; min-width: 900px; width: max-content; gap: 0; }
+  .org-tier { display: flex; flex-direction: row; align-items: flex-start; justify-content: center; gap: 20px; width: 100%; }
   .org-col { display: flex; flex-direction: column; align-items: center; }
   .org-connector-h { height: 2px; background: var(--border-strong); }
   .org-connector-v { width: 2px; background: var(--border-strong); }
@@ -246,6 +257,8 @@
   .n-tech  .node-initials { background: var(--purple); color: var(--purple-light); }
   .n-fin   { background: var(--teal-bg);      border-color: var(--teal-border); color: var(--teal); }
   .n-fin   .node-initials { background: var(--teal);   color: var(--teal-bg); }
+  .n-hse   { background: var(--red-light);   border-color: var(--red); color: var(--red); }
+  .n-hse   .node-initials { background: var(--red);    color: #fff; }
   .n-sales { background: var(--red-light);    border-color: #e8aaaa; color: var(--red-text); }
   .n-sales .node-initials { background: var(--red);    color: var(--red-light); }
   .profile-panel { background: var(--bg-primary); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px 24px; margin-top: 24px; display: none; }
@@ -282,16 +295,6 @@
   .kpi-card { background:var(--bg-secondary); border-radius:var(--radius-md); padding:12px 14px; }
   .kpi-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-tertiary); margin-bottom:3px; }
   .kpi-value { font-size:15px; font-weight:700; }
-
-  /* Keep toolkit + scenarios from widening the whole page */
-  #view-toolkit, #view-scenarios { width:100%; max-width:100%; overflow-x:hidden; }
-  #view-toolkit .form-card,
-  #view-scenarios .er-main-view,
-  #view-scenarios .wfp-section,
-  #view-scenarios .wfp-table-wrap,
-  #view-scenarios .scenario-grid { width:100%; max-width:100%; min-width:0; }
-  .er-main-tab-bar, .ptk-tab-bar { width:100%; max-width:100%; }
-  .scenario-grid { grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); }
 
   /* ── Policy pack styles ── */
   .pp-layout { display:grid; grid-template-columns:260px 1fr; gap:20px; align-items:start; }
@@ -335,8 +338,8 @@
   .form-card { background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 28px 32px; }
   .form-header { border-radius:var(--radius-lg); padding:16px 20px; margin-bottom:22px; border:1.5px solid; }
   .form-doc-title { font-size:21px; font-weight:800; }
-  .form-meta-row { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-top:12px; width:100%; }
-  .form-field { display:flex; flex-direction:column; gap:4px; min-width:0; }
+  .form-meta-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; }
+  .form-field { display:flex; flex-direction:column; gap:4px; flex:1; min-width:160px; }
   .form-label { font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-tertiary); }
   .form-value { font-size:15px; border-bottom:1.5px solid var(--border-strong); padding-bottom:4px; color:var(--text-secondary); font-style:italic; }
   .form-sec { margin-bottom:22px; }
@@ -469,6 +472,9 @@
         <span class="badge badge-green">Cert IV HRM Study Kit</span>
       </div>
     </div>
+    <a class="sops-link-btn" href="https://andrewme89.github.io/CertIV-HRM/ppg_hr_sops.html" target="_blank" rel="noopener">
+      HR SOPs &amp; Procedures ↗
+    </a>
   </div>
 
   <div class="tab-bar">
@@ -692,214 +698,238 @@
     <div id="ov-org" class="orgres-view active">
       <div class="unit-hdr" style="background:var(--blue-light);border-color:#aec8ec;color:var(--blue-text);">
         <div class="unit-hdr-title">Organisation chart</div>
-        <div class="unit-hdr-desc">Leadership structure and reporting lines — click any card for role details.</div>
+        <div class="unit-hdr-desc">Leadership structure and reporting lines — click any named card for role details.</div>
       </div>
       <div class="org-legend">
         <div class="leg-item"><div class="leg-dot" style="background:#185FA5"></div>Executive</div>
         <div class="leg-item"><div class="leg-dot" style="background:#BA7517"></div>Operations &amp; Transport</div>
         <div class="leg-item"><div class="leg-dot" style="background:#1D9E75"></div>Human Resources</div>
         <div class="leg-item"><div class="leg-dot" style="background:#534AB7"></div>Technology</div>
-        <div class="leg-item"><div class="leg-dot" style="background:#0F6E56"></div>Finance &amp; Procurement</div>
-        <div class="leg-item"><div class="leg-dot" style="background:#A32D2D"></div>Sales &amp; Client Services</div>
+        <div class="leg-item"><div class="leg-dot" style="background:#0F6E56"></div>Finance</div>
+        <div class="leg-item"><div class="leg-dot" style="background:#A32D2D"></div>Sales</div>
       </div>
-      <p class="hint">Click any card to see role details below.</p>
+      <p class="hint" style="margin-bottom:10px;">Click any card to see role details below.</p>
 
       <div class="org-scroll">
-      <div class="org-tree">
+      <div class="org-tree2">
 
-        <!-- L1: CEO -->
-        <div style="display:flex;flex-direction:column;align-items:center;">
-          <div class="org-node n-exec" onclick="showProfile('ceo')" id="node-ceo">
-            <div class="node-initials">MO</div>
-            <div class="node-name">Marcus Okafor</div>
-            <div class="node-title">Chief Executive Officer</div>
-            <div class="node-dept">Executive</div>
-          </div>
-          <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-        </div>
-
-        <!-- L2: C-Suite horizontal bar -->
-        <div style="display:flex;flex-direction:column;align-items:center;width:100%;">
-          <div style="width:1240px;height:2px;background:var(--border-strong);"></div>
-          <div style="display:flex;gap:28px;width:1240px;justify-content:space-between;">
-            <!-- COO -->
-            <div style="display:flex;flex-direction:column;align-items:center;">
-              <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-              <div class="org-node n-exec" onclick="showProfile('coo')" id="node-coo">
-                <div class="node-initials">RB</div>
-                <div class="node-name">Rachel Burns</div>
-                <div class="node-title">Chief Operating Officer</div>
-                <div class="node-dept">Executive</div>
-              </div>
+        <!-- ── L1: CEO ──────────────────────────── -->
+        <div class="ot-row ot-center">
+          <div class="ot-node-col">
+            <div class="org-node n-exec" onclick="showProfile('ceo')" id="node-ceo">
+              <div class="node-initials">MO</div>
+              <div class="node-name">Marcus Okafor</div>
+              <div class="node-title">Chief Executive Officer</div>
+              <div class="node-dept">Executive</div>
             </div>
-            <!-- CHRO -->
-            <div style="display:flex;flex-direction:column;align-items:center;">
-              <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-              <div class="org-node n-exec" onclick="showProfile('chro')" id="node-chro">
-                <div class="node-initials">PS</div>
-                <div class="node-name">Dr. Priya Sharma</div>
-                <div class="node-title">Chief HR Officer</div>
-                <div class="node-dept">Executive</div>
-              </div>
-            </div>
-            <!-- CFO -->
-            <div style="display:flex;flex-direction:column;align-items:center;">
-              <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-              <div class="org-node n-fin" onclick="showProfile('cfo')" id="node-cfo">
-                <div class="node-initials">LN</div>
-                <div class="node-name">Liam Nguyen</div>
-                <div class="node-title">Chief Financial Officer</div>
-                <div class="node-dept">Finance</div>
-              </div>
-            </div>
-            <!-- CTO -->
-            <div style="display:flex;flex-direction:column;align-items:center;">
-              <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-              <div class="org-node n-tech" onclick="showProfile('cto')" id="node-cto">
-                <div class="node-initials">KP</div>
-                <div class="node-name">Kevin Park</div>
-                <div class="node-title">Chief Technology Officer</div>
-                <div class="node-dept">Technology</div>
-              </div>
-            </div>
-            <!-- CCO -->
-            <div style="display:flex;flex-direction:column;align-items:center;">
-              <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-              <div class="org-node n-sales" onclick="showProfile('cco')" id="node-cco">
-                <div class="node-initials">DM</div>
-                <div class="node-name">Diana Mills</div>
-                <div class="node-title">Chief Commercial Officer</div>
-                <div class="node-dept">Sales</div>
-              </div>
-            </div>
+            <div class="ot-v"></div>
           </div>
         </div>
 
-        <!-- L3: Reports — each C-Suite chain as independent columns -->
-        <div style="display:flex;gap:28px;width:1240px;justify-content:space-between;margin-top:0;align-items:flex-start;">
+        <!-- ── L2: C-Suite horizontal span ─────── -->
+        <!-- Horizontal bar spans the 5 column centres -->
+        <!-- Each column is 180px wide, 16px gap => total = 5×180 + 4×16 = 964px -->
+        <!-- Bar runs from col1-centre to col5-centre = 964 - 180 = 784px, centred -->
+        <div class="ot-row ot-center">
+          <div style="width:964px; display:flex; flex-direction:column; align-items:center;">
+            <div style="width:784px; height:2px; background:var(--border-strong);"></div>
+            <div style="width:964px; display:flex; gap:16px; justify-content:space-between;">
 
-          <!-- COO chain -->
-          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
-            <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-            <div style="width:460px;height:2px;background:var(--border-strong);"></div>
-            <div style="display:flex;gap:20px;">
-              <div style="display:flex;flex-direction:column;align-items:center;">
-                <div style="width:2px;height:28px;background:var(--border-strong);"></div>
-                <div class="org-node n-ops" onclick="showProfile('gm_ops_mel')" id="node-gm_ops_mel">
-                  <div class="node-initials">SC</div>
-                  <div class="node-name">Sandra Cortez</div>
-                  <div class="node-title">GM Operations (MEL)</div>
-                  <div class="node-dept">Operations</div>
-                </div>
-                <div style="width:2px;height:24px;background:var(--border-strong);"></div>
-                <div style="width:360px;height:2px;background:var(--border-strong);"></div>
-                <div style="display:flex;gap:16px;">
-                  <div style="display:flex;flex-direction:column;align-items:center;">
-                    <div style="width:2px;height:24px;background:var(--border-strong);"></div>
-                    <div class="org-node n-ops" onclick="showProfile('tl_wh')" id="node-tl_wh" style="width:170px;">
-                      <div class="node-initials">—</div>
-                      <div class="node-name">Team Leaders ×4</div>
-                      <div class="node-title">Warehouse Operations</div>
-                      <div class="node-dept">Operations</div>
-                    </div>
-                    <div style="width:2px;height:20px;background:var(--border-strong);"></div>
-                    <div class="org-node n-ops" style="width:140px;opacity:0.65;">
-                      <div class="node-name">~180 Team Members</div>
-                      <div class="node-dept">Operations</div>
-                    </div>
-                  </div>
-                  <div style="display:flex;flex-direction:column;align-items:center;">
-                    <div style="width:2px;height:24px;background:var(--border-strong);"></div>
-                    <div class="org-node n-ops" onclick="showProfile('hse_mgr')" id="node-hse_mgr" style="width:170px;">
-                      <div class="node-initials">TW</div>
-                      <div class="node-name">Tom Walsh</div>
-                      <div class="node-title">HSE Manager</div>
-                      <div class="node-dept">HSE</div>
-                    </div>
-                  </div>
+              <!-- COO -->
+              <div class="ot-node-col" style="width:180px;">
+                <div class="ot-v"></div>
+                <div class="org-node n-exec" onclick="showProfile('coo')" id="node-coo">
+                  <div class="node-initials">RB</div>
+                  <div class="node-name">Rachel Burns</div>
+                  <div class="node-title">Chief Operating Officer</div>
+                  <div class="node-dept">Executive</div>
                 </div>
               </div>
-              <div style="display:flex;flex-direction:column;align-items:center;">
-                <div style="width:2px;height:28px;background:var(--border-strong);"></div>
-                <div class="org-node n-ops" onclick="showProfile('gm_trans')" id="node-gm_trans">
-                  <div class="node-initials">BT</div>
-                  <div class="node-name">Barry Tran</div>
-                  <div class="node-title">GM Transport &amp; Fleet</div>
-                  <div class="node-dept">Transport</div>
+
+              <!-- CHRO -->
+              <div class="ot-node-col" style="width:180px;">
+                <div class="ot-v"></div>
+                <div class="org-node n-exec" onclick="showProfile('chro')" id="node-chro">
+                  <div class="node-initials">PS</div>
+                  <div class="node-name">Dr. Priya Sharma</div>
+                  <div class="node-title">Chief HR Officer</div>
+                  <div class="node-dept">Executive</div>
                 </div>
-                <div style="width:2px;height:20px;background:var(--border-strong);"></div>
-                <div class="org-node n-ops" style="opacity:0.65;">
-                  <div class="node-name">Fleet + Drivers</div>
-                  <div class="node-title">~80 staff</div>
-                  <div class="node-dept">Transport</div>
+              </div>
+
+              <!-- CFO -->
+              <div class="ot-node-col" style="width:180px;">
+                <div class="ot-v"></div>
+                <div class="org-node n-fin" onclick="showProfile('cfo')" id="node-cfo">
+                  <div class="node-initials">LN</div>
+                  <div class="node-name">Liam Nguyen</div>
+                  <div class="node-title">Chief Financial Officer</div>
+                  <div class="node-dept">Finance</div>
+                </div>
+              </div>
+
+              <!-- CTO -->
+              <div class="ot-node-col" style="width:180px;">
+                <div class="ot-v"></div>
+                <div class="org-node n-tech" onclick="showProfile('cto')" id="node-cto">
+                  <div class="node-initials">KP</div>
+                  <div class="node-name">Kevin Park</div>
+                  <div class="node-title">Chief Technology Officer</div>
+                  <div class="node-dept">Technology</div>
+                </div>
+              </div>
+
+              <!-- CCO -->
+              <div class="ot-node-col" style="width:180px;">
+                <div class="ot-v"></div>
+                <div class="org-node n-sales" onclick="showProfile('cco')" id="node-cco">
+                  <div class="node-initials">DM</div>
+                  <div class="node-name">Diana Mills</div>
+                  <div class="node-title">Chief Commercial Officer</div>
+                  <div class="node-dept">Sales</div>
+                </div>
+              </div>
+
+            </div><!-- end L2 cols -->
+          </div>
+        </div>
+
+        <!-- ── L3: Reports row — 5 independent columns ── -->
+        <div class="ot-row" style="width:964px; gap:16px; align-items:flex-start;">
+
+          <!-- ── COO chain (width:180px) ─────── -->
+          <div class="ot-chain" style="width:180px;">
+            <div class="ot-v"></div>
+            <!-- Branch to 2 GMs: Sandra + Barry -->
+            <!-- Bar spans 180px + 16px + 180px = 376px, centred on 180px col = offset left by 98px -->
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:196px; height:2px; background:var(--border-strong);"></div>
+              <div style="display:flex; gap:16px;">
+                <!-- Sandra Cortez sub-column -->
+                <div class="ot-chain" style="width:180px; align-items:center;">
+                  <div class="ot-v"></div>
+                  <div class="org-node n-ops" onclick="showProfile('gm_ops_mel')" id="node-gm_ops_mel">
+                    <div class="node-initials">SC</div>
+                    <div class="node-name">Sandra Cortez</div>
+                    <div class="node-title">GM Operations (MEL)</div>
+                    <div class="node-dept">Operations</div>
+                  </div>
+                  <div class="ot-v"></div>
+                  <!-- Sandra's 2 reports: TLs + HSE -->
+                  <div style="display:flex; flex-direction:column; align-items:center;">
+                    <div style="width:156px; height:2px; background:var(--border-strong);"></div>
+                    <div style="display:flex; gap:16px;">
+                      <div class="ot-chain" style="width:70px; align-items:center;">
+                        <div class="ot-v"></div>
+                        <div class="org-node n-ops" onclick="showProfile('tl_wh')" id="node-tl_wh" style="width:70px; min-width:0;">
+                          <div class="node-initials" style="width:28px;height:28px;font-size:11px;">—</div>
+                          <div class="node-name" style="font-size:12px;">TLs ×4</div>
+                          <div class="node-title" style="font-size:11px;">Warehouse Ops</div>
+                          <div class="node-dept" style="font-size:10px;">Operations</div>
+                        </div>
+                        <div class="ot-v"></div>
+                        <div class="org-node n-ops" style="width:70px;min-width:0;opacity:.6;">
+                          <div class="node-name" style="font-size:11px;">~180 Team Members</div>
+                          <div class="node-dept" style="font-size:10px;">Operations</div>
+                        </div>
+                      </div>
+                      <div class="ot-chain" style="width:70px; align-items:center;">
+                        <div class="ot-v"></div>
+                        <div class="org-node n-hse" onclick="showProfile('hse_mgr')" id="node-hse_mgr" style="width:70px;min-width:0;">
+                          <div class="node-initials" style="width:28px;height:28px;font-size:11px;">TW</div>
+                          <div class="node-name" style="font-size:12px;">Tom Walsh</div>
+                          <div class="node-title" style="font-size:11px;">HSE Manager</div>
+                          <div class="node-dept" style="font-size:10px;">HSE</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Barry Tran sub-column -->
+                <div class="ot-chain" style="width:180px; align-items:center;">
+                  <div class="ot-v"></div>
+                  <div class="org-node n-ops" onclick="showProfile('gm_trans')" id="node-gm_trans">
+                    <div class="node-initials">BT</div>
+                    <div class="node-name">Barry Tran</div>
+                    <div class="node-title">GM Transport &amp; Fleet</div>
+                    <div class="node-dept">Transport</div>
+                  </div>
+                  <div class="ot-v"></div>
+                  <div class="org-node n-ops" style="opacity:.6;">
+                    <div class="node-name">Fleet + Drivers</div>
+                    <div class="node-title">~80 staff</div>
+                    <div class="node-dept">Transport</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CHRO chain -->
-          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
-            <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-            <div style="width:420px;height:2px;background:var(--border-strong);"></div>
-            <div style="display:flex;gap:20px;">
-              <div style="display:flex;flex-direction:column;align-items:center;">
-                <div style="width:2px;height:28px;background:var(--border-strong);"></div>
-                <div class="org-node n-hr" onclick="showProfile('hpe')" id="node-hpe">
-                  <div class="node-initials">JB</div>
-                  <div class="node-name">Jordan Bell</div>
-                  <div class="node-title">Head of People Experience</div>
-                  <div class="node-dept">Human Resources</div>
+          <!-- ── CHRO chain (width:180px) ──────── -->
+          <div class="ot-chain" style="width:180px;">
+            <div class="ot-v"></div>
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:196px; height:2px; background:var(--border-strong);"></div>
+              <div style="display:flex; gap:16px;">
+                <div class="ot-chain" style="width:90px; align-items:center;">
+                  <div class="ot-v"></div>
+                  <div class="org-node n-hr" onclick="showProfile('hpe')" id="node-hpe" style="width:90px;min-width:0;">
+                    <div class="node-initials" style="width:28px;height:28px;font-size:11px;">JB</div>
+                    <div class="node-name" style="font-size:12px;">Jordan Bell</div>
+                    <div class="node-title" style="font-size:11px;">Head of People Exp.</div>
+                    <div class="node-dept" style="font-size:10px;">Human Resources</div>
+                  </div>
+                  <div class="ot-v"></div>
+                  <div class="org-node n-hr" onclick="showProfile('hr_adv')" id="node-hr_adv" style="width:90px;min-width:0;">
+                    <div class="node-initials" style="width:28px;height:28px;font-size:11px;">—</div>
+                    <div class="node-name" style="font-size:12px;">HR Advisors ×2</div>
+                    <div class="node-title" style="font-size:11px;">Generalist support</div>
+                    <div class="node-dept" style="font-size:10px;">Human Resources</div>
+                  </div>
                 </div>
-                <div style="width:2px;height:20px;background:var(--border-strong);"></div>
-                <div class="org-node n-hr" onclick="showProfile('hr_adv')" id="node-hr_adv" style="width:170px;">
-                  <div class="node-initials">—</div>
-                  <div class="node-name">HR Advisors ×2</div>
-                  <div class="node-title">Generalist support</div>
-                  <div class="node-dept">Human Resources</div>
-                </div>
-              </div>
-              <div style="display:flex;flex-direction:column;align-items:center;">
-                <div style="width:2px;height:28px;background:var(--border-strong);"></div>
-                <div class="org-node n-hr" onclick="showProfile('hrbp')" id="node-hrbp">
-                  <div class="node-initials">AW</div>
-                  <div class="node-name">Aaliyah Wong</div>
-                  <div class="node-title">HRBP — Operations</div>
-                  <div class="node-dept">Human Resources</div>
+                <div class="ot-chain" style="width:90px; align-items:center;">
+                  <div class="ot-v"></div>
+                  <div class="org-node n-hr" onclick="showProfile('hrbp')" id="node-hrbp" style="width:90px;min-width:0;">
+                    <div class="node-initials" style="width:28px;height:28px;font-size:11px;">AW</div>
+                    <div class="node-name" style="font-size:12px;">Aaliyah Wong</div>
+                    <div class="node-title" style="font-size:11px;">HRBP — Operations</div>
+                    <div class="node-dept" style="font-size:10px;">Human Resources</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CFO chain -->
-          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
-            <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-            <div class="org-node n-fin" style="opacity:0.65;width:180px;">
+          <!-- ── CFO chain (width:180px) ───────── -->
+          <div class="ot-chain" style="width:180px;">
+            <div class="ot-v"></div>
+            <div class="org-node n-fin" style="opacity:.65; width:180px;">
               <div class="node-name">Finance Manager</div>
               <div class="node-title">+ Procurement Mgr</div>
               <div class="node-dept">Finance</div>
             </div>
           </div>
 
-          <!-- CTO chain -->
-          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
-            <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-            <div class="org-node n-tech" onclick="showProfile('lead_eng')" id="node-lead_eng">
+          <!-- ── CTO chain (width:180px) ───────── -->
+          <div class="ot-chain" style="width:180px;">
+            <div class="ot-v"></div>
+            <div class="org-node n-tech" onclick="showProfile('lead_eng')" id="node-lead_eng" style="width:180px;">
               <div class="node-initials">—</div>
               <div class="node-name">Lead Engineers ×3</div>
               <div class="node-title">Platform · Data · Infra</div>
               <div class="node-dept">Technology</div>
             </div>
-            <div style="width:2px;height:20px;background:var(--border-strong);"></div>
-            <div class="org-node n-tech" style="opacity:0.65;">
+            <div class="ot-v"></div>
+            <div class="org-node n-tech" style="opacity:.65; width:180px;">
               <div class="node-name">Dev Team ~48</div>
               <div class="node-dept">Technology</div>
             </div>
           </div>
 
-          <!-- CCO chain -->
-          <div style="display:flex;flex-direction:column;align-items:center;width:220px;">
-            <div style="width:2px;height:32px;background:var(--border-strong);"></div>
-            <div class="org-node n-sales" style="opacity:0.65;width:180px;">
+          <!-- ── CCO chain (width:180px) ───────── -->
+          <div class="ot-chain" style="width:180px;">
+            <div class="ot-v"></div>
+            <div class="org-node n-sales" style="opacity:.65; width:180px;">
               <div class="node-name">Sales · Client Svcs</div>
               <div class="node-title">Marketing · ~62 staff</div>
               <div class="node-dept">Sales</div>
@@ -907,7 +937,8 @@
           </div>
 
         </div><!-- end L3 row -->
-      </div><!-- end org-tree -->
+
+      </div><!-- end org-tree2 -->
       </div><!-- end org-scroll -->
 
       <!-- Profile panel -->
@@ -1927,6 +1958,7 @@
     </div><!-- end panels -->
   </div><!-- end layout -->
 </div>
+  </div>
 
   <!-- PERFORMANCE TOOLKIT -->
   <div id="view-toolkit" class="view">
@@ -2313,6 +2345,7 @@
   </div>
 
 </div>
+  </div>
 
   <!-- ER SCENARIOS & WORKFORCE PLANNING -->
   <div id="view-scenarios" class="view">
