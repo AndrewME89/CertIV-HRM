@@ -94,6 +94,8 @@
   .tab.active { background: var(--text-primary); color: var(--bg-primary); border-color: transparent; }
   .view { display: none; }
   .view.active { display: block; }
+  #view-toolkit,
+  #view-scenarios { max-width: 100%; overflow-x: hidden; }
 
   /* ── Shared layout helpers ── */
   .section { margin-bottom: 20px; }
@@ -307,7 +309,7 @@
   .kpi-value { font-size:15px; font-weight:700; }
 
   /* ── Policy pack styles ── */
-  .pp-layout { display:grid; grid-template-columns:260px 1fr; gap:20px; align-items:start; }
+  .pp-layout { display:grid; grid-template-columns:minmax(200px, 260px) 1fr; gap:20px; align-items:start; }
   .policy-nav { display:flex; flex-direction:column; gap:6px; }
   .pp-nav-item { display:flex; align-items:center; gap:12px; padding:12px 16px; background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-md); cursor:pointer; transition:all .15s; border-left:4px solid; }
   .pp-nav-item:hover { background:var(--bg-secondary); }
@@ -429,7 +431,7 @@
   .er-main-view.active { display:block; }
   .wfp-section { margin-bottom:28px; }
   .wfp-sec-title { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.09em; color:var(--text-tertiary); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
-  .wfp-table-wrap { overflow-x:auto; }
+  .wfp-table-wrap { overflow-x:auto; max-width:100%; }
   .wfp-table { width:100%; border-collapse:collapse; font-size:15px; min-width:800px; }
   .wfp-table th { text-align:left; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-tertiary); padding:10px 12px; border-bottom:2px solid var(--border-strong); background:var(--bg-primary); }
   .wfp-table td { padding:10px 12px; border-bottom:1px solid var(--border); background:var(--bg-primary); vertical-align:top; }
