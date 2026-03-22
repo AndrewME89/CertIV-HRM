@@ -347,7 +347,7 @@
   .ptk-tab:hover { background:var(--bg-secondary); color:var(--text-primary); }
   .ptk-tab.active { background:var(--text-primary); color:var(--bg-primary); border-color:transparent; }
   .ptk-view { display:none; }
-  .ptk-view.active { display:block; }
+  .ptk-view.active { display:block; width:100%; min-width:0; }
   .form-card { background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-lg); padding:16px 20px 24px; overflow:hidden; }
   .form-header { border-radius:var(--radius-lg); padding:16px 20px; margin-bottom:22px; border:1.5px solid; }
   .form-doc-title { font-size:21px; font-weight:800; }
@@ -372,7 +372,7 @@
   .rating-opt.r3 { border-color:var(--blue-border); color:var(--blue); background:var(--blue-bg); }
   .rating-opt.r4 { border-color:var(--green-border); color:var(--green); background:var(--green-bg); }
   .rating-opt.r5 { border-color:var(--purple-border); color:var(--purple); background:var(--purple-bg); }
-  .three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+  .three-col { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:12px; }
   .kpi-row { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); }
   .kpi-row:last-child { border-bottom:none; }
   .kpi-num { font-size:12px; font-weight:800; color:var(--text-tertiary); width:24px; flex-shrink:0; padding-top:2px; }
@@ -429,7 +429,7 @@
   .er-main-tab:hover { background:var(--bg-secondary); color:var(--text-primary); }
   .er-main-tab.active { background:var(--text-primary); color:var(--bg-primary); border-color:transparent; }
   .er-main-view { display:none; }
-  .er-main-view.active { display:block; }
+  .er-main-view.active { display:block; width:100%; min-width:0; }
   .wfp-section { margin-bottom:28px; }
   .wfp-sec-title { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.09em; color:var(--text-tertiary); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
   .wfp-table-wrap { overflow-x:auto; max-width:100%; display:block; }
