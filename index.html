@@ -94,6 +94,8 @@
   .tab.active { background: var(--text-primary); color: var(--bg-primary); border-color: transparent; }
   .view { display: none; }
   .view.active { display: block; width: 100%; min-width: 0; box-sizing: border-box; }
+  #view-scenarios,
+  #view-dataregister { overflow-x: hidden; }
 
   /* ── Shared layout helpers ── */
   .section { margin-bottom: 20px; }
@@ -345,11 +347,11 @@
   .ptk-tab.active { background:var(--text-primary); color:var(--bg-primary); border-color:transparent; }
   .ptk-view { display:none; }
   .ptk-view.active { display:block; }
-  .form-card { background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 28px 32px; }
+  .form-card { background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-lg); padding:16px 20px 24px; overflow:hidden; }
   .form-header { border-radius:var(--radius-lg); padding:16px 20px; margin-bottom:22px; border:1.5px solid; }
   .form-doc-title { font-size:21px; font-weight:800; }
-  .form-meta-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; }
-  .form-field { display:flex; flex-direction:column; gap:4px; flex:1; min-width:160px; }
+  .form-meta-row { display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:10px; margin-top:12px; }
+  .form-field { display:flex; flex-direction:column; gap:4px; flex:1; min-width:120px; }
   .form-label { font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-tertiary); }
   .form-value { font-size:15px; border-bottom:1.5px solid var(--border-strong); padding-bottom:4px; color:var(--text-secondary); font-style:italic; }
   .form-sec { margin-bottom:22px; }
@@ -391,7 +393,7 @@
   .filter-btn { padding:6px 13px; font-size:14px; font-weight:600; border-radius:20px; cursor:pointer; border:1.5px solid var(--border-strong); background:var(--bg-primary); color:var(--text-secondary); transition:all .15s; }
   .filter-btn:hover { background:var(--bg-secondary); }
   .filter-btn.active { background:var(--text-primary); color:var(--bg-primary); border-color:transparent; }
-  .scenario-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; }
+  .scenario-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(380px,1fr)); gap:12px; }
   .scenario-card { background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; border-left:4px solid; }
   .sc-header { padding:14px 16px 12px; cursor:pointer; }
   .sc-header:hover { background:var(--bg-secondary); }
@@ -429,7 +431,7 @@
   .er-main-view.active { display:block; }
   .wfp-section { margin-bottom:28px; }
   .wfp-sec-title { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.09em; color:var(--text-tertiary); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
-  .wfp-table-wrap { overflow-x:auto; max-width:100%; }
+  .wfp-table-wrap { overflow-x:auto; max-width:100%; display:block; }
   .wfp-table { width:100%; border-collapse:collapse; font-size:15px; min-width:800px; }
   .wfp-table th { text-align:left; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-tertiary); padding:10px 12px; border-bottom:2px solid var(--border-strong); background:var(--bg-primary); }
   .wfp-table td { padding:10px 12px; border-bottom:1px solid var(--border); background:var(--bg-primary); vertical-align:top; }
@@ -466,7 +468,7 @@
   }
 
   /* ── HR Data Register ── */
-  .dr-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:20px; margin-top:4px; }
+  .dr-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; margin-top:4px; }
   .dr-card { background:var(--bg-primary); border:1px solid var(--border); border-radius:var(--radius-md); overflow:hidden; }
   .dr-card-header { padding:14px 16px 10px; display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--border); }
   .dr-card-icon { width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; }
