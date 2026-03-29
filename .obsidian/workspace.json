@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/API Tokens, Keys, Etc.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API Tokens, Keys, Etc"
+              "title": "README"
             }
           }
         ]
@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "2563e4689e97049a",
+            "id": "1af48abd094c9d61",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -183,9 +183,19 @@
               "icon": "timer",
               "title": "Timer"
             }
+          },
+          {
+            "id": "e814595c02b6e706",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "882cc6db02261e33",
@@ -219,20 +229,20 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-task-progress-bar:Open Task Genius view": false,
       "pomodoro-timer:Toggle timer panel": false,
       "omnisearch:Omnisearch": false,
       "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-task-progress-bar:Open Task Genius view": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "New Text Document.txt",
     "Dashboard.md",
-    "Resources/Fair Work - Best Practice Guides/flexible-working-arrangements-best-practice-guide-bpg.pdf",
     "Resources/API Tokens, Keys, Etc.md",
+    "New Text Document.txt",
+    "Resources/Fair Work - Best Practice Guides/flexible-working-arrangements-best-practice-guide-bpg.pdf",
     "Resources/Zip Files/Ideaverse Lite 1.5/Ideaverse Lite 1.5/Home Basic.md",
     "Travel Purgatory List.md",
     "My Courses/Unit 1 - Support Human Resources Functions and Processes - M00023AZ/01_Identify Human Resource Functions/01_Human Resources Strategy.md",

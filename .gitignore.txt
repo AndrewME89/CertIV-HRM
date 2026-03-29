@@ -10,3 +10,5 @@
 
 # Obsidian Git conflict files
 conflict-files-obsidian-git.md
+
+Resources/API Tokens, Keys, Etc.md

@@ -46,8 +46,7 @@
     "//Resources/Resources/Zip Files",
     "//Resources/Resources/Zip Files/Resources/Zip Files/Ideaverse Lite 1.5",
     "//Resources/Resources/Zip Files/Resources/Zip Files/Ideaverse Lite 1.5/Resources/Zip Files/Ideaverse Lite 1.5/Ideaverse Lite 1.5/Resources/Zip Files/Ideaverse Lite 1.5/Ideaverse Lite 1.5/Calendar",
-    "//Resources/Resources/Fair Work - Best Practice Guides",
-    "//Resources"
+    "//Resources/Resources/Fair Work - Best Practice Guides"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
@@ -59,8 +58,6 @@
     "_assets",
     "_blocks"
   ],
-  "newFileLocation": "root",
-  "newFileFolderPath": "",
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
@@ -77,7 +74,7 @@
   "fmKeySticker": "sticker",
   "openSpacesOnLaunch": true,
   "indexSVG": false,
-  "readableLineWidth": true,
+  "readableLineWidth": false,
   "autoAddContextsToSubtags": true,
   "releaseNotesPrompt": 0.999,
   "enableDefaultSpaces": true,
