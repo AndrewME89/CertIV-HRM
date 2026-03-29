@@ -1,0 +1,454 @@
+Date: Sat, 28 Mar 2026 20:09:37 +0000 (UTC)
+Message-ID: <1326977919.45.1774728577931@e99af58fb8b9>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_44_396270361.1774728577931"
+
+------=_Part_44_396270361.1774728577931
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>4 Ls Retrospective</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>4 Ls Retrospective</h1>
+    <div class=3D"Section1">
+        <h2 local-id=3D"4c0141a3474e" id=3D"id-4LsRetrospective-Overview"><=
+img src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluen=
+ce/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&=
+amp;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; bec=
+ause &quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=
+=3D"%3Cac%3Aemoticon+ac%3Aname%3D%22clipboard%22+ac%3Aemoji-shortname%3D%22=
+%3Aclipboard%3A%22+ac%3Aemoji-id%3D%221f4cb%22+ac%3Alocal-id%3D%2204ec03f6a=
+fd4%22+ac%3Aemoji-fallback%3D%22%5CuD83D%5CuDCCB%22+%2F%3E">&nbsp;Overview<=
+/h2>
+<p local-id=3D"e334cebba99e">Reflect back on what you and your team learned=
+ and what motivates the group to succeed by following the instructions for =
+the <a class=3D"external-link" href=3D"https://www.atlassian.com/team-playb=
+ook/plays/4-ls-retrospective-technique" rel=3D"nofollow">4Ls Retrospective =
+Play</a>.</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"4f=
+adb702b1d6" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 234.0px;">
+<col style=3D"width: 526.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"199282be0133">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"84375115e624" class=
+=3D"confluenceTd">
+<p local-id=3D"ed05d20ec815"><strong>Team</strong></p></td>
+<td data-local-id=3D"4a6d71c5c3ef" class=3D"confluenceTd">
+<p local-id=3D"e5cc2bc68cd3"></p></td>
+</tr>
+<tr data-local-id=3D"d4a862e06ef3">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"655d02d369b1" class=
+=3D"confluenceTd">
+<p local-id=3D"4827cd6ede9b"><strong>Team members</strong></p></td>
+<td data-local-id=3D"c08d5040ecd8" class=3D"confluenceTd">
+<p local-id=3D"b4be26bbcd92"></p></td>
+</tr>
+<tr data-local-id=3D"f28e4693b565">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"67b3fbcda00e" class=
+=3D"confluenceTd">
+<p local-id=3D"e35bb8edb133"><strong>Date</strong></p></td>
+<td data-local-id=3D"b0682b9e91ae" class=3D"confluenceTd">
+<p local-id=3D"9ce0bc625262"></p></td>
+</tr>
+<tr data-local-id=3D"a3e82b941ca8">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"0dbdd0065ee4" class=
+=3D"confluenceTd">
+<p local-id=3D"53e4fbfb37c7"><strong>Retrospective period</strong></p></td>
+<td data-local-id=3D"5e47bef2090e" class=3D"confluenceTd">
+<p local-id=3D"71222a79b56e"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"fb936222eee9" id=3D"id-4LsRetrospective-4Lsretrospective"><=
+img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f4ad" data-emoj=
+i-shortname=3D":thought_balloon:" data-emoji-fallback=3D"\uD83D\uDCAD" src=
+=3D"09c04df6b7e377f2c731a38fdcc89a58aebe3b62c9dfea29d1381ac9662f72e2" width=
+=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">=
+&nbsp;4Ls retrospective</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"fa=
+f8ee49dfa5" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"516d8fe5fdae">
+<th data-highlight-colour=3D"#deebff" data-local-id=3D"0bc0f3fd9ea0" class=
+=3D"confluenceTh">
+<p local-id=3D"1306c49d3711"><strong>Milestones</strong></p></th>
+<th data-highlight-colour=3D"#deebff" data-local-id=3D"edb8b3477b37" class=
+=3D"confluenceTh">
+<p local-id=3D"400a99408893"><strong>Loved</strong></p></th>
+<th data-highlight-colour=3D"#deebff" data-local-id=3D"38444be5214e" class=
+=3D"confluenceTh">
+<p local-id=3D"d440d247af0e"><strong>Longed for</strong></p></th>
+<th data-highlight-colour=3D"#deebff" data-local-id=3D"45b24db40d3a" class=
+=3D"confluenceTh">
+<p local-id=3D"0107f4df085b"><strong>Loathed</strong></p></th>
+<th data-highlight-colour=3D"#deebff" data-local-id=3D"6db8729e7916" class=
+=3D"confluenceTh">
+<p local-id=3D"2930b24682a9"><strong>Learned</strong></p></th>
+</tr>
+<tr data-local-id=3D"e207908dac00">
+<td data-local-id=3D"e69010df1f62" class=3D"confluenceTd">
+<p local-id=3D"adb5a4523821"></p></td>
+<td data-local-id=3D"e7f205ba27fb" class=3D"confluenceTd">
+<ul local-id=3D"d9429138ae0f">
+<li local-id=3D"354e840c1607">
+<p local-id=3D"396a720641fe"></p></li>
+</ul></td>
+<td data-local-id=3D"c9b59ce08b90" class=3D"confluenceTd">
+<ul local-id=3D"5e41474725cf">
+<li local-id=3D"a8f45e1b29b0">
+<p local-id=3D"270dc867e38b"></p></li>
+</ul></td>
+<td data-local-id=3D"09615244e2ab" class=3D"confluenceTd">
+<ul local-id=3D"390713263047">
+<li local-id=3D"0e9aebe554ae">
+<p local-id=3D"48788186d387"><br></p></li>
+</ul></td>
+<td data-local-id=3D"642ee934c23c" class=3D"confluenceTd">
+<ul local-id=3D"cfeb55214fbc">
+<li local-id=3D"c8be2046c306">
+<p local-id=3D"0cdcfe41ab1c"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"990382630034">
+<td data-local-id=3D"f3d66c446f87" class=3D"confluenceTd">
+<p local-id=3D"d9186ff9c786"></p></td>
+<td data-local-id=3D"b278cde6dbb2" class=3D"confluenceTd">
+<p local-id=3D"0ea78833533f"></p></td>
+<td data-local-id=3D"cf2d03e82cc7" class=3D"confluenceTd">
+<p local-id=3D"7f42bbf7ae45"></p></td>
+<td data-local-id=3D"ea38ec01689c" class=3D"confluenceTd">
+<p local-id=3D"9c12641b6026"></p></td>
+<td data-local-id=3D"e35cb03313d3" class=3D"confluenceTd">
+<p local-id=3D"a4feb1908388"></p></td>
+</tr>
+<tr data-local-id=3D"e5b0c67483a5">
+<td data-local-id=3D"e368a3158fb1" class=3D"confluenceTd">
+<p local-id=3D"02b53d8525c4"></p></td>
+<td data-local-id=3D"a823532a8318" class=3D"confluenceTd">
+<p local-id=3D"bc137f1c5e61"></p></td>
+<td data-local-id=3D"a9825e3bf782" class=3D"confluenceTd">
+<p local-id=3D"49c95f5da9f5"></p></td>
+<td data-local-id=3D"2bcc911d08de" class=3D"confluenceTd">
+<p local-id=3D"3228b90fcab9"></p></td>
+<td data-local-id=3D"1efee5b35461" class=3D"confluenceTd">
+<p local-id=3D"1ade205f1112"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"f993abcb0668" id=3D"id-4LsRetrospective-Actionplan"><img sr=
+c=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/pla=
+ceholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;ve=
+rsion=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &=
+quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Ca=
+c%3Aemoticon+ac%3Aname%3D%22high_voltage%22+ac%3Aemoji-shortname%3D%22%3Aza=
+p%3A%22+ac%3Aemoji-id%3D%2226a1%22+ac%3Alocal-id%3D%2271980ff50ca7%22+ac%3A=
+emoji-fallback%3D%22%E2%9A%A1%22+%2F%3E">&nbsp;Action plan</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"78=
+91ed03c00f" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"4b19a9b442e9">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"af9379fab77a" class=
+=3D"confluenceTh">
+<p local-id=3D"07eb1640b37c"><strong>Action</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"fe971a26530c" class=
+=3D"confluenceTh">
+<p local-id=3D"02338cc7a81b"><strong>Owner</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"1cdefe497f98" class=
+=3D"confluenceTh">
+<p local-id=3D"b43410abd532"><strong>Due date</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"5877a80e8928" class=
+=3D"confluenceTh">
+<p local-id=3D"b318de48a182"><strong>Action items</strong></p></th>
+</tr>
+<tr data-local-id=3D"1aedcb4c448e">
+<td data-local-id=3D"a936d25b06c1" class=3D"confluenceTd">
+<p local-id=3D"c8df81f2ee74"></p></td>
+<td data-local-id=3D"5af975e4f832" class=3D"confluenceTd">
+<p local-id=3D"29dbb2f13611"></p></td>
+<td data-local-id=3D"8083c412efa3" class=3D"confluenceTd">
+<p local-id=3D"e6cfad94ec6b"></p></td>
+<td data-local-id=3D"6a0fc7f51ce5" class=3D"confluenceTd">
+<p local-id=3D"bf62ae1cd9c8"></p></td>
+</tr>
+<tr data-local-id=3D"456158d266cc">
+<td data-local-id=3D"626ff830a238" class=3D"confluenceTd">
+<p local-id=3D"49b3d7a4ef57"></p></td>
+<td data-local-id=3D"86ff0703fa65" class=3D"confluenceTd">
+<p local-id=3D"00c3a94d38bf"></p></td>
+<td data-local-id=3D"306186151557" class=3D"confluenceTd">
+<p local-id=3D"40db5669113c"></p></td>
+<td data-local-id=3D"ce6319c86605" class=3D"confluenceTd">
+<p local-id=3D"539e25f59d36"></p></td>
+</tr>
+<tr data-local-id=3D"e1c39b7b6fdf">
+<td data-local-id=3D"2524ccef53c3" class=3D"confluenceTd">
+<p local-id=3D"bcf2b5636ea3"></p></td>
+<td data-local-id=3D"83aba8984c10" class=3D"confluenceTd">
+<p local-id=3D"74a2aa6d9fb8"></p></td>
+<td data-local-id=3D"6feee133b5ed" class=3D"confluenceTd">
+<p local-id=3D"5dc415f062c6"></p></td>
+<td data-local-id=3D"5330fe56c451" class=3D"confluenceTd">
+<p local-id=3D"7d1aee13fe8e"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"ffb779952ee7"></p>
+    </div>
+</body>
+</html>
+------=_Part_44_396270361.1774728577931
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/09c04df6b7e377f2c731a38fdcc89a58aebe3b62c9dfea29d1381ac9662f72e2
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAM1BMVEVHcEy93fS93fS93fS93fS9
+3fS93fS93fS93fS93fS93fS93fS93fS93fS93fS93fS93fSov3vyAAAAEHRSTlMAII9wv88w758Q
+r99QQIBg/5/+pQAAAUlJREFUeF7t18tuxCAMBVATHuaV6f3/r61UIdERmclge1OpZ8niKhhiGfpD
+ks/hR32cJHZmxm/1iyS+IhbtQbtSwKXWacsDL+VCHysVb0T3cU7EW5wEOZqkiluxFF8ZALj6sl/n
+qd2XP2Efd1oFSBzrfQZskiKEOj05IcXPFc8QyzT1zJArNJwNKn7kHFCqszo6PL5Hbxy7TVAzCuow
+CsowwHNn+uOHBW8VVIyCMtkEcTG6Rn1pQ6pW201y9Hvjru7V63xyQCzQk6xraCbfRIO6+dOi56YM
+msyCWFfsKeiOf/KyhrZy2OboUhXuTD9DJnrhEM98qukvlt3JP8bdnOukWEq8z7mv03G9WjbffTWN
+1YoJIdEnnA8MABy8e7e6cpkBzo6UEs+3mIZjDOxIIy8jvBAvjUoIEyyD7LdmX2z747e/kJpfRO/f
+N20ms7m0AGmsAAAAAElFTkSuQmCC
+------=_Part_44_396270361.1774728577931--

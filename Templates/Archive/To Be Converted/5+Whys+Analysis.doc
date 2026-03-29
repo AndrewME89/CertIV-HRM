@@ -1,0 +1,459 @@
+Date: Sat, 28 Mar 2026 20:10:21 +0000 (UTC)
+Message-ID: <393401933.11.1774728621345@4e8ffeabb9b0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_10_1117834423.1774728621345"
+
+------=_Part_10_1117834423.1774728621345
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>5 Whys Analysis</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>5 Whys Analysis</h1>
+    <div class=3D"Section1">
+        <h2 local-id=3D"b70156f9f0e8" id=3D"id-5WhysAnalysis-Overview"><img=
+ src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/=
+placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp=
+;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; becaus=
+e &quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%=
+3Cac%3Aemoticon+ac%3Aname%3D%22clipboard%22+ac%3Aemoji-shortname%3D%22%3Acl=
+ipboard%3A%22+ac%3Aemoji-id%3D%221f4cb%22+ac%3Alocal-id%3D%224f195c4c332c%2=
+2+ac%3Aemoji-fallback%3D%22%5CuD83D%5CuDCCB%22+%2F%3E">&nbsp;Overview</h2>
+<p local-id=3D"701239f9b3da">Discover and resolve problems with your team b=
+y following the instructions for the <a class=3D"external-link" href=3D"htt=
+ps://www.atlassian.com/team-playbook/plays/5-whys" rel=3D"nofollow">5 Whys =
+Analysis Play</a>.</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"c8=
+46c8b562ce" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 234.0px;">
+<col style=3D"width: 526.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"4d32922822a0">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"51b380c3f27b" class=
+=3D"confluenceTd">
+<p local-id=3D"e60a346e02b8"><strong>Team</strong></p></td>
+<td data-local-id=3D"76cb6f9a0aad" class=3D"confluenceTd">
+<p local-id=3D"1fb1a93e0444"></p></td>
+</tr>
+<tr data-local-id=3D"10ade62b9068">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"a367f706d025" class=
+=3D"confluenceTd">
+<p local-id=3D"5adfab64c043"><strong>Team members</strong></p></td>
+<td data-local-id=3D"7dd1f8512dfe" class=3D"confluenceTd">
+<p local-id=3D"422ef1539665"></p></td>
+</tr>
+<tr data-local-id=3D"0d1892c76195">
+<td data-highlight-colour=3D"#f4f5f7" data-local-id=3D"e22dc5d994df" class=
+=3D"confluenceTd">
+<p local-id=3D"bdc37c26d916"><strong>Date</strong></p></td>
+<td data-local-id=3D"ed6c66af83d3" class=3D"confluenceTd">
+<p local-id=3D"6dcc2ea99787"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"5c123fca2330" id=3D"id-5WhysAnalysis-Problemstatements"><im=
+g class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f914" data-emoji-=
+shortname=3D":thinking:" data-emoji-fallback=3D"\uD83E\uDD14" src=3D"a74e72=
+164def34d6628d0a18e28230617b4b0adada426e79c7e19a3f50d81293" width=3D"16" he=
+ight=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Prob=
+lem statements</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"8c=
+a1983b9544" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 152.0px;">
+<col style=3D"width: 152.0px;">
+<col style=3D"width: 152.0px;">
+<col style=3D"width: 152.0px;">
+<col style=3D"width: 152.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"aeda483bb682">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"890f590feae0" class=
+=3D"confluenceTh">
+<p local-id=3D"5bcb13851ecd"><strong>Problem 1</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"f98cdade67e4" class=
+=3D"confluenceTh">
+<p local-id=3D"5724efcb5e25"><strong>Problem 2</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"45a2bd15cf0b" class=
+=3D"confluenceTh">
+<p local-id=3D"4a3831b30f27"><strong>Problem 3</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"272ff769decd" class=
+=3D"confluenceTh">
+<p local-id=3D"9e7d0a551b5e"><strong>Problem 4</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"38363998f314" class=
+=3D"confluenceTh">
+<p local-id=3D"e9ba20377fef"><strong>Problem 5</strong></p></th>
+</tr>
+<tr data-local-id=3D"4489aad66b3f">
+<td data-local-id=3D"12c7b74a4bac" class=3D"confluenceTd">
+<p local-id=3D"d32948107b84"></p></td>
+<td data-local-id=3D"9558c9e7200e" class=3D"confluenceTd">
+<p local-id=3D"5d509e70d5a2"></p></td>
+<td data-local-id=3D"931c57aedc21" class=3D"confluenceTd">
+<p local-id=3D"59b416e4fcec"></p></td>
+<td data-local-id=3D"db521ef58295" class=3D"confluenceTd">
+<p local-id=3D"1bc2cb517f5c"></p></td>
+<td data-local-id=3D"12ff917961bd" class=3D"confluenceTd">
+<p local-id=3D"544436bbd88b"></p></td>
+</tr>
+<tr data-local-id=3D"7285afc0d78b">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"f03f18154052" class=
+=3D"confluenceTd">
+<p local-id=3D"7b4268fb2c63"><strong>Whys</strong></p></td>
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"4e1f25854a3e" class=
+=3D"confluenceTd">
+<p local-id=3D"87f184876a5e"><strong>Whys</strong></p></td>
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"4ff53105d68c" class=
+=3D"confluenceTd">
+<p local-id=3D"401268665a10"><strong>Whys</strong></p></td>
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"7f9adc8a1951" class=
+=3D"confluenceTd">
+<p local-id=3D"7fd40c4158d8"><strong>Whys</strong></p></td>
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"9bed54289f80" class=
+=3D"confluenceTd">
+<p local-id=3D"85694a06e505"><strong>Whys</strong></p></td>
+</tr>
+<tr data-local-id=3D"2d7b3d9818ad">
+<td data-local-id=3D"7407a3d6dbb5" class=3D"confluenceTd">
+<ul local-id=3D"c1c7a5a38232">
+<li local-id=3D"9047cef0a21b">
+<p local-id=3D"04c0b46f0e1b"></p></li>
+<li local-id=3D"e69688b5cb65">
+<p local-id=3D"94f0b8ba9e3d"></p></li>
+<li local-id=3D"ccbcc3cc6e93">
+<p local-id=3D"533fdbb82902"></p></li>
+</ul></td>
+<td data-local-id=3D"cd90993f5fc7" class=3D"confluenceTd">
+<p local-id=3D"66b588bc3a6c"></p></td>
+<td data-local-id=3D"807acade1218" class=3D"confluenceTd">
+<p local-id=3D"11ff54344554"></p></td>
+<td data-local-id=3D"a4cb73e05add" class=3D"confluenceTd">
+<p local-id=3D"1ceef23993a8"></p></td>
+<td data-local-id=3D"7ae9913f5b1d" class=3D"confluenceTd">
+<p local-id=3D"3b4eeb4f999e"></p></td>
+</tr>
+<tr data-local-id=3D"f305a37df889">
+<td data-highlight-colour=3D"#fffae6" colspan=3D"5" data-local-id=3D"c41983=
+ce8f8d" class=3D"confluenceTd">
+<p local-id=3D"dfb6de46c29d"><strong>Final problem statement</strong></p></=
+td>
+</tr>
+<tr data-local-id=3D"5275aa7667f1">
+<td colspan=3D"5" data-local-id=3D"c28f5f96d59e" class=3D"confluenceTd">
+<p local-id=3D"7407bf5e438e"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 local-id=3D"9a16bb472910" id=3D"id-5WhysAnalysis-Solutions"><img src=3D=
+"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/placeho=
+lder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;versio=
+n=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &quot=
+;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac%3A=
+emoticon+ac%3Aname%3D%22seedling%22+ac%3Aemoji-shortname%3D%22%3Aseedling%3=
+A%22+ac%3Aemoji-id%3D%221f331%22+ac%3Alocal-id%3D%22bf74ab56eb4d%22+ac%3Aem=
+oji-fallback%3D%22%5CuD83C%5CuDF31%22+%2F%3E">&nbsp;Solutions</h2>
+<p local-id=3D"83f08baa5e7b"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"63=
+abda88bbf8" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"b4b764605444">
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"87568db07c95" class=
+=3D"confluenceTh">
+<p local-id=3D"29a4f4f5d0ed"><strong>Solution</strong></p></th>
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"62c99d13f972" class=
+=3D"confluenceTh">
+<p local-id=3D"944251eb71e5"><strong>Owner</strong></p></th>
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"84cc6eab85e4" class=
+=3D"confluenceTh">
+<p local-id=3D"0907f370c73b"><strong>Status</strong></p></th>
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"7b2af1ccaf0c" class=
+=3D"confluenceTh">
+<p local-id=3D"35472facd108"><strong>Action items</strong></p></th>
+</tr>
+<tr data-local-id=3D"3878cf9e137c">
+<td data-local-id=3D"7404acdaad80" class=3D"confluenceTd">
+<p local-id=3D"135109f04448"></p></td>
+<td data-local-id=3D"49f33154800a" class=3D"confluenceTd">
+<p local-id=3D"d8f371291d87"></p></td>
+<td data-local-id=3D"f7cf31e5a520" class=3D"confluenceTd">
+<p local-id=3D"10753888894a"><span class=3D"status-macro aui-lozenge aui-lo=
+zenge-visual-refresh aui-lozenge-current">IN PROGRESS</span>/<span class=3D=
+"status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-success">C=
+OMPLETE</span></p></td>
+<td data-local-id=3D"f048df683705" class=3D"confluenceTd">
+<p local-id=3D"b14e1e9ef415"></p></td>
+</tr>
+<tr data-local-id=3D"ac76ddd4f029">
+<td data-local-id=3D"78fd51457455" class=3D"confluenceTd">
+<p local-id=3D"7ec674d44de0"></p></td>
+<td data-local-id=3D"67399c0fd6af" class=3D"confluenceTd">
+<p local-id=3D"82a08c508bbf"></p></td>
+<td data-local-id=3D"ce67a6db524d" class=3D"confluenceTd">
+<p local-id=3D"f6ef70edb591"></p></td>
+<td data-local-id=3D"f8526e96417f" class=3D"confluenceTd">
+<p local-id=3D"daeb5ce7e901"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"0fdf589f77dd"></p>
+    </div>
+</body>
+</html>
+------=_Part_10_1117834423.1774728621345
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/a74e72164def34d6628d0a18e28230617b4b0adada426e79c7e19a3f50d81293
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAvVBMVEVHcEz/y0z/y0z/y0z/y0z/
+y0z/y0z/y0z/y0z/y0z/y0z/y0zxkCDxkCD/y0z/y0zxkCDxkCDxkCD/y0z/y0zzliTxkCDxkCDx
+kCD7uT7xkCDxkCDxkCDxkCDxkCDxkCD/y0yyiTTxkCCMaCdlRxuCYCTFmjr8wETylCOfeS31w0n9
+xEe8kTf1oi54WCHsu0b4rjZvTx73pzHiskP7uT6VcCr6tTz1nSn5sTn+x0n8vEHPoj3ZqkCogTDz
+lyZJUBfDAAAAIHRSTlMAUCDfYO+AEM+/j59Az68wEJ8wQHBQv98gz49g769wgLdoNu0AAALWSURB
+VHhezZjZVqNAEIYxITREjTpus08v7GTdF5f3f6whodEORbUNxwu/S49+p/7qKmi0NJBbZ+BRiTdw
+bonVgs6dSwHuXaehxvYogmc30XSphq6p6gxogOrMQEMG1IAB+bCcHjWi90FRfWpMXxfrvBAsmBj7
+B8ar4QQ1nRPUU0zOcOyrBE+YySVaT+hXWTQ0yVysCCVeGFsFR9Eznk7X5zTwg7fOpKHwg7RRx89o
+K8AUdHrtRL3qFnu0JV6LYJOh7P5MsAUSDuxpmuQndzpBia8yZqncYNXjAE9x8KEq8ivMZFWOriAm
+f1c9+VkpEKIwrUBJNq2SbwkoacFY4Q8ofTrkTGiBbZW4IJkvYaeBZ+8/nbBhWa5bejq0yjMUqWs4
+pqd0YKtL6kWs9FdEDkxWEkjRk5FIZiMUEoIMOhEl+FQnclLwHsHVdWgdoRDJBJmKsCpyTPYVnqZA
+Ntel5ixWs0CeJOw2/QS+poh8HREeLZouP0W05Jy/Rp8gGvGcuJGpfiDn/MDmOMohyxk+p3qPW78i
+a35kqdwn5Fscw6tf2qwQzanwVRJc5SCPkUIU08Q/5UV/A+ggIr5Lh3l7DjCBmtSHtouI9oo7Pd7j
+BNJr5AYaQVFOytBsfSm6gscPRTmTSbasnfkr9QUJC+KVOrfz1+NhIsnAKzuKpWf0LtlPRzEvyWgJ
+eGWTnvI30lMm2y3nG2lAEvdI3bVmzUu2eZp1ngaQwWmEJUX8DZkGMMUKUruUxVxLPNpqOqRs7obj
+vM7XGbKv4Hq8xyQbIIHXYzXcCK1G0cBg8FOEo4yafIx4EcfBH2gQ8kPT6UYfbBe4aKrxQL41a5FH
+LAx8ECOkzwiXqGkO5se2NPw0zuaBOTRs0haUo+cBW5ETjQO6bDoA8U79Xw2xDLjRj1G3f2WZcX2J
+ibpe3wYdbmy6t5pzDdP9/mW14uJRtTz++fvdasvFTRHw4d+9seQ/xqXp+/TYvsUAAAAASUVORK5C
+YII=
+------=_Part_10_1117834423.1774728621345--

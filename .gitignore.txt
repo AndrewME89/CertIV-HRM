@@ -1,0 +1,12 @@
+# Volatile Obsidian state — don't sync these
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian trash
+.trash/
+
+# macOS junk
+.DS_Store
+
+# Obsidian Git conflict files
+conflict-files-obsidian-git.md

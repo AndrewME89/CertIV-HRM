@@ -1,0 +1,335 @@
+Date: Sat, 28 Mar 2026 20:04:05 +0000 (UTC)
+Message-ID: <58807282.13.1774728245004@b70cdf2f509e>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_12_1856143048.1774728245004"
+
+------=_Part_12_1856143048.1774728245004
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Job Offer Letter Template</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Job Offer Letter Template</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<style>[data-colorid=3Dfa63b9ak74]{color:#00b8d9} html[data-color-mode=3Dda=
+rk] [data-colorid=3Dfa63b9ak74]{color:#26deff}[data-colorid=3Dd7j7dtovvr]{c=
+olor:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Dd7j7dtovvr]{colo=
+r:#26deff}[data-colorid=3Dv5v9q4j48q]{color:#00b8d9} html[data-color-mode=
+=3Ddark] [data-colorid=3Dv5v9q4j48q]{color:#26deff}[data-colorid=3Djp3kobjq=
+w8]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Djp3kobjqw8]=
+{color:#26deff}[data-colorid=3Ddshj5gp4fi]{color:#00b8d9} html[data-color-m=
+ode=3Ddark] [data-colorid=3Ddshj5gp4fi]{color:#26deff}[data-colorid=3Dyajeo=
+8di22]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Dyajeo8di=
+22]{color:#26deff}[data-colorid=3Dqu7srkzep0]{color:#00b8d9} html[data-colo=
+r-mode=3Ddark] [data-colorid=3Dqu7srkzep0]{color:#26deff}[data-colorid=3Di9=
+6ijjnrwd]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Di96ij=
+jnrwd]{color:#26deff}[data-colorid=3Dd7jpm5risk]{color:#00b8d9} html[data-c=
+olor-mode=3Ddark] [data-colorid=3Dd7jpm5risk]{color:#26deff}[data-colorid=
+=3Dh4qj8e2wbe]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3D=
+h4qj8e2wbe]{color:#26deff}[data-colorid=3Dr36amxajh3]{color:#00b8d9} html[d=
+ata-color-mode=3Ddark] [data-colorid=3Dr36amxajh3]{color:#26deff}[data-colo=
+rid=3Dzviyyyqfby]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=
+=3Dzviyyyqfby]{color:#26deff}[data-colorid=3Dsvks5xsiss]{color:#00b8d9} htm=
+l[data-color-mode=3Ddark] [data-colorid=3Dsvks5xsiss]{color:#26deff}[data-c=
+olorid=3Duoq7z1uy7n]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colo=
+rid=3Duoq7z1uy7n]{color:#26deff}</style><span class=3D"aui-icon aui-icon-sm=
+all aui-iconfont-info confluence-information-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"5821abdd18ba">We recommend you export this letter as a pdf o=
+nce you are finished.</p>
+</div>
+</div>
+<p local-id=3D"82119f91f954"></p>
+<p local-id=3D"2b54ea717167">We are excited to offer you the <span data-col=
+orid=3D"dshj5gp4fi">&lt;e.g., Full-time, part-time, etc.&gt;</span> positio=
+n of <span data-colorid=3D"yajeo8di22">&lt;Job title&gt;</span> on the <spa=
+n data-colorid=3D"uoq7z1uy7n">&lt;Team&gt;</span> at <span data-colorid=3D"=
+d7j7dtovvr">&lt;Company&gt;</span>, with a start date of <span data-colorid=
+=3D"i96ijjnrwd">&lt;/ /&gt;</span>, contingent upon <span data-colorid=3D"s=
+vks5xsiss">&lt;e.g., Background checks, I-9 form, etc&gt;</span>. You will =
+report to <span data-colorid=3D"jp3kobjqw8">&lt;Manager name&gt;</span>. We=
+ believe your skills and experience are an excellent match for our company.=
+</p>
+<p local-id=3D"6258873f0074">You will be paid an annual starting salary of =
+<span data-colorid=3D"fa63b9ak74">&lt;Salary number&gt;</span>, in accordan=
+ce with <span data-colorid=3D"h4qj8e2wbe">&lt;Company's&gt;</span> standard=
+ payroll policies and subject to applicable withholdings and deductions. Th=
+is position is designated as exempt from the minimum wage and overtime prov=
+isions of the Fair Labor Standards Act. In addition to this starting salary=
+, we're offering you <span data-colorid=3D"v5v9q4j48q">&lt;Bonuses, stock o=
+ptions commission structures, etc.&gt;</span></p>
+<p local-id=3D"fbea69001ca5">You will be eligible to participate in the emp=
+loyee benefit plans and programs, such as <span data-colorid=3D"d7jpm5risk"=
+>&lt;e.g., Medical insurance, 401(k), vacation time, etc.&gt;</span>, curre=
+ntly and hereafter maintained by <span data-colorid=3D"qu7srkzep0">&lt;Comp=
+any&gt;</span> and generally available to its similarly situated employees,=
+ subject in each case to the terms and conditions of the plan in question, =
+including any eligibility requirements set forth therein, and the determina=
+tion of any person or committee administering the plan. Notwithstanding the=
+ foregoing, <span data-colorid=3D"zviyyyqfby">&lt;Company&gt;</span> reserv=
+es the right to modify job titles and salaries and to modify or terminate b=
+enefits from time to time as it deems necessary or appropriate.</p>
+<p local-id=3D"463645be141a">Please confirm your acceptance of this offer b=
+y signing and returning this letter by <span data-colorid=3D"r36amxajh3">&l=
+t;Offer expiration date&gt;</span>.</p>
+<p local-id=3D"8af3a40d9dc6">We are pleased to have you join our team! If y=
+ou have any questions, please feel free to reach out at any time.</p>
+<p local-id=3D"7736eab0a56a">Sincerely,</p>
+<p local-id=3D"a27f4afcd605"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"32=
+d5bed3-7006-4a30-92b7-0cf53b73717c" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 174.0px;">
+<col style=3D"width: 586.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"6ae918493a3d">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"6c9890c867af" class=
+=3D"confluenceTd">
+<p local-id=3D"669b782a17aa"><strong>Signature</strong></p></td>
+<td data-local-id=3D"3e3167905dca" class=3D"confluenceTd">
+<p local-id=3D"024eb3b60d95"></p></td>
+</tr>
+<tr data-local-id=3D"03070c960461">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"704955ea435a" class=
+=3D"confluenceTd">
+<p local-id=3D"66d97ba1d20b"><strong>Date</strong></p></td>
+<td data-local-id=3D"62a26172bf39" class=3D"confluenceTd">
+<p local-id=3D"5f7009de7b93"></p></td>
+</tr>
+<tr data-local-id=3D"421af43843f3">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"16dcd82d29ba" class=
+=3D"confluenceTd">
+<p local-id=3D"e7ae0b2f312a"><strong>Printed Name</strong></p></td>
+<td data-local-id=3D"ed03a705ed8a" class=3D"confluenceTd">
+<p local-id=3D"9e56a37e939c"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_12_1856143048.1774728245004--

@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPG — HR SOP Reference Guide</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg:       #f4f3f0;
+    --surface1: #ffffff;
+    --surface2: #f0eeea;
+    --surface3: #e8e5df;
+    --text:     #1a1a18;
+    --text-mid: #4a4a45;
+    --text-dim: #888880;
+    --border:   rgba(0,0,0,0.10);
+    --border2:  rgba(0,0,0,0.16);
+    --radius:   10px;
+    --shadow:   0 1px 4px rgba(0,0,0,0.08);
+    font-family: 'Calibri', 'Carlito', 'Segoe UI', Arial, sans-serif;
+    font-size: 17px;
+    color: var(--text);
+    background: var(--bg);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:       #1c1c19;
+      --surface1: #26261e;
+      --surface2: #2e2e24;
+      --surface3: #36362a;
+      --text:     #e8e6df;
+      --text-mid: #a0a090;
+      --text-dim: #686860;
+      --border:   rgba(255,255,255,0.08);
+      --border2:  rgba(255,255,255,0.14);
+    }
+  }
+
+  /* ── Layout ── */
+  .page-wrap { display:flex; min-height:100vh; }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    width: 280px; flex-shrink: 0;
+    background: var(--surface1);
+    border-right: 1px solid var(--border2);
+    display: flex; flex-direction: column;
+    position: sticky; top: 0; height: 100vh;
+    overflow-y: auto;
+  }
+  .sidebar-header {
+    padding: 20px 20px 14px;
+    border-bottom: 1px solid var(--border2);
+  }
+  .sidebar-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--text-dim); margin-bottom: 4px;
+  }
+  .sidebar-title {
+    font-size: 17px; font-weight: 800; color: var(--text); line-height: 1.25;
+  }
+  .sidebar-sub {
+    font-size: 13px; color: var(--text-dim); margin-top: 3px;
+  }
+  .nav-section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: .10em;
+    text-transform: uppercase; color: var(--text-dim);
+    padding: 14px 20px 5px;
+  }
+  .sop-nav-btn {
+    display: flex; align-items: center; gap: 10px;
+    width: 100%; padding: 9px 18px 9px 16px;
+    background: none; border: none; border-left: 3px solid transparent;
+    text-align: left; cursor: pointer; transition: all .15s;
+    color: var(--text-mid); font-size: 14.5px; font-family: inherit;
+    line-height: 1.3;
+  }
+  .sop-nav-btn:hover { background: var(--surface2); color: var(--text); }
+  .sop-nav-btn.active { background: var(--surface2); font-weight: 700; }
+  .nav-icon { font-size: 13px; flex-shrink: 0; opacity: .7; }
+  .nav-label { flex: 1; }
+  .nav-arr { font-size: 16px; opacity: .4; }
+  .sidebar-footer {
+    margin-top: auto; padding: 14px 18px;
+    border-top: 1px solid var(--border);
+    font-size: 12px; color: var(--text-dim); line-height: 1.5;
+  }
+
+  /* ── Main content ── */
+  .main { flex: 1; padding: 28px 36px 60px; max-width: 1040px; }
+
+  /* ── SOP panels (hidden by default) ── */
+  .sop-panel { display: none; }
+
+  /* ── SOP header block ── */
+  .sop-header {
+    border: 1.5px solid;
+    border-radius: var(--radius); padding: 22px 24px 18px;
+    margin-bottom: 26px;
+  }
+  .sop-header-top {
+    display: flex; align-items: flex-start;
+    justify-content: space-between; gap: 16px;
+    flex-wrap: wrap; margin-bottom: 16px;
+  }
+  .sop-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: .10em;
+    text-transform: uppercase; opacity: .7; margin-bottom: 4px;
+  }
+  .sop-title { font-size: 24px; font-weight: 800; line-height: 1.2; }
+  .sop-header-badges { display: flex; gap: 8px; flex-shrink: 0; margin-top: 2px; }
+  .sop-badge {
+    font-size: 11px; font-weight: 700; letter-spacing: .06em;
+    text-transform: uppercase; padding: 3px 9px; border-radius: 20px;
+    opacity: .85;
+  }
+  .sop-meta-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .sop-meta-item { display: flex; flex-direction: column; gap: 3px; }
+  .sop-meta-label {
+    font-size: 10.5px; font-weight: 800; letter-spacing: .09em;
+    text-transform: uppercase; opacity: .65;
+  }
+  .sop-meta-val { font-size: 14px; line-height: 1.5; opacity: .9; }
+
+  /* ── Section heading ── */
+  .sop-section-title {
+    font-size: 11.5px; font-weight: 800; letter-spacing: .11em;
+    text-transform: uppercase; color: var(--text-dim);
+    border-bottom: 1px solid var(--border2);
+    padding-bottom: 6px; margin-bottom: 14px; margin-top: 28px;
+  }
+
+  /* ── Steps ── */
+  .steps-list { display: flex; flex-direction: column; gap: 0; }
+  .step-item {
+    display: flex; gap: 16px; padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .step-item:last-child { border-bottom: none; }
+  .step-num {
+    width: 34px; height: 34px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 900; flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step-body { flex: 1; }
+  .step-title {
+    font-size: 16px; font-weight: 800; color: var(--text);
+    margin-bottom: 5px; line-height: 1.3;
+  }
+  .step-desc {
+    font-size: 15px; color: var(--text-mid); line-height: 1.65;
+  }
+
+  /* ── Bottom grid ── */
+  .sop-bottom-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 20px; margin-top: 26px;
+  }
+
+  /* ── Tools ── */
+  .tools-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tool-tag {
+    font-size: 13px; font-weight: 600;
+    padding: 5px 11px; border-radius: 6px;
+    border: 1.5px solid; line-height: 1.3;
+  }
+
+  /* ── PPG context box ── */
+  .ppg-box {
+    border: 1.5px solid; border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+  .ppg-box p {
+    font-size: 14.5px; color: var(--text-mid); line-height: 1.65;
+  }
+
+  /* ── Tips list ── */
+  .tips-list {
+    list-style: none; display: flex; flex-direction: column; gap: 12px;
+    padding-bottom: 40px;
+  }
+  .tip-item {
+    display: flex; gap: 10px; align-items: flex-start;
+    font-size: 14.5px; color: var(--text-mid); line-height: 1.6;
+    padding: 12px 14px;
+    background: var(--surface2);
+    border-radius: var(--radius);
+  }
+
+  @media (max-width: 900px) {
+    .sidebar { width: 220px; }
+    .main { padding: 20px; }
+    .sop-meta-grid { grid-template-columns: 1fr; }
+    .sop-bottom-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .page-wrap { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; position: static; }
+    .main { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- ── Sidebar ── -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-eyebrow">Pinnacle Pacific Group</div>
+      <div class="sidebar-title">HR SOP Reference Guide</div>
+      <div class="sidebar-sub">Australian Standards &mdash; FY2025</div>      
+    <a class="sops-link-btn" href="https://andrewme89.github.io/CertIV-HRM/"
+   style="display:block; margin:12px 16px 0; padding:9px 16px; background:var(--blue,#185FA5);
+          color:#fff; text-decoration:none; border-radius:8px; font-size:13.5px; font-weight:700;
+          text-align:center;">
+  ↖ Back to Case Study Kit
+</a>
+    </div>
+    <div class="nav-section-label">12 HR Responsibility Areas</div>
+    
+      <button class="sop-nav-btn" id="nav-strategy" onclick="showSOP('strategy')"
+        style="border-left-color:#1558a0;"
+        data-colour="blue">
+        <span class="nav-icon">◎</span>
+        <span class="nav-label">HR Strategy &amp; Workforce Planning</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-recruitment" onclick="showSOP('recruitment')"
+        style="border-left-color:#1558a0;"
+        data-colour="blue">
+        <span class="nav-icon">◈</span>
+        <span class="nav-label">Recruitment &amp; Selection</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-onboarding" onclick="showSOP('onboarding')"
+        style="border-left-color:#13724a;"
+        data-colour="green">
+        <span class="nav-icon">◉</span>
+        <span class="nav-label">Onboarding &amp; Induction</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-performance" onclick="showSOP('performance')"
+        style="border-left-color:#8a5c00;"
+        data-colour="amber">
+        <span class="nav-icon">◐</span>
+        <span class="nav-label">Performance Management</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-ld" onclick="showSOP('ld')"
+        style="border-left-color:#13724a;"
+        data-colour="green">
+        <span class="nav-icon">◑</span>
+        <span class="nav-label">Learning &amp; Development</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-er" onclick="showSOP('er')"
+        style="border-left-color:#8a3e00;"
+        data-colour="coral">
+        <span class="nav-icon">◆</span>
+        <span class="nav-label">Employee Relations &amp; ER Case Management</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-whs" onclick="showSOP('whs')"
+        style="border-left-color:#932020;"
+        data-colour="red">
+        <span class="nav-icon">◕</span>
+        <span class="nav-label">WHS &amp; Psychosocial Hazard Management</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-remuneration" onclick="showSOP('remuneration')"
+        style="border-left-color:#5a3898;"
+        data-colour="purple">
+        <span class="nav-icon">◍</span>
+        <span class="nav-label">Remuneration &amp; Benefits Management</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-dei" onclick="showSOP('dei')"
+        style="border-left-color:#0e6a5e;"
+        data-colour="teal">
+        <span class="nav-icon">◎</span>
+        <span class="nav-label">Diversity, Equity &amp; Inclusion</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-change" onclick="showSOP('change')"
+        style="border-left-color:#8a5c00;"
+        data-colour="amber">
+        <span class="nav-icon">◈</span>
+        <span class="nav-label">Change Management &amp; Consultation</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-termination" onclick="showSOP('termination')"
+        style="border-left-color:#932020;"
+        data-colour="red">
+        <span class="nav-icon">◔</span>
+        <span class="nav-label">Termination, Redundancy &amp; Separation</span>
+        <span class="nav-arr">›</span>
+      </button>
+      <button class="sop-nav-btn" id="nav-reporting" onclick="showSOP('reporting')"
+        style="border-left-color:#5a3898;"
+        data-colour="purple">
+        <span class="nav-icon">◉</span>
+        <span class="nav-label">HR Reporting &amp; Metrics Analysis</span>
+        <span class="nav-arr">›</span>
+      </button>
+    <div class="sidebar-footer">
+      All SOPs reflect Australian employment law standards including the Fair Work Act 2009, relevant Modern Awards, state-based legislation, and 2023 WHS Regulations. Always seek legal advice before taking action in complex matters.
+    </div>
+  </nav>
+
+  <!-- ── Main ── -->
+  <main class="main">
+    
+    <div class="sop-panel" id="sop-strategy" style="display:block;">
+      <div class="sop-header" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◎ HR Strategy &amp; Workforce Planning</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#e6eef8;border:1.5px solid #aec8ec;color:#1558a0;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#e6eef8;border:1.5px solid #aec8ec;color:#1558a0;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Develop an HR strategy aligned to business objectives and produce a workforce plan that identifies current capability, future needs, gaps, and actions required to close them.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All organisations conducting strategic or operational HR planning. At PPG this is led by the CHRO annually with input from all GMs.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (s.202-205 consultation); Privacy Act 1988 (workforce data); Workplace Gender Equality Act 2012; Superannuation Guarantee (Administration) Act 1992</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">1</div>
+          <div class="step-body">
+            <div class="step-title">Analyse the business strategy</div>
+            <div class="step-desc">Obtain and read the current business strategy, strategic plan, and board-approved budget. Identify the 3-5 year growth trajectory, new capabilities required, geographic expansion plans, and technology changes. At PPG: review the six strategic pillars and four HR objectives before any workforce planning begins.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">2</div>
+          <div class="step-body">
+            <div class="step-title">Conduct an environmental scan (PESTLE)</div>
+            <div class="step-desc">Analyse external factors: Political (IR law changes, immigration policy), Economic (wage growth, labour market tightness), Social (workforce demographics), Technological (automation, AI), Legal (Fair Work Act amendments, WGEA obligations), Environmental (ESG commitments). This contextualises the plan and surfaces risks HR needs to plan around.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">3</div>
+          <div class="step-body">
+            <div class="step-title">Audit current workforce - supply analysis</div>
+            <div class="step-desc">Pull HRIS data on current headcount, FTE mix, tenure distribution, age profile, skills inventory, gender breakdown, and turnover rates. Map current capability against the competencies the business needs. At PPG: identify the 74% skills gap in automation systems operation before planning reskilling.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">4</div>
+          <div class="step-body">
+            <div class="step-title">Forecast future workforce needs - demand analysis</div>
+            <div class="step-desc">Work with each department head to forecast headcount requirements over 12, 24, and 36 months. Consider growth targets, productivity improvements, technology changes, and natural attrition. Formula: Future HC = (Current HC x predicted retention rate) + new roles required.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">5</div>
+          <div class="step-body">
+            <div class="step-title">Identify gaps by comparing supply and demand</div>
+            <div class="step-desc">For each department, compare current supply against future demand. Categorise gaps as Quantitative (headcount shortfalls), Qualitative (skills gaps), or Structural (wrong employment mix). At PPG: Operations has a 74% gap in automation skills; Tech has retention-driven supply shortfalls.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">6</div>
+          <div class="step-body">
+            <div class="step-title">Develop workforce strategies to close gaps</div>
+            <div class="step-desc">For each gap, select: Build (train existing staff), Buy (recruit externally), Borrow (contractors or secondments), or Bot (automate the task). Document rationale. Prioritise by urgency and business impact. At PPG: reskilling Operations staff (Build) is preferred over redundancy to manage the AI transition ethically and legally.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">7</div>
+          <div class="step-body">
+            <div class="step-title">Build the HR Strategy document</div>
+            <div class="step-desc">Structure: (1) Executive summary, (2) Business context, (3) Current workforce analysis, (4) Future state vision, (5) Priority HR objectives with 12/24/36 month targets, (6) Initiatives and programs, (7) Resource requirements and budget, (8) KPIs and measurement framework, (9) Risks and mitigations. Align each objective to a business pillar.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">8</div>
+          <div class="step-body">
+            <div class="step-title">Consult and validate with stakeholders</div>
+            <div class="step-desc">Present draft to CEO, CFO, and GM leadership team. Where the strategy involves major workplace change, trigger consultation obligations under the Fair Work Act and EA before finalising. At PPG: CEO Marcus Okafor must not bypass consultation - HR leads this process and ensures legal obligations are met.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">9</div>
+          <div class="step-body">
+            <div class="step-title">Obtain approval and communicate</div>
+            <div class="step-desc">Obtain formal sign-off from CEO and Board if required. Develop a communication plan for sharing the strategy with managers and employees. Summarise key people commitments to build trust. Publish to the intranet or shared drive.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">10</div>
+          <div class="step-body">
+            <div class="step-title">Monitor, measure, and review quarterly</div>
+            <div class="step-desc">Review the strategy quarterly against KPIs: headcount vs plan, turnover vs target, skills gap closure rate, internal promotion rate, engagement score trend. Conduct a formal annual review. Adjust for material changes in the business.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">HRIS workforce data export</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">PESTLE analysis template</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">9-box talent grid</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Workforce supply/demand model (spreadsheet)</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Gap analysis matrix</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">HR Strategy document template</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Balanced scorecard / OKR framework</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#e6eef8;border-color:#aec8ec;">
+            <p>PPG's FY2025 workforce plan must address three simultaneous pressures: AI/automation transition in Operations (reskilling 198 staff), CFO succession gap (18 months to retirement, no successor), and planned Perth/Adelaide hub (+60 FTE by FY2027). The strategy must link directly to the six business pillars and include WGEA reporting obligations as a non-negotiable constraint.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>A workforce plan without a business strategy to anchor it is just a headcount spreadsheet. Always start with strategy.</span></li><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Use rolling 3-year horizons: year 1 is operational (fill vacancies), year 2 is tactical (build capability), year 3 is strategic (transform workforce).</span></li><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Workforce plans must include total employment cost modelling: base salary + super (11.5% rising to 12% July 2025) + on-costs (~20-25%).</span></li><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Under the Workplace Gender Equality Act 2012, employers with 100+ staff must report workforce composition annually. Your strategy should include targets that close current gaps.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-recruitment">
+      <div class="sop-header" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◈ Recruitment &amp; Selection</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#e6eef8;border:1.5px solid #aec8ec;color:#1558a0;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#e6eef8;border:1.5px solid #aec8ec;color:#1558a0;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Attract, assess, and appoint candidates on merit using a fair, consistent, and legally compliant process that does not discriminate on protected attributes.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All permanent, fixed-term, casual, and contractor recruitment across PPG. Applies to all hiring managers and HR staff.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (s.536 FWIS; s.340 general protections); Age Discrimination Act 2004; Sex Discrimination Act 1984; Racial Discrimination Act 1975; Disability Discrimination Act 1992; Equal Opportunity Act 2010 (Vic) - positive duty; Privacy Act 1988 (APPs 3, 5, 6, 11); Migration Act 1958</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">1</div>
+          <div class="step-body">
+            <div class="step-title">Obtain written approval to recruit</div>
+            <div class="step-desc">Before any recruitment activity begins, the hiring manager must obtain written approval from their GM and CHRO confirming: the position is in the workforce plan and budget, the PD is current and HR-reviewed, and the employment type and remuneration band are confirmed. Do not advertise without written approval.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">2</div>
+          <div class="step-body">
+            <div class="step-title">Review and update the position description</div>
+            <div class="step-desc">Confirm the PD accurately reflects the role. HR must review all selection criteria to ensure they are genuinely necessary, non-discriminatory, and compliant with the relevant Award classification. At PPG: physical warehouse criteria must be validated as genuinely necessary to avoid indirect sex discrimination risk.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">3</div>
+          <div class="step-body">
+            <div class="step-title">Advertise internally for a minimum of 5 business days</div>
+            <div class="step-desc">Post the role on the internal jobs board before external advertising. This supports the internal fill rate target (PPG target: 45%, currently 29%). Notify the HRBP to identify internal candidates, high-potential staff, or succession candidates who should be encouraged to apply.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">4</div>
+          <div class="step-body">
+            <div class="step-title">Advertise externally if no suitable internal candidate</div>
+            <div class="step-desc">Advertise using channels appropriate to the role. Ensure all advertisements: state the role accurately, do not include discriminatory language, and comply with the Privacy Act by stating how candidate data will be handled.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">5</div>
+          <div class="step-body">
+            <div class="step-title">Shortlist against selection criteria only</div>
+            <div class="step-desc">Both the hiring manager and HR independently review applications against the selection criteria. Document shortlisting decisions. Do not consider any protected attribute: age, gender, ethnicity, family status, disability, or pregnancy. Any selection decision that cannot be justified against the criteria is a discrimination risk.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">6</div>
+          <div class="step-body">
+            <div class="step-title">Conduct structured behavioural interviews (STAR method)</div>
+            <div class="step-desc">HR develops a structured interview guide using the STAR method (Situation, Task, Action, Result). All candidates must be asked the same core questions. Panels for Level 4+ roles must include at least one HR representative. Do not ask questions that elicit information about protected attributes.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">7</div>
+          <div class="step-body">
+            <div class="step-title">Complete pre-employment checks</div>
+            <div class="step-desc">Complete as appropriate to the role: Working rights verification (all roles - mandatory under Migration Act); Reference checks (minimum two); National Police Check (Transport, Finance, Level 5+); Pre-employment medical (Operations, Transport - must be genuinely necessary). All checks comply with Privacy Act APPs - candidates must be informed upfront.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">8</div>
+          <div class="step-body">
+            <div class="step-title">Make selection decision and extend written offer</div>
+            <div class="step-desc">Hiring manager and HR make the decision jointly, documented against the criteria. Prepare a written offer letter approved by HR including: role title, commencement date, employment type, remuneration (base + super), location, and conditions. Do not make verbal-only offers for permanent roles.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">9</div>
+          <div class="step-body">
+            <div class="step-title">Issue all commencement documents on day one</div>
+            <div class="step-desc">On commencement: issue the Fair Work Information Statement (mandatory under s.536 FWA); have the employment contract signed; provide Casual Employment Information Statement if applicable; complete tax file number declaration and super fund election. Failure to issue the FWIS is a breach of the NES.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e6eef8;border:2px solid #aec8ec;color:#1558a0;">10</div>
+          <div class="step-body">
+            <div class="step-title">Manage unsuccessful candidates and records</div>
+            <div class="step-desc">Notify unsuccessful candidates promptly. Offer brief feedback where appropriate. Destroy or de-identify application materials after 12 months (APP 11). Do not retain candidates in a talent pool without their explicit written consent.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Position description template</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Recruitment approval form</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Compliant job ad template</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Structured interview guide (STAR method)</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Reference check guide</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Selection scoring matrix</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Offer letter template</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Fair Work Information Statement (fairwork.gov.au)</span><span class="tool-tag" style="background:#e6eef8;border-color:#aec8ec;color:#1558a0;">Pre-employment check consent form</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#e6eef8;border-color:#aec8ec;">
+            <p>PPG internal fill rate is 29% against a 45% target. HR should actively brief Team Leaders and GMs on internal vacancies before external advertising. For Operations roles, physical selection criteria must be validated as genuinely required. PPG conducts police checks and medicals for Transport roles - candidates must be informed upfront under APP 5.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The Equal Opportunity Act 2010 (Vic) imposes a positive duty - you must proactively design non-discriminatory recruitment, not just react to complaints. Structured interviews and documented decisions are your evidence.</span></li><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Behavioural interview questions (STAR format) are legally stronger than hypothetical questions because they require evidence of past behaviour.</span></li><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>You must verify working rights for every person you hire. Knowingly employing someone without work rights is an offence under the Migration Act 1958.</span></li><li class="tip-item"><span style="color:#1558a0;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>A 90-day attrition rate of 11% often signals a recruitment problem: hiring for the wrong fit, overselling the role, or poor onboarding handoff. Audit exit interviews of early leavers.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-onboarding">
+      <div class="sop-header" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◉ Onboarding &amp; Induction</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#e4f3ec;border:1.5px solid #8fd0b0;color:#13724a;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#e4f3ec;border:1.5px solid #8fd0b0;color:#13724a;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Integrate new employees effectively, ensuring they understand their role, team, culture, obligations, and entitlements from day one - reducing early attrition and accelerating time to productivity.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All new starters (permanent, fixed-term, casual) at all PPG locations. HR owns the framework; line managers own local delivery.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (s.536 - FWIS on commencement); OHS Act 2004 (Vic) / WHS Act 2011 - duty to provide training from day one; Privacy Act 1988; Superannuation Guarantee (Administration) Act 1992</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">1</div>
+          <div class="step-body">
+            <div class="step-title">Complete pre-boarding before day one</div>
+            <div class="step-desc">Send a welcome email confirming start details. Set up HRIS record, email, system access, and equipment. Send digital paperwork (tax file, super, emergency contacts, bank details). Add to payroll. Brief the line manager and team on the new starter. A warm pre-boarding experience dramatically reduces first-week anxiety.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">2</div>
+          <div class="step-body">
+            <div class="step-title">Day 1 - Welcome, administration, and site orientation</div>
+            <div class="step-desc">Provide a personal welcome with the manager present. Complete remaining paperwork (contract signature, FWIS, Casual FWIS if applicable). Issue ID, access card, keys, and PPE. Conduct a site tour including emergency exits, first aid, and facilities. Introduce to team members individually. Do not leave a new starter at reception unaccompanied.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">3</div>
+          <div class="step-body">
+            <div class="step-title">Day 1 - Organisation overview and role context</div>
+            <div class="step-desc">Cover: PPG history, mission, vision, and values; the organisational structure; the team's purpose; immediate priorities and expectations for the first week; and who to contact for common questions.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">4</div>
+          <div class="step-body">
+            <div class="step-title">Days 1-3 - WHS and compliance induction</div>
+            <div class="step-desc">Mandatory compliance induction must cover: WHS responsibilities under the OHS/WHS Act; hazard reporting procedures; emergency procedures; incident reporting; Safe Work Method Statements for the role; Code of Conduct; and key policies. All completion must be documented and signed. This is a legal obligation, not optional.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">5</div>
+          <div class="step-body">
+            <div class="step-title">Week 1 - Role-specific training</div>
+            <div class="step-desc">Line manager delivers: systems and tools training; key processes and workflows; performance expectations and KPIs; introduction to key stakeholders; any mandatory role-specific licences. At PPG: warehouse roles require documented WMS training and forklift licence verification before unsupervised equipment operation begins.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">6</div>
+          <div class="step-body">
+            <div class="step-title">Day 30 - First structured check-in</div>
+            <div class="step-desc">Manager conducts a structured 30-day check-in. HR Advisor or HRBP sends a separate brief check-in (3-5 questions on role clarity, support, and whether the role matches expectations). Identify any early concerns or support needs. Poor role clarity at day 30 is the leading indicator of 90-day attrition.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">7</div>
+          <div class="step-body">
+            <div class="step-title">Day 60 - Mid-probation review</div>
+            <div class="step-desc">Manager conducts a documented mid-probation review: assess performance against probation objectives; provide specific and constructive feedback. If not on track - initiate a probation support plan immediately. HR must be notified of any probation concerns at 60 days, not at 89 days.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">8</div>
+          <div class="step-body">
+            <div class="step-title">Day 90 - Probation confirmation or action</div>
+            <div class="step-desc">Formal probation review with documented outcome: Confirmed (letter issued, HRIS updated); Extended (written notice, improvement requirements, new review date - HR approval required); Not confirmed (written notice, notice period or payment in lieu per NES, HRBP sign-off required, adverse action risk assessed). General protections still apply during probation.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">9</div>
+          <div class="step-body">
+            <div class="step-title">Post-90 - Integration and development</div>
+            <div class="step-desc">Transition from onboarding to regular performance management. Conduct a 90-day onboarding debrief to feed program improvement. Enrol in ongoing development programs. Add to succession planning inputs if high-potential signals identified.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Pre-boarding checklist</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Fair Work Information Statement (fairwork.gov.au)</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Induction completion register</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">30/60/90-day check-in templates</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Probation review form</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Buddy program guide</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">WHS induction sign-off sheet</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Role-specific training matrix</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#e4f3ec;border-color:#8fd0b0;">
+            <p>PPG has a 90-day attrition rate of 11% - nearly one in nine new hires leaves within 3 months. Jordan Bell (Head of People Experience) has identified broken onboarding as the root cause. Key fixes required: manager briefing before day 1, buddy assignment at offer stage, structured 30/60-day check-ins, and a role-specific training matrix for Operations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Onboarding starts at offer acceptance, not day one. Pre-boarding engagement dramatically reduces first-week anxiety.</span></li><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The leading indicator of 90-day attrition is role clarity at day 30. If someone cannot clearly describe what they do and why it matters, they are a flight risk.</span></li><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Buddy programs reduce early attrition by 20-50%. The buddy should be a peer (not the manager), trained, and willing.</span></li><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Failure to issue the Fair Work Information Statement on commencement is a breach of the NES under s.536.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-performance">
+      <div class="sop-header" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◐ Performance Management</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#faf2de;border:1.5px solid #dfc070;color:#8a5c00;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#faf2de;border:1.5px solid #dfc070;color:#8a5c00;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Manage and develop employee performance fairly, consistently, and in compliance with the Fair Work Act - focused on early intervention, genuine support, and meticulous documentation.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All employees at PPG. Casual and fixed-term employees during their engagement.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (s.387 unfair dismissal two-part test; Part 3-1 general protections; reverse onus); Disability Discrimination Act 1992 (reasonable adjustment); Fair Work Regulations 2009 (reg.1.07 serious misconduct); OHS Act 2004 / WHS Act 2011 (psychosocial hazards)</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">1</div>
+          <div class="step-body">
+            <div class="step-title">Set clear expectations at commencement</div>
+            <div class="step-desc">Performance management starts at onboarding, not when things go wrong. Every employee must have: a current PD with clear KPIs; a documented probation plan for new starters; a Personal Development Plan reviewed at least twice yearly; and clarity on what meeting expectations looks like. Without this baseline, formal performance action is legally vulnerable.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">2</div>
+          <div class="step-body">
+            <div class="step-title">Conduct regular documented 1:1 check-ins</div>
+            <div class="step-desc">Managers must conduct monthly 1:1 meetings (documented using the 1:1 template). These are two-way conversations: employee-led agenda items plus manager feedback. Use check-ins to identify performance concerns early. Document observations, agreed actions, and any concerns. This record is critical evidence if formal action is later required.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">3</div>
+          <div class="step-body">
+            <div class="step-title">Raise concerns informally at Stage 1</div>
+            <div class="step-desc">As soon as a performance concern is identified, the manager raises it directly in a private conversation. Be specific: describe the behaviour or gap, the expected standard, and the impact. Give the employee a genuine opportunity to respond. Document the date, what was discussed, and agreed next steps. Do not skip this stage - it is the first record in the performance file.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">4</div>
+          <div class="step-body">
+            <div class="step-title">Check for reasonable adjustment obligations</div>
+            <div class="step-desc">Before any formal step, assess: Has the employee disclosed a disability, injury, or medical condition? Could a health or personal issue be contributing? If yes, explore reasonable adjustments first (modified duties, flexible hours, adjusted targets, EAP referral). Failure to consider reasonable adjustment before formal performance action risks a Disability Discrimination Act claim even if the performance concern is genuine.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">5</div>
+          <div class="step-body">
+            <div class="step-title">Issue a first written warning at Stage 2</div>
+            <div class="step-desc">If informal coaching has not produced improvement (typically 2-4 weeks): (a) Notify the employee in advance of the formal meeting; (b) Conduct the meeting - the employee has the right to a support person; (c) Issue a written warning stating the specific concern, expected standard, support provided, improvement timeframe, and consequences; (d) Document the employee's response and your genuine consideration of it; (e) Obtain HRBP sign-off before issuing.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">6</div>
+          <div class="step-body">
+            <div class="step-title">Implement a Performance Improvement Plan at Stage 3</div>
+            <div class="step-desc">Develop a PIP with: specific, measurable objectives (not vague aspirations); a clear timeframe (30-90 days); weekly documented check-ins; concrete support mechanisms; and explicit measurement criteria. HRBP must be involved in all PIPs. CHRO must approve. Issue in writing and obtain the employee's signature (receipt only, not agreement).</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">7</div>
+          <div class="step-body">
+            <div class="step-title">Conduct weekly PIP check-ins and document progress</div>
+            <div class="step-desc">Every weekly PIP check-in must be documented: date, attendees, progress rating against each objective, employee's comments, any adjustments. This record is the most important evidence in any subsequent Fair Work Commission proceeding. If the employee is improving, document that in writing too.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">8</div>
+          <div class="step-body">
+            <div class="step-title">Determine the PIP outcome and proceed accordingly</div>
+            <div class="step-desc">At completion: Objectives met - confirm in writing, return to normal cycle; Partial improvement - consider a documented extension; Objectives not met - proceed to final warning or termination (CHRO approval required). Before terminating: confirm valid reason; confirm procedural fairness steps are documented; assess general protections risks.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">9</div>
+          <div class="step-body">
+            <div class="step-title">Issue a show cause letter before termination</div>
+            <div class="step-desc">Issue a show cause letter stating the performance history; invite the employee to show cause in writing; allow reasonable time to respond (24-48 hours); genuinely consider the response before deciding. Issuing a termination letter before reading the show cause response is a procedural fairness failure.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">10</div>
+          <div class="step-body">
+            <div class="step-title">Issue the termination letter and finalise</div>
+            <div class="step-desc">Prepare a written termination letter (valid reason, effective date, notice period or payment in lieu per NES/Award minimum). Conduct a private meeting with a support person available. Arrange property return, finalise entitlements, process HRIS termination same day, conduct exit interview (HRBP-led, not the terminating manager).</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">1:1 meeting template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">PDP template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">First written warning template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Performance Improvement Plan template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Show cause letter template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Termination letter template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Performance file checklist</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">EAP referral form</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#faf2de;border-color:#dfc070;">
+            <p>Aaliyah Wong is currently managing 4 active performance/ER cases in Operations. Key risks: Sandra Cortez wants to skip stages under operational pressure - HRBP must hold the line. Workers raising WHS complaints before or during a PIP creates adverse action risk - document that the PIP was based on pre-existing data. Operations TLs are managing first-level conduct matters without sufficient HR support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The s.387 two-part test: (1) Was there a valid reason? AND (2) Was procedural fairness followed? You can win on reason and lose on procedure - and still pay compensation.</span></li><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The reverse onus in general protections means if an employee claims adverse action, you must prove the action was not for a prohibited reason. Document your reasons before you take each step.</span></li><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>A PIP should never be a surprise. If a PIP comes as a shock to the employee, you have skipped informal coaching stages and the process is legally fragile.</span></li><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Never issue a formal warning or PIP on the same day an employee lodges a grievance or makes a WHS complaint. Document the independence of the performance concern.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-ld">
+      <div class="sop-header" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◑ Learning &amp; Development</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#e4f3ec;border:1.5px solid #8fd0b0;color:#13724a;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#e4f3ec;border:1.5px solid #8fd0b0;color:#13724a;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Systematically identify, design, deliver, and evaluate learning programs that build individual capability, close workforce skills gaps, and support PPG strategic objectives.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All employees at PPG. Covers mandatory compliance training, role-specific technical training, leadership development, and career development.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">OHS Act 2004 (Vic) / WHS Act 2011 - duty to provide training and instruction; National VET Regulator Act 2011 (ASQA/AQF); Fair Work Act 2009 (EA provisions for study leave); Privacy Act 1988 (training records as personal information)</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">1</div>
+          <div class="step-body">
+            <div class="step-title">Conduct a Training Needs Analysis (TNA)</div>
+            <div class="step-desc">A TNA identifies the gap between current and required capability. Three inputs: (1) Organisational level - review the workforce plan for strategic capability gaps (e.g. automation systems, change leadership); (2) Role level - compare PDs and competency frameworks against current performance; (3) Individual level - use PDP reviews and performance data. At PPG: the skills audit shows a 74% gap in automation systems operation - this drives the highest-priority L&amp;D investment.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">2</div>
+          <div class="step-body">
+            <div class="step-title">Prioritise training by type and urgency</div>
+            <div class="step-desc">Categorise training: Mandatory/compliance (legally required - WHS induction, high-risk work licences); Mandatory/operational (required to perform the role - WMS, forklift); Development (skills improvement); Strategic (capability for future roles). Prioritise mandatory training as non-negotiable. Development and strategic training are planned in the L&amp;D calendar and PDP.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">3</div>
+          <div class="step-body">
+            <div class="step-title">Map training to AQF qualifications where possible</div>
+            <div class="step-desc">Where training aligns to a nationally recognised qualification, engage an ASQA-registered RTO. Only RTOs can issue qualifications and statements of attainment under the AQF. At PPG: warehouse automation reskilling should target Certificate III in Warehousing Operations or Certificate IV in Leadership and Management.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">4</div>
+          <div class="step-body">
+            <div class="step-title">Design or procure the training solution</div>
+            <div class="step-desc">Decide build vs buy: Build (internal facilitation) for role-specific content; Buy (RTO or e-learning) for nationally recognised content or compliance training. For in-house design: use adult learning principles (relevant, practical, learner-driven, immediately applicable); mix formats (face-to-face, e-learning, on-the-job coaching, mentoring).</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">5</div>
+          <div class="step-body">
+            <div class="step-title">Schedule and communicate the L&amp;D calendar</div>
+            <div class="step-desc">Build a 12-month calendar aligned to the HR strategy. Schedule mandatory training first. For Operations shift workers: schedule across shifts to avoid under-resourcing. If mandatory training is scheduled outside ordinary hours, check Award/EA - overtime or penalty rates may apply.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">6</div>
+          <div class="step-body">
+            <div class="step-title">Deliver training and document all completion</div>
+            <div class="step-desc">Ensure the facilitator is suitably qualified. Use sign-in sheets or LMS records. After delivery: update the training register; upload certificates to HRIS; notify manager of completion; follow up non-completers for mandatory training. Training records are legal documents in a WHS investigation - date, attendees, content, facilitator, and outcome must all be documented.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">7</div>
+          <div class="step-body">
+            <div class="step-title">Evaluate training effectiveness using Kirkpatrick's four levels</div>
+            <div class="step-desc">(1) Reaction - did participants find it relevant? (post-survey same day); (2) Learning - did they gain the skill? (pre/post assessments); (3) Behaviour - are they applying it on the job? (manager observation, 30-day follow-up); (4) Results - has it improved business outcomes? (KPI data). Report L&amp;D ROI to the CHRO quarterly.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">8</div>
+          <div class="step-body">
+            <div class="step-title">Manage mandatory licence and certification expiries</div>
+            <div class="step-desc">Maintain a licences register for all roles requiring mandatory credentials (forklift LF, EWP, HR/MC, first aid). Set automated reminders at 60 and 30 days before expiry. A worker operating equipment without a current valid licence is a WHS breach regardless of their actual competency.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e4f3ec;border:2px solid #8fd0b0;color:#13724a;">9</div>
+          <div class="step-body">
+            <div class="step-title">Review and update the L&amp;D program annually</div>
+            <div class="step-desc">Annual review: compare training hours/FTE against target; review L&amp;D spend/FTE ROI; update the TNA based on new business priorities; review RTO provider performance; update compliance training for legislative changes. Present to the CHRO for approval.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Training Needs Analysis template</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">L&amp;D calendar template</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Training register / LMS</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">RTO procurement checklist</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Kirkpatrick evaluation template</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">Licences and certifications register</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">PDP template (links to L&amp;D goals)</span><span class="tool-tag" style="background:#e4f3ec;border-color:#8fd0b0;color:#13724a;">AQF qualification level guide</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#e4f3ec;border-color:#8fd0b0;">
+            <p>PPG spends $1,240/FTE on L&amp;D (18.2 hrs/FTE). As warehouse automation rolls out, HR must build a training matrix for new systems - training on automation equipment is a legal WHS obligation. Reskilling should be tied to AQF credentials to reduce employee resistance to change. EA 2027 negotiations are an opportunity to embed training entitlements as a bargaining offering.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Training records are legal documents in a WHS investigation. 'We trained them' is only a defence if you can prove it with date, attendees, content, facilitator, and outcome.</span></li><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>High-risk work licences are state-regulated. Ensure licences are current and issued by an approved assessor - not just an internal tick-off.</span></li><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The most effective L&amp;D combines formal training with structured on-the-job application and manager coaching. Training alone achieves less than 10% behaviour change (Ebbinghaus forgetting curve).</span></li><li class="tip-item"><span style="color:#13724a;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>If investing in leadership development for the High Potential Accelerator, link it explicitly to succession outcomes - a visible career path is more motivating than a generic leadership course.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-er">
+      <div class="sop-header" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◆ Employee Relations &amp; ER Case Management</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#fdf0e8;border:1.5px solid #f0bc88;color:#8a3e00;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#fdf0e8;border:1.5px solid #f0bc88;color:#8a3e00;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Manage workplace complaints, disputes, and ER matters fairly, impartially, and in compliance with applicable laws - resolving issues at the lowest appropriate level while protecting all parties.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All employees at all PPG locations. HRBP owns ER case management for Operations and Transport; the CHRO manages executive-level matters.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (Part 3-1 general protections; s.789FD bullying; Part 3-2 unfair dismissal; s.340 adverse action); Sex Discrimination Act 1984 (Respect@Work 2022 - positive duty); Equal Opportunity Act 2010 (Vic); Racial Discrimination Act 1975; Disability Discrimination Act 1992; OHS Act 2004 / WHS Act 2011</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">1</div>
+          <div class="step-body">
+            <div class="step-title">Receive and triage the complaint or matter</div>
+            <div class="step-desc">Acknowledge within 2 business days and categorise: (a) Interpersonal conflict - informal resolution first; (b) Bullying/harassment - formal investigation likely required; (c) Sexual harassment - formal investigation required under Respect@Work positive duty; (d) Discrimination - formal investigation; (e) Misconduct/performance - performance management pathway; (f) Grievance about a management decision - grievance process; (g) Suspected underpayment - immediate payroll investigation. The triage determines the pathway.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">2</div>
+          <div class="step-body">
+            <div class="step-title">Take immediate interim action where required</div>
+            <div class="step-desc">If the situation poses ongoing risk: separate the parties by rostering or temporary redeployment; refer the affected employee to EAP; brief managers on confidentiality obligations; consider whether the respondent needs to be stood down on full pay pending investigation (only for serious misconduct). Document all interim actions and the reasons for them.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">3</div>
+          <div class="step-body">
+            <div class="step-title">Determine whether a formal investigation is required</div>
+            <div class="step-desc">Consider: Is this a one-off interpersonal disagreement (mediation may suffice)? Is there an allegation of a breach of policy or law (formal investigation required)? For formal investigations: use an external investigator for senior staff, complex matters, or where internal HR has a conflict of interest.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">4</div>
+          <div class="step-body">
+            <div class="step-title">Plan and scope the investigation</div>
+            <div class="step-desc">Document before commencing: the specific allegations; the evidence to be gathered; the witnesses to be interviewed (complainant first, then witnesses, then respondent); the investigator's identity and authority; and the expected timeframe (aim for completion within 20 business days). Brief the relevant GM on category and timeframe only - not the substance.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">5</div>
+          <div class="step-body">
+            <div class="step-title">Conduct interviews following the rules of natural justice</div>
+            <div class="step-desc">Interview sequence: complainant first, then witnesses, then respondent. For each interview: allow a support person to be present; take detailed contemporaneous notes; provide a summary for the interviewee to review and confirm. Do not share one party's account verbatim with another. The respondent must know the full substance of the allegations and have a genuine opportunity to respond - this is natural justice.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">6</div>
+          <div class="step-body">
+            <div class="step-title">Gather and assess all relevant evidence</div>
+            <div class="step-desc">Gather documentary evidence: timesheets, rosters, emails, CCTV footage, prior complaint records, performance history. Assess credibility of each piece of evidence. Apply the civil standard of proof: balance of probabilities (more likely than not that the conduct occurred). Document your reasoning for accepting or rejecting each piece of evidence.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">7</div>
+          <div class="step-body">
+            <div class="step-title">Make findings and determine outcome</div>
+            <div class="step-desc">Make a finding for each allegation: Substantiated, Unsubstantiated, or Inconclusive. Do not make findings beyond the scope of the investigation. Prepare a confidential written investigation report. Outcomes: Substantiated - disciplinary action proportionate to severity; Unsubstantiated - no adverse action against complainant; Inconclusive - consider structural changes to reduce recurrence.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">8</div>
+          <div class="step-body">
+            <div class="step-title">Communicate outcomes to both parties</div>
+            <div class="step-desc">Tell the complainant: investigation is complete, whether the complaint was substantiated, and what action is being taken in general terms. Tell the respondent: findings and action being taken. Both communications in person with a support person available, followed by written confirmation. Do not share the investigation report itself with either party.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">9</div>
+          <div class="step-body">
+            <div class="step-title">Implement disciplinary action if required</div>
+            <div class="step-desc">Disciplinary action must follow the Performance Management SOP procedural steps: show cause, genuine consideration, decision, written outcome. Ensure action is proportionate to the finding. For serious misconduct: summary dismissal is possible after investigation confirms the finding - but procedural fairness still applies. Obtain CHRO approval for any termination.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fdf0e8;border:2px solid #f0bc88;color:#8a3e00;">10</div>
+          <div class="step-body">
+            <div class="step-title">Follow up and monitor for recurrence</div>
+            <div class="step-desc">Check in with the complainant 4 weeks after resolution to confirm no recurrence or retaliation. Monitor the working environment for ongoing tension. Update the complaints register. Review whether systemic causes should be addressed. Close the case in HRIS and retain all records securely for 7 years.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">ER case log / complaints register</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">Investigation plan template</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">Interview question guide</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">Confidential investigation report template</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">Show cause letter template</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">Outcome letter templates</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">EAP referral form</span><span class="tool-tag" style="background:#fdf0e8;border-color:#f0bc88;color:#8a3e00;">Natural justice checklist</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#fdf0e8;border-color:#f0bc88;">
+            <p>Aaliyah Wong has 4 active ER/performance cases in Operations. Key risks: Sandra Cortez must not be involved in investigations of her direct reports (conflict of interest); any performance action against someone who recently raised a complaint needs documented pre-existing performance evidence; the low psychological safety score (63/100) suggests likely unreported complaints. The Respect@Work positive duty means HR must proactively assess harassment risk - not wait for complaints.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#8a3e00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The most common ER mistake in Australia: conflating interpersonal conflict with bullying. Bullying requires repeated, unreasonable behaviour. A single incident is not bullying - but may be harassment. The pathway is different.</span></li><li class="tip-item"><span style="color:#8a3e00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Natural justice has two limbs: the right to know the case against you, and the right to respond. Both must be genuinely met. If the outcome was predetermined, it is not procedurally fair.</span></li><li class="tip-item"><span style="color:#8a3e00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Under Respect@Work (2022), the AHRC can investigate employers proactively without a complaint. A low psychological safety score in a male-dominated environment warrants a proactive risk assessment.</span></li><li class="tip-item"><span style="color:#8a3e00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Retain all ER case records for a minimum of 7 years. General protections claims can be lodged at any time, and historical conduct patterns can surface in proceedings.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-whs">
+      <div class="sop-header" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◕ WHS &amp; Psychosocial Hazard Management</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#fceaea;border:1.5px solid #e8aaaa;color:#932020;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#fceaea;border:1.5px solid #e8aaaa;color:#932020;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Identify, assess, and control both physical and psychosocial workplace hazards, manage incidents and injuries, and support injured workers back to work - ensuring PPG meets its legal obligations across all three jurisdictions.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All workers (employees, contractors, labour hire, visitors) at all PPG sites. Multi-jurisdictional: Melbourne (OHS Act Vic), Sydney (WHS Act NSW), Brisbane (WHS Act Qld).</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">OHS Act 2004 (Vic) - employer primary duty, WorkSafe Victoria; WHS Act 2011 (Cth model - NSW, Qld) - PCBU duty; WHS Regulations 2023 - psychosocial hazards; WIRC Act 2013 (Vic); Workers Compensation Act 1987 (NSW); WCRA 2003 (Qld); Safe Work Australia Model Code: Managing Psychosocial Hazards at Work</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">1</div>
+          <div class="step-body">
+            <div class="step-title">Establish WHS governance and responsibilities</div>
+            <div class="step-desc">Document and communicate WHS responsibilities: PCBU/Employer - ensure health and safety so far as reasonably practicable; Officers (CEO, GMs) - exercise due diligence (acquire WHS knowledge, verify controls, ensure resources); Managers/supervisors - implement controls, report incidents; Workers - take reasonable care, follow procedures, report hazards; HR - own psychosocial hazard management and RTW for psychological injuries.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">2</div>
+          <div class="step-body">
+            <div class="step-title">Identify physical hazards systematically</div>
+            <div class="step-desc">Physical hazard identification methods: workplace inspections (monthly for Operations, quarterly for corporate); pre-start and toolbox talks; incident and near-miss data analysis; equipment and plant risk assessments; Safe Work Method Statements (SWMS) for high-risk activities; consultation with elected Health and Safety Representatives (HSRs). Record all hazards in the hazard register. Prioritise by risk rating: likelihood x consequence.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">3</div>
+          <div class="step-body">
+            <div class="step-title">Identify psychosocial hazards - a 2023 legal obligation</div>
+            <div class="step-desc">Psychosocial hazards must now be formally identified, assessed, and controlled under the 2023 WHS Regulations. Methods: validated employee surveys (People at Work survey - free from safeworkaustralia.gov.au); focus groups; analysis of engagement data, absenteeism, and incidents; exit interview themes; grievance patterns. At PPG: formally assessed hazards include high job demands (8.4% overtime), change anxiety (AI rollout), low job control, bullying/harassment risk (63/100 psychological safety), and isolated work (Transport drivers).</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">4</div>
+          <div class="step-body">
+            <div class="step-title">Assess and prioritise risks using the hierarchy of controls</div>
+            <div class="step-desc">For each hazard, apply the hierarchy in order: (1) Elimination - remove the hazard entirely; (2) Substitution - replace with a less hazardous option; (3) Isolation - separate the hazard from workers; (4) Engineering controls - physical barriers, guarding; (5) Administrative controls - procedures, training, rosters; (6) PPE - last resort. For psychosocial hazards: organisational-level controls (workload management, role clarity, consultation) are far more effective than individual supports (EAP access alone is not a sufficient control).</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">5</div>
+          <div class="step-body">
+            <div class="step-title">Implement controls and verify effectiveness</div>
+            <div class="step-desc">Document controls in the risk register with: control type, implementation date, owner, and verification method. Verify high-risk controls are in place before work commences. For psychosocial controls: check effectiveness at 3 months using engagement and absenteeism data. If controls are not reducing risk, escalate to the next level of the hierarchy.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">6</div>
+          <div class="step-body">
+            <div class="step-title">Manage notifiable incidents and regulatory reporting</div>
+            <div class="step-desc">Notifiable incidents must be reported IMMEDIATELY by phone: death of a worker; serious injury or illness; dangerous incident. Steps: (1) Make scene safe; (2) Call emergency services if required; (3) Notify regulator by phone immediately - WorkSafe Vic: 13 23 60 / SafeWork NSW: 13 10 50 / WHS Qld: 1300 362 128; (4) Do not disturb the scene without regulator approval; (5) Submit written notification within 48 hours. Failure to report immediately is a criminal offence.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">7</div>
+          <div class="step-body">
+            <div class="step-title">Conduct incident investigation and root cause analysis</div>
+            <div class="step-desc">For all incidents and near-misses: (1) Gather evidence immediately before scene is disturbed; (2) Conduct root cause analysis - not just what happened but why the system allowed it; (3) Identify contributing factors (human, environmental, system/procedural); (4) Use the 5 Whys or fishbone method; (5) Develop corrective actions targeting root causes; (6) Assign owners with due dates; (7) Verify completion and effectiveness. Complete within 5 business days for non-notifiable incidents.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">8</div>
+          <div class="step-body">
+            <div class="step-title">Manage workers compensation claims and return to work</div>
+            <div class="step-desc">When a claim is lodged: (1) Accept the claim - do not manage informally; (2) Notify your workers comp insurer within the required timeframe (Vic: within 5 days); (3) Appoint a RTW coordinator for serious injuries; (4) Obtain a Certificate of Capacity from the treating GP; (5) Develop a RTW plan with suitable duties in consultation with the worker, doctor, and insurer. Legal obligation: you must provide suitable employment for an injured worker returning to work. Terminating a worker on workers compensation is extremely high-risk.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">9</div>
+          <div class="step-body">
+            <div class="step-title">Manage psychological injury claims with additional care</div>
+            <div class="step-desc">Psychological injury claims require: (1) Accept the claim without requiring proof that the injury was work-caused; (2) Follow all treating psychologist RTW restrictions including restrictions around specific individuals; (3) Early intervention (EAP, modified duties, flexible hours) reduces claim duration; (4) Do not continue the stressor during RTW - same manager, same workload. At PPG: if a psychological injury is linked to a specific manager, that manager must not be involved in the RTW process.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">10</div>
+          <div class="step-body">
+            <div class="step-title">Consult workers and conduct an annual WHS program review</div>
+            <div class="step-desc">Legal obligation: both the OHS Act (Vic) and WHS Act require consultation with workers on health and safety matters through elected HSRs (who have legal powers including Provisional Improvement Notices and work cessation directions), WHS committees, and toolbox talks. Annual WHS review: analyse incident rates, near-miss trends, workers comp costs, and psychosocial survey data. Report to executive quarterly.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Hazard register</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Risk assessment matrix (likelihood x consequence)</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">SWMS templates</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Incident report form</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Investigation report template</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">RTW plan template</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Workers comp claim checklist</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">People at Work psychosocial survey (safeworkaustralia.gov.au)</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">WHS inspection checklist</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Regulator notification forms</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#fceaea;border-color:#e8aaaa;">
+            <p>PPG operates across 3 jurisdictions: Melbourne (OHS Act 2004 Vic - WorkSafe Victoria), Sydney (WHS Act 2011 NSW - SafeWork NSW), Brisbane (WHS Act 2011 Qld - WHS Queensland). HR must own psychosocial hazard identification alongside Tom Walsh (HSE Manager). Operations has 4 formally identified psychosocial hazards requiring risk controls under 2023 regulations - not just EAP access. PPG's absence rate (3.2%) is below national average - maintaining this requires active psychosocial hazard management during the AI transition.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Under the 2023 WHS Regulations, psychosocial hazards are regulated the same way as physical hazards. Offering only EAP access without addressing the hazard source is likely non-compliant.</span></li><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>WorkSafe Victoria and SafeWork NSW conduct proactive inspections of logistics and warehousing operators. Keep your hazard register, SWMS, and training records current - inspectors can request to see them on the day.</span></li><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The hierarchy of controls is a legal framework. Administrative controls (training, procedures) and PPE are the least effective and should not be your primary approach for high-risk hazards.</span></li><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>A notifiable incident must be reported IMMEDIATELY by phone - not after your internal investigation. Many employers face prosecution for the failure to notify, separate from the incident itself.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-remuneration">
+      <div class="sop-header" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◍ Remuneration &amp; Benefits Management</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#eeebfa;border:1.5px solid #c0b0e8;color:#5a3898;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#eeebfa;border:1.5px solid #c0b0e8;color:#5a3898;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Design, manage, and administer a remuneration framework that is competitive, equitable, legally compliant, and aligned to PPG objectives - including closing the gender pay gap and retaining critical talent.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All employees at PPG. Remuneration decisions are made by HR in partnership with Finance and relevant GMs. Executive remuneration is a Board function.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (NES minimum entitlements; Modern Award minimum rates; EA; high income threshold); Superannuation Guarantee (Administration) Act 1992 (11.5% rising to 12% July 2025; payday super July 2026); Workplace Gender Equality Act 2012 (remuneration reporting); Tax Administration Act 1953 (PAYG); Payroll Tax Act (state-based); Privacy Act 1988</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">1</div>
+          <div class="step-body">
+            <div class="step-title">Establish and maintain salary bands</div>
+            <div class="step-desc">Salary bands provide structure and equity. Steps: (1) Group roles into levels (PPG uses L1-L6) based on complexity and accountability; (2) Use a job evaluation methodology for consistent grading; (3) Set band minimum, midpoint, and maximum using market benchmarking data; (4) Review bands annually after FWC National Minimum Wage Orders (typically announced June, effective 1 July); (5) Brief managers on band positions - transparency reduces gender pay gap risk.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">2</div>
+          <div class="step-body">
+            <div class="step-title">Conduct annual market benchmarking</div>
+            <div class="step-desc">Sources: SEEK Salary Insights, Mercer Remuneration Survey, Hays Salary Guide, Supply Chain and Logistics Australia surveys. Compare base salary, total fixed remuneration (base + super), and total package. Positioning strategy: market median (50th percentile) is standard; above-market (65th-75th percentile) for critical retention roles. At PPG: Tech roles are 8-12% below market - this drives 18% turnover and requires immediate band adjustment.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">3</div>
+          <div class="step-body">
+            <div class="step-title">Run the annual remuneration review process</div>
+            <div class="step-desc">Process: (1) Finance confirms the review budget; (2) HR provides managers with individual pay data and recommended adjustment ranges; (3) Managers recommend adjustments based on: performance rating, position in band, market movement, and retention risk; (4) HR reviews all recommendations for equity, consistency, and budget compliance; (5) CHRO and CFO approve the final review; (6) Communicate individual outcomes by the effective date; (7) Update HRIS and payroll simultaneously.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">4</div>
+          <div class="step-body">
+            <div class="step-title">Conduct a gender pay gap audit</div>
+            <div class="step-desc">Under the WGEA Act, employer-level pay gaps are publicly published since 2024. Audit steps: (1) Pull HRIS data: salary by gender, level, department, and tenure; (2) Calculate median gender pay gap at each level; (3) Distinguish structural gaps (fewer women in senior roles) from like-for-like gaps (same role, different pay); (4) Investigate like-for-like gaps - these are the legal and reputational risk; (5) Develop a remediation plan with specific budget; (6) Report to WGEA; (7) Track progress quarterly.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">5</div>
+          <div class="step-body">
+            <div class="step-title">Administer Award and EA compliance</div>
+            <div class="step-desc">For Award-covered employees: verify all employees are correctly classified; check all rates, loadings, allowances, and penalty rates are applied correctly in payroll; conduct a self-audit against the Pay and Conditions Tool (PACT) on fairwork.gov.au annually. If an underpayment is identified: self-report to the Fair Work Ombudsman, calculate back-pay with interest, communicate to affected employees, and rectify immediately. Underpayment carries significant penalty risk under the Closing Loopholes Act 2023.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">6</div>
+          <div class="step-body">
+            <div class="step-title">Manage superannuation obligations</div>
+            <div class="step-desc">Super obligations: (1) Contribute 11.5% of ordinary time earnings (rising to 12% from 1 July 2025); (2) Check ATO Stapled Super Fund requirements for new starters; (3) Super is currently paid quarterly - changes to payday super from 1 July 2026 (must be paid on every payday); (4) Failure to pay = Superannuation Guarantee Charge (not tax-deductible, includes penalties and interest); (5) Include super in all total employment cost modelling.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">7</div>
+          <div class="step-body">
+            <div class="step-title">Design and administer benefits programs</div>
+            <div class="step-desc">Benefits beyond base salary form part of the EVP. Common Australian employer benefits: additional super contributions; salary packaging (novated leasing); EAP ($1,200-2,000/employee/year); parental leave top-up (PPG provides 14 weeks paid primary carer leave above the NES minimum); flexible work; L&amp;D allowance; health insurance subsidy. Review benefits annually against competitor offerings - particularly for Tech roles where PPG competes against higher-paying employers.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">8</div>
+          <div class="step-body">
+            <div class="step-title">Calculate and process termination entitlements</div>
+            <div class="step-desc">On termination: outstanding annual leave balance (paid at termination rate including leave loading if applicable under Award); long service leave (Vic: employees with 7+ years entitled to pro-rata LSL on resignation or dismissal); payment in lieu of notice if not working out the period (taxed as ordinary income); redundancy pay if applicable (NES scale - taxed at concessional rate as ETP); super on all final payments. Issue final payslip on the last day of employment.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Salary band framework (spreadsheet)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Remuneration review template</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Market benchmarking data (SEEK, Hays, Mercer)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Gender pay gap audit template</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Pay and Conditions Tool - PACT (fairwork.gov.au)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">WGEA reporting portal (wgea.gov.au)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Superannuation choice form (ATO)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Termination pay calculator</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Total employment cost model</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#eeebfa;border-color:#c0b0e8;">
+            <p>PPG has four remuneration priorities: (1) Close the 9.1% executive gender pay gap - WGEA now publishes this publicly; (2) Adjust Tech salary bands to close the 8-12% market gap and reduce 18% turnover; (3) Prepare for payday super obligations from July 2026 - this requires a payroll system change; (4) Model total employment cost (base + 11.5% super + oncosts ~22%) for the Perth/Adelaide hub expansion (~60 FTE = ~$6M+ TEC per year).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Remuneration is confidential personal information under the Privacy Act. Build data access controls in your HRIS and do not share individual salary data beyond what is necessary for the review process.</span></li><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The NES minimum notice table is a floor, not a ceiling. Always check the applicable Award or EA - notice entitlements are often higher and the higher entitlement applies.</span></li><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>When calculating redundancy, years of service includes continuous service across related entities - not just the start date in the current role.</span></li><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Payday super from 1 July 2026 requires payroll systems to calculate and remit super with every pay run. Start your payroll system review now - this is a significant operational change.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-dei">
+      <div class="sop-header" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◎ Diversity, Equity &amp; Inclusion</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#e2f4f2;border:1.5px solid #7ecec8;color:#0e6a5e;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#e2f4f2;border:1.5px solid #7ecec8;color:#0e6a5e;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Build a workplace that actively values diversity, ensures equitable outcomes, and fosters genuine inclusion - meeting both legal obligations and the business case for diverse, high-performing teams.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All employees, managers, and people processes at PPG. DEI responsibilities are shared: HR designs the framework, senior leaders model it, managers implement it, all employees participate.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Workplace Gender Equality Act 2012 (WGEA reporting - 6 gender equality indicators); Sex Discrimination Act 1984 (Respect@Work 2022 - positive duty); Equal Opportunity Act 2010 (Vic) - positive duty; Racial Discrimination Act 1975; Disability Discrimination Act 1992; Age Discrimination Act 2004; Australian Human Rights Commission Act 1986</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">1</div>
+          <div class="step-body">
+            <div class="step-title">Establish a DEI baseline - measure what you manage</div>
+            <div class="step-desc">Collect and analyse: gender composition by level, department, and employment type; gender pay gap by level (WGEA required); CALD representation (voluntary disclosure); Aboriginal and Torres Strait Islander representation; disability representation; age distribution; promotion rates by gender and background; engagement scores by demographic group. At PPG: 31% women in management (target 40% by FY2027) and 9.1% executive pay gap are the highest-priority metrics.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">2</div>
+          <div class="step-body">
+            <div class="step-title">Build a DEI strategy with measurable targets</div>
+            <div class="step-desc">Structure the strategy as: (1) Business case - link diversity to business outcomes; (2) Measurable targets (e.g. 40% women in management by FY2027; gender pay gap under 3% by FY2026); (3) Priority initiatives mapped to each target; (4) Accountability - who owns each initiative and how are they measured?; (5) Budget allocation; (6) Governance - who reviews progress and how often? Obtain CEO and Board endorsement. A DEI strategy without targets and accountability is a values statement, not a plan.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">3</div>
+          <div class="step-body">
+            <div class="step-title">Audit recruitment and selection processes for bias</div>
+            <div class="step-desc">Audit every stage: job ad language (use gender-neutral language checkers); selection criteria (genuinely necessary?); shortlisting (use structured scoring matrices); interview panels (include diverse panel members for Level 4+ roles); candidate pool targets; offer stage (ensure salary offers are within the band - do not negotiate differently for different demographic groups). Document decisions at every stage.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">4</div>
+          <div class="step-body">
+            <div class="step-title">Address structural barriers to advancement</div>
+            <div class="step-desc">Data often shows women are well-represented at entry levels but underrepresented at senior levels (the pipeline problem). Structural barriers to address: performance criteria that penalise flexible or part-time workers; succession planning that defaults to majority demographic candidates; leadership programs not accessible to shift workers; informal sponsorship networks that exclude women and CALD staff; promotion processes requiring self-nomination. At PPG: audit the pipeline from L2 to L5 - the 9.1% executive pay gap and 31% women in management suggest structural barriers exist.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">5</div>
+          <div class="step-body">
+            <div class="step-title">Implement and promote flexible work inclusively</div>
+            <div class="step-desc">Flexible work is a key enabler of gender equity and disability inclusion. Actions: process flexible work requests consistently and fairly; actively promote flexible work at all levels including senior roles; ensure men accessing flexible work or parental leave are not penalised (this normalises flexibility); track flexible work approval rates by gender and level - disparities indicate bias.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">6</div>
+          <div class="step-body">
+            <div class="step-title">Meet WGEA reporting obligations annually</div>
+            <div class="step-desc">Annual WGEA report due by 31 May across 6 Gender Equality Indicators: (1) Gender composition of workforce and governing bodies; (2) Gender composition of key management personnel; (3) Equal remuneration; (4) Availability and utility of flexible working; (5) Consultation with employees on gender equality; (6) Sexual harassment policies and reporting mechanisms. Steps: pull HRIS data by 1 April; calculate pay gaps; review with CHRO and legal; submit via WGEA portal by 31 May; prepare for public gap disclosure.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">7</div>
+          <div class="step-body">
+            <div class="step-title">Build an inclusive culture through training and behaviour</div>
+            <div class="step-desc">DEI strategy fails without cultural change. Actions: unconscious bias training for all hiring managers (annual reinforcement, not just one-off); bystander intervention training (practical, not theoretical); inclusive leadership program for all people managers; regular CEO communication on DEI progress; Employee Resource Groups for women, CALD staff, LGBTIQ+, and staff with disability (provide budget, executive sponsorship, and a voice to leadership).</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#e2f4f2;border:2px solid #7ecec8;color:#0e6a5e;">8</div>
+          <div class="step-body">
+            <div class="step-title">Monitor, report, and adjust</div>
+            <div class="step-desc">Quarterly: review DEI metrics against targets. Annually: comprehensive DEI audit; Board report on progress; update DEI strategy; submit WGEA report by 31 May; publish internal DEI progress report to all staff. Consider applying for WGEA Employer of Choice for Gender Equality (EOCGE) citation - a meaningful EVP differentiator for attracting and retaining talent.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">WGEA reporting portal (wgea.gov.au)</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">Pay gap audit template</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">Inclusive job ad language checklist</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">DEI baseline measurement template</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">Structured interview scoring matrix</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">Unconscious bias training resources (AHRC)</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">People at Work survey</span><span class="tool-tag" style="background:#e2f4f2;border-color:#7ecec8;color:#0e6a5e;">WGEA Employer of Choice application guide</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#e2f4f2;border-color:#7ecec8;">
+            <p>PPG has two urgent DEI priorities. First, the publicly visible 9.1% executive gender pay gap requires a documented remediation plan with budget - WGEA publication makes this a reputational risk. Second, Operations is a male-dominated environment with low psychological safety (63/100) - the Respect@Work positive duty means HR must proactively assess and address harassment and exclusion risk, not wait for complaints.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#0e6a5e;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>DEI metrics without targets are just data. Set specific, time-bound targets and hold managers accountable through their KPIs and performance reviews.</span></li><li class="tip-item"><span style="color:#0e6a5e;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The most effective diversity interventions combine structural change (who gets shortlisted, who gets sponsored) with cultural change. Training alone without structural change achieves little.</span></li><li class="tip-item"><span style="color:#0e6a5e;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Intersectionality matters: a woman from a CALD background may experience multiple, compounding barriers. Your data analysis should look at intersecting characteristics, not just single categories.</span></li><li class="tip-item"><span style="color:#0e6a5e;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The WGEA Employer of Choice for Gender Equality (EOCGE) citation is a genuine competitive advantage. It signals to candidates that the organisation is committed - and holds you accountable to live up to it.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-change">
+      <div class="sop-header" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◈ Change Management &amp; Consultation</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#faf2de;border:1.5px solid #dfc070;color:#8a5c00;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#faf2de;border:1.5px solid #dfc070;color:#8a5c00;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Plan and implement organisational change in a way that meets legal consultation obligations, manages employee wellbeing, and achieves sustainable adoption - particularly where technology, structure, or workforce composition is changing.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">Any significant change at PPG: technology changes (AI/automation), structural changes (new hub, restructure), role changes, EA variations, leadership changes, or workforce reductions.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (s.202-205 major workplace change consultation; EA consultation term; s.228 good faith bargaining); OHS Act 2004 (Vic) / WHS Act 2011 (worker consultation on safety changes); WHS Regulations 2023 (change anxiety is a regulated psychosocial hazard); Privacy Act 1988; NES redundancy provisions</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">1</div>
+          <div class="step-body">
+            <div class="step-title">Classify the change and determine consultation obligations</div>
+            <div class="step-desc">Determine: (1) Major workplace change - 'a change likely to have a significant effect on employees' including technology changes affecting roles and restructures. This triggers mandatory consultation under the EA consultation term and s.202 FWA. (2) Operational change - routine change without significant effect - consultation is good practice but not legally required. At PPG: the AI/automation rollout and Perth/Adelaide expansion are both Major Workplace Changes. Consultation is mandatory, not optional.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">2</div>
+          <div class="step-body">
+            <div class="step-title">Build a change management plan before communicating anything</div>
+            <div class="step-desc">Before communicating to employees, plan: (1) Scope - what exactly is changing, for whom, and when?; (2) Drivers - why is the change necessary? Be honest; (3) Impact assessment - which roles are affected?; (4) Consultation timeline - when will you engage employees with genuine time to influence the outcome?; (5) Communication plan; (6) Support measures (EAP, reskilling, redeployment options); (7) Risks and mitigations. Consultation must be planned before the decision is finalised.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">3</div>
+          <div class="step-body">
+            <div class="step-title">Issue written notice to affected employees</div>
+            <div class="step-desc">As soon as the change is proposed (before it is final), provide written notice to affected employees including: the nature of the change; expected effects on employees; timing; how they can provide input; and who to contact. If employees are union members, the union must also be formally notified. At PPG: Operations staff are 61% union members - the union delegate must be formally invited to participate in consultation.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">4</div>
+          <div class="step-body">
+            <div class="step-title">Conduct genuine consultation - not notification</div>
+            <div class="step-desc">Consultation means informing employees early enough that their input can actually change the outcome. Required steps: (1) Hold meetings with affected employees in small groups; (2) Provide meaningful information; (3) Invite employees and representatives to discuss and propose alternatives; (4) Genuinely consider every alternative raised and document your consideration; (5) Keep consultation open for a reasonable period. Telling employees after the decision is made is notification, not consultation. This is a breach of the Fair Work Act.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">5</div>
+          <div class="step-body">
+            <div class="step-title">Address psychosocial hazards from change anxiety</div>
+            <div class="step-desc">Change anxiety is a formally regulated psychosocial hazard under 2023 WHS Regulations. Actions: identify who is most at risk; provide clear, honest, regular communication (uncertainty is more stressful than bad news); promote EAP access; brief managers on supportive conversations; monitor absenteeism and engagement indicators; conduct a psychosocial hazard assessment and implement specific controls. At PPG: Operations absenteeism spiked during the AI announcement - this is a WHS signal requiring formal action.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">6</div>
+          <div class="step-body">
+            <div class="step-title">Manage redeployment before declaring any redundancy</div>
+            <div class="step-desc">Where roles are being eliminated: (1) Before declaring a redundancy, conduct a genuine search for suitable alternative positions; (2) Consult the employee about alternative roles; (3) Consider retraining for the alternative role; (4) Only if no suitable redeployment exists and consultation obligations are met can the redundancy be declared genuine. A redundancy is not genuine if the employer could have redeployed the employee but chose not to. At PPG: reskilling warehouse staff for automation operator roles is a redeployment option that must be documented as genuinely explored.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">7</div>
+          <div class="step-body">
+            <div class="step-title">Communicate the final decision clearly and simultaneously</div>
+            <div class="step-desc">After consultation is complete: communicate the final decision to all affected employees simultaneously; acknowledge what feedback was received and how it influenced the outcome; be specific about what happens next and when; communicate the support available. Also communicate to non-affected employees - change anxiety is contagious in a team environment.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#faf2de;border:2px solid #dfc070;color:#8a5c00;">8</div>
+          <div class="step-body">
+            <div class="step-title">Support employees through the transition</div>
+            <div class="step-desc">During implementation: maintain regular communication updates (weekly during active change); monitor absenteeism, engagement, and performance data; provide the reskilling and transition support committed during consultation; check in with managers (they are often the most stressed and least supported in a change program); conduct a post-change review at 90 days.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Change impact assessment template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Consultation plan template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Change communication templates (initial notice, updates, final decision)</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Psychosocial hazard risk assessment (change-specific)</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Redeployment register</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">ADKAR change model framework</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Union notification letter template</span><span class="tool-tag" style="background:#faf2de;border-color:#dfc070;color:#8a5c00;">Post-change review template</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#faf2de;border-color:#dfc070;">
+            <p>PPG has two major changes requiring formal consultation: (1) AI/automation rollout - already partially underway without proper consultation (Sandra Cortez ran an all-hands announcement, not a consultation meeting); (2) Perth/Adelaide hub expansion - in planning stage, HR must get ahead of this before decisions are finalised. CEO Marcus Okafor's direct style is a consultation compliance risk - HR must brief him on the legal obligations and consequences of skipping consultation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The single most common change management legal error in Australia: telling employees about a change after the decision is made and calling it consultation. Consultation must occur while the employer can still be influenced.</span></li><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The ADKAR change model (Awareness, Desire, Knowledge, Ability, Reinforcement) is a practical Australian-used framework. Every employee needs all five stages for change to stick. Most programs stop at Awareness.</span></li><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Resistance to change is usually about fear of the unknown or distrust of management, not the change itself. Transparent, honest, early communication is the highest-ROI change management investment.</span></li><li class="tip-item"><span style="color:#8a5c00;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>If a union is involved, good faith bargaining obligations apply. Surface bargaining (going through the motions without genuine intent) is a breach of s.228 FWA.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-termination">
+      <div class="sop-header" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◔ Termination, Redundancy &amp; Separation</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#fceaea;border:1.5px solid #e8aaaa;color:#932020;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#fceaea;border:1.5px solid #e8aaaa;color:#932020;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Manage all forms of employment separation - resignation, performance dismissal, serious misconduct, and redundancy - in a legally compliant, fair, and dignified manner.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All forms of separation at PPG: voluntary resignation, dismissal (performance, conduct, serious misconduct), genuine redundancy, retirement, fixed-term contract end, and death in service.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Fair Work Act 2009 (Part 3-2 unfair dismissal s.387; Part 3-1 general protections s.340; NES Part 2-2 redundancy pay and notice; s.117 notice of termination); NES minimum notice table (s.117); NES redundancy pay scale (s.119); Fair Work Regulations 2009 (reg.1.07 serious misconduct); WIRC Act 2013 (Vic); Long Service Leave Act 2018 (Vic); Privacy Act 1988</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">1</div>
+          <div class="step-body">
+            <div class="step-title">Classify the type of separation</div>
+            <div class="step-desc">Process varies significantly by type: (1) Voluntary resignation - employee initiated, minimum notice applies; (2) Performance/conduct dismissal - completed performance management process required; (3) Serious misconduct - summary dismissal possible after investigation, procedural fairness still applies; (4) Genuine redundancy - role no longer required, consultation met, redeployment considered; (5) End of fixed-term - contract expiry, no redundancy pay unless a series of contracts suggests ongoing employment; (6) Mutual separation by agreement - usually involves a deed of release. Classify correctly before beginning.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">2</div>
+          <div class="step-body">
+            <div class="step-title">Run the pre-dismissal checklist for all dismissals</div>
+            <div class="step-desc">Before any dismissal confirm: Valid reason documented and defensible?; Employee notified of the reason in writing?; Genuine show cause opportunity provided?; Employee's response genuinely considered?; Support person offered at all formal meetings?; HRBP and CHRO sign-off obtained?; General protections risk assessed (has the employee recently exercised a workplace right)?; Minimum employment period met (6 months for unfair dismissal eligibility)?; High income threshold checked (~$175K per annum)?</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">3</div>
+          <div class="step-body">
+            <div class="step-title">Confirm the genuine redundancy test is met</div>
+            <div class="step-desc">A genuine redundancy requires three elements: (1) The employer no longer requires the job to be done by anyone - the role is redundant, not just the person; (2) Consultation obligations have been complied with; (3) It was not reasonable in all circumstances to redeploy the employee to another position within the enterprise. If any element is missing, the redundancy is not genuine and the employee can claim unfair dismissal. Document evidence of all three elements for each affected employee.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">4</div>
+          <div class="step-body">
+            <div class="step-title">Issue the termination or redundancy letter</div>
+            <div class="step-desc">The separation letter must include: employee name and role; date of separation; the reason for separation (mandatory for all dismissals); notice period or payment in lieu (per NES minimum table or Award/EA - the higher entitlement applies); entitlements to be paid; return of company property instructions; reference to post-employment obligations; and date final pay will be processed. Deliver the letter in person, in a private setting, with a support person available. Never dismiss by email, text, or voicemail.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">5</div>
+          <div class="step-body">
+            <div class="step-title">Calculate and process all final entitlements</div>
+            <div class="step-desc">Final pay must include: base salary to date of termination; annual leave balance at the termination rate (including leave loading if applicable under Award); long service leave (Vic: employees with 7+ years entitled to pro-rata LSL on resignation or dismissal); payment in lieu of notice if not working out the period (taxed as ordinary income); redundancy pay (NES scale - taxed as ETP at concessional rate); super on all final payments. Issue a final payslip and ETP payment summary.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">6</div>
+          <div class="step-body">
+            <div class="step-title">Manage the notice period or immediate stand-down</div>
+            <div class="step-desc">If serving notice: maintain normal conduct expectations; ensure knowledge transfer is completed; maintain appropriate system access for handover; brief the team on the departure at an agreed time. If paying in lieu of notice: terminate all system and site access on the last working day; notify IT, payroll, and building security immediately.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">7</div>
+          <div class="step-body">
+            <div class="step-title">Conduct a structured exit interview</div>
+            <div class="step-desc">Conduct with HRBP, not the line manager. Structured questions covering: why the employee is leaving; what PPG does well; what it could improve; whether they experienced harassment or discrimination (important for Respect@Work positive duty); whether their manager was effective. Record responses anonymously in exit data. Analyse quarterly to identify patterns. At PPG: exit data from Operations should be driving retention interventions, not just being filed.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">8</div>
+          <div class="step-body">
+            <div class="step-title">Complete all post-separation administration</div>
+            <div class="step-desc">After the employee leaves: (1) Process termination record in HRIS on the day; (2) Confirm final pay is correct; (3) Disable all system access (email, HRIS, WMS, building access); (4) Ensure final super payment is made in the correct cycle; (5) Agree reference process with the employee; (6) Retain the employee file for 7 years (Fair Work record-keeping requirements), then destroy securely per the Privacy Act.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#fceaea;border:2px solid #e8aaaa;color:#932020;">9</div>
+          <div class="step-body">
+            <div class="step-title">Manage the risk of post-separation claims</div>
+            <div class="step-desc">Common post-separation claims: Unfair dismissal (FWC - must be lodged within 21 days of dismissal) - mitigated by documented procedural fairness; General protections (FWC/court - no time limit for court) - mitigated by documented reasons independent of any workplace right; Underpayment (FWO - 6-year limitation) - mitigated by accurate payroll and self-audits; Discrimination (AHRC/VEOHRC) - mitigated by merit-based documented decision-making. If a claim is received: notify your employment practices liability insurer; do not contact the former employee directly; engage an employment lawyer before responding.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Pre-dismissal checklist</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Termination letter templates (performance, redundancy, serious misconduct)</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Genuine redundancy checklist</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">NES notice table</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">NES redundancy pay scale</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Final pay calculation template</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Exit interview template</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">Post-separation checklist</span><span class="tool-tag" style="background:#fceaea;border-color:#e8aaaa;color:#932020;">ETP payment summary guide (ATO)</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#fceaea;border-color:#e8aaaa;">
+            <p>PPG's AI/automation rollout may create redundancies in Operations. HR must: (a) document each consultation meeting and redeployment consideration for every affected role; (b) calculate NES redundancy pay - Operations staff average 2.1 years tenure (4-6 weeks pay) but longer-serving staff may be entitled to significantly more; (c) ensure Tom Walsh is involved in RTW for WorkCover claimants affected by a restructure - terminating someone on WorkCover is a serious legal risk.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The 21-day clock for unfair dismissal starts on the date of dismissal (including payment in lieu of notice), not the date the letter is issued. Do not dismiss on a Friday afternoon thinking the clock does not start until Monday.</span></li><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Payment in lieu of notice is taxed as ordinary income. Redundancy pay (genuine redundancy) is taxed as an ETP at a concessional rate. Confusing these creates both underpayment and tax compliance risks.</span></li><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The genuine redundancy defence fails if you hire someone into a substantially similar role within 6 months. If you know you will need the capability, explore redeployment and reskilling first.</span></li><li class="tip-item"><span style="color:#932020;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Exit interviews are most honest when conducted by someone other than the employee's manager. Consider an anonymous pulse survey tool for the initial exit.</span></li></ul>
+    </div>
+
+    <div class="sop-panel" id="sop-reporting">
+      <div class="sop-header" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">
+        <div class="sop-header-top">
+          <div>
+            <div class="sop-eyebrow">Standard Operating Procedure &mdash; Australian HR Management</div>
+            <div class="sop-title">◉ HR Reporting &amp; Metrics Analysis</div>
+          </div>
+          <div class="sop-header-badges">
+            <span class="sop-badge" style="background:#eeebfa;border:1.5px solid #c0b0e8;color:#5a3898;">PPG FY2025</span>
+            <span class="sop-badge" style="background:#eeebfa;border:1.5px solid #c0b0e8;color:#5a3898;">Australian Standards</span>
+          </div>
+        </div>
+        <div class="sop-meta-grid">
+          <div class="sop-meta-item"><div class="sop-meta-label">Purpose</div><div class="sop-meta-val">Establish a regular HR reporting cadence that gives business leaders accurate, timely, and actionable people data - enabling evidence-based decisions on workforce investment, risk management, and strategic planning.</div></div>
+          <div class="sop-meta-item"><div class="sop-meta-label">Scope</div><div class="sop-meta-val">All HR metrics data at PPG. HR Advisor owns data quality in the HRIS; HRBP owns operational reporting; CHRO owns strategic reporting to the CEO and Board.</div></div>
+          <div class="sop-meta-item" style="grid-column:1/-1;"><div class="sop-meta-label">Key legislation</div><div class="sop-meta-val">Workplace Gender Equality Act 2012 (mandatory WGEA reporting - 31 May deadline); Fair Work Act 2009 (record-keeping obligations s.535-536 - retain employment records for 7 years); Privacy Act 1988 (APPs 3, 6, 10, 11 - workforce data as personal information); Superannuation Guarantee (Administration) Act 1992 (SGC reporting)</div></div>
+        </div>
+      </div>
+
+      <div class="sop-section-title">Step-by-step process</div>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">1</div>
+          <div class="step-body">
+            <div class="step-title">Define your HR metrics framework</div>
+            <div class="step-desc">Organise metrics into four categories: (1) Compliance metrics - legally required (WGEA gender pay gap, Award compliance, super payment dates); (2) Operational metrics - HR function efficiency (time to fill, cost per hire, onboarding completion rate); (3) Workforce metrics - workforce health (turnover, absence, engagement, internal promotion rate); (4) Strategic metrics - HR linked to business outcomes (revenue per employee, labour cost as % of revenue, skills gap closure rate).</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">2</div>
+          <div class="step-body">
+            <div class="step-title">Ensure HRIS data quality before reporting</div>
+            <div class="step-desc">Data quality standards: every active employee record must have current role, department, location, employment type, start date, remuneration, and manager; termination records must be processed same day (late processing distorts headcount and turnover data); leave records updated from payroll in real time; training records uploaded within 5 business days of completion. Conduct a quarterly HRIS audit: pull a report of all records with missing mandatory fields and assign the HR Advisor to clean data before end of quarter.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">3</div>
+          <div class="step-body">
+            <div class="step-title">Build and maintain a monthly HR dashboard</div>
+            <div class="step-desc">The monthly dashboard must include: Headcount (total FTE by department and location vs budget); Vacancies (open positions by department and days open); Turnover (monthly and rolling 12-month rate, voluntary vs involuntary); Time to fill (average days by role type); Absenteeism (unplanned absence rate by department); ER cases (active by type and stage); Training compliance (% mandatory training completed); Engagement (pulse score if running monthly). Keep it visual, concise, and consistent month-to-month so leaders can track trends.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">4</div>
+          <div class="step-body">
+            <div class="step-title">Calculate HR metrics using consistent formulas</div>
+            <div class="step-desc">Key formulas: Turnover rate = (Separations / Average headcount) x 100; Retention rate = 100 - turnover rate; Absence rate = (Days absent / (Headcount x Working days)) x 100; Cost per hire = Total recruitment costs / Number of hires; Time to fill = Date offer accepted - Date vacancy approved; Internal fill rate = Internal appointments / Total appointments x 100; Revenue per employee = Total revenue / Average FTE; Promotion rate = Number promoted / Average headcount x 100. Always define the period consistently - inconsistent period definitions make trend analysis meaningless.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">5</div>
+          <div class="step-body">
+            <div class="step-title">Conduct quarterly deep-dive analysis</div>
+            <div class="step-desc">Monthly dashboards show the 'what'. Quarterly deep-dives explore the 'why': Turnover deep-dive - analyse exit interview data by department, level, tenure group, and manager; identify which factors most predict departure. Engagement deep-dive - cross-tabulate scores by department, level, gender, and tenure; identify which drivers are most correlated with turnover. Skills gap progress - compare skills audit results against the previous quarter; identify which L&amp;D interventions are closing gaps.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">6</div>
+          <div class="step-body">
+            <div class="step-title">Produce the annual WGEA report by 31 May</div>
+            <div class="step-desc">Steps: (1) Pull HRIS data by 1 April to allow time for analysis; (2) Calculate gender pay gaps at each level; (3) Review with CHRO and legal if gaps are material; (4) Submit via WGEA portal (wgea.gov.au) by 31 May; (5) Prepare for public disclosure - WGEA publishes employer-level data. Required data across 6 Gender Equality Indicators: workforce composition; management composition; equal remuneration; flexible work availability; consultation on gender equality; sexual harassment policies.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">7</div>
+          <div class="step-body">
+            <div class="step-title">Comply with Fair Work record-keeping obligations</div>
+            <div class="step-desc">Under s.535-536 FWA, keep employment records for 7 years: employee details (name, commencement date); remuneration (rate, gross and net amounts, deductions); hours worked (for Award-covered employees); leave (accrual, taken, balance); super contributions; termination records. Records must be accessible to a Fair Work Inspector on request; in English; and not altered. Failure to keep records is a civil penalty. If records are inadequate, the onus shifts to the employer to disprove any underpayment allegation.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">8</div>
+          <div class="step-body">
+            <div class="step-title">Report to the CEO and Board on people metrics</div>
+            <div class="step-desc">CEO reporting (monthly): headline dashboard metrics vs targets; key ER risks and active cases summary; turnover trend and cost impact; recruitment pipeline for critical vacancies; L&amp;D compliance rate. Board reporting (quarterly): workforce composition and diversity metrics; WGEA progress; engagement trend; succession coverage for critical roles; significant ER matters in general terms; HR strategy KPI progress. The Board report should be forward-looking as well as retrospective.</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#eeebfa;border:2px solid #c0b0e8;color:#5a3898;">9</div>
+          <div class="step-body">
+            <div class="step-title">Use data to drive action, not just report it</div>
+            <div class="step-desc">For each metric that is off-target: identify the root cause (not just the symptom); propose a specific, time-bound intervention; assign ownership; define the success measure; track at the next reporting cycle. At PPG: Operations turnover (22%) has been tracked but not actioned. Data should be triggering a targeted retention intervention - not just appearing in the monthly dashboard as a red metric.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-bottom-grid">
+        <div>
+          <div class="sop-section-title">Tools &amp; templates</div>
+          <div class="tools-wrap"><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">HRIS reporting module</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">HR dashboard template (Excel or Power BI)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">HR metric formula reference sheet</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">WGEA reporting portal (wgea.gov.au)</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Exit interview analysis template</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Quarterly deep-dive report template</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Fair Work record-keeping compliance checklist</span><span class="tool-tag" style="background:#eeebfa;border-color:#c0b0e8;color:#5a3898;">Board HR report template</span></div>
+        </div>
+        <div>
+          <div class="sop-section-title">PPG context &mdash; Pinnacle Pacific Group</div>
+          <div class="ppg-box" style="background:#eeebfa;border-color:#c0b0e8;">
+            <p>PPG's HRIS (Yardi Voyager) feeds the dashboard. Data Analyst support from PPG Digital should be leveraged to build automated Power BI dashboards rather than manual Excel reports - freeing HR Advisors for advisory work. Priority metrics to improve: close Operations turnover gap (22% vs 14% industry avg); lift internal fill rate (29% vs 45% target); improve 90-day attrition (11%). WGEA report due 31 May each year - pull data by 1 April.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sop-section-title" style="margin-top:24px;">Practitioner tips</div>
+      <ul class="tips-list"><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Under the Fair Work Act, the burden of proof in an underpayment dispute is on the employer to show they paid correctly. If your records are incomplete, you effectively lose by default. Record-keeping is your legal defence.</span></li><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>HR metrics without benchmarks are just numbers. Always present in context: PPG turnover 22% vs logistics industry average 14%, national average 12%. Context drives urgency and investment decisions.</span></li><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>Workforce data is personal information under the Privacy Act. You can use it for workforce planning (APP 6 - reasonable secondary use) but cannot share individual salary data externally without consent.</span></li><li class="tip-item"><span style="color:#5a3898;font-size:14px;flex-shrink:0;margin-top:2px;">✦</span><span>The most powerful HR metric is not the one that impresses the Board - it is the one that changes what managers do on Monday morning. Design reports for action, not admiration.</span></li></ul>
+    </div>
+  </main>
+
+</div>
+<script>
+
+  const sopIds = ['strategy','recruitment','onboarding','performance','ld','er','whs','remuneration','dei','change','termination','reporting'];
+  function showSOP(id) {
+    sopIds.forEach(sid => {
+      const panel = document.getElementById('sop-' + sid);
+      const btn = document.getElementById('nav-' + sid);
+      if (panel) panel.style.display = (sid === id) ? 'block' : 'none';
+      if (btn) {
+        btn.classList.toggle('active', sid === id);
+        if (sid === id) {
+          const colour = btn.dataset.colour;
+          const colourMap = {
+            blue: '#1558a0', green: '#13724a', amber: '#8a5c00',
+            red: '#932020', purple: '#5a3898', teal: '#0e6a5e', coral: '#8a3e00'
+          };
+          btn.style.borderLeftColor = colourMap[colour] || '#1558a0';
+          btn.style.background = 'var(--surface2)';
+          btn.style.color = colourMap[colour] || '#1558a0';
+          btn.style.fontWeight = '700';
+        } else {
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.style.fontWeight = '';
+        }
+      }
+    });
+  }
+  // Activate first on load
+  document.addEventListener('DOMContentLoaded', () => showSOP('strategy'));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+Date: Sat, 28 Mar 2026 20:03:11 +0000 (UTC)
+Message-ID: <654878327.5.1774728191826@4e8ffeabb9b0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_329176245.1774728191826"
+
+------=_Part_4_329176245.1774728191826
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Career development plan</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Career development plan</h1>
+    <div class=3D"Section1">
+        <h2 local-id=3D"059b98c956cb" id=3D"Careerdevelopmentplan-Self-asse=
+ssment"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"270d" d=
+ata-emoji-shortname=3D":writing_hand:" data-emoji-fallback=3D"=E2=9C=8D" sr=
+c=3D"b7f06c24664fb32dc4a6f120f716dc7fec7f460b2aabe2e3add60ce7e64f7303" widt=
+h=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)"=
+>&nbsp;Self-assessment</h2>
+<p local-id=3D"b961a5475b8c">Start by thinking through your existing streng=
+ths and development areas. What are you really good at? Where could you imp=
+rove? This will help you figure out what to target. Look at past performanc=
+e reviews for inspiration, or reach out to the people you work with closely=
+ for feedback.</p>
+<h3 local-id=3D"7ed95e5a5894" id=3D"Careerdevelopmentplan-Strengths">Streng=
+ths</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"09=
+a1d6ca9306" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"59b977cb98ea">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"dc3e7d3596ed" class=
+=3D"confluenceTh">
+<p local-id=3D"64fa88b7bfb0"><strong>Strength</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"ad12c0c966f0" class=
+=3D"confluenceTh">
+<p local-id=3D"74734ec9bda0"><strong>Details or examples</strong></p></th>
+</tr>
+<tr data-local-id=3D"3f0161e5f525">
+<td data-local-id=3D"312a5658a44a" class=3D"confluenceTd">
+<p local-id=3D"f401d9d136e2"></p></td>
+<td data-local-id=3D"947fa25ddebc" class=3D"confluenceTd">
+<p local-id=3D"de2568775312"></p>
+<p local-id=3D"997758581bdb"></p></td>
+</tr>
+<tr data-local-id=3D"54174478f0ed">
+<td data-local-id=3D"62e115532e18" class=3D"confluenceTd">
+<p local-id=3D"de3e62298975"></p></td>
+<td data-local-id=3D"841beed7deac" class=3D"confluenceTd">
+<p local-id=3D"9c7083fed8e4"></p></td>
+</tr>
+<tr data-local-id=3D"7c5e3a986544">
+<td data-local-id=3D"7fbca94cf2c0" class=3D"confluenceTd">
+<p local-id=3D"61238ec54608"></p></td>
+<td data-local-id=3D"90e0d2287e04" class=3D"confluenceTd">
+<p local-id=3D"dfebdbb5cfb3"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 local-id=3D"4353d7e1ee1d" id=3D"Careerdevelopmentplan-Growthareas">Grow=
+th areas</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"d9=
+4e8f5656b0" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"2acd7224dfb2">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"352e1a7ed874" class=
+=3D"confluenceTh">
+<p local-id=3D"9c98e3608da0"><strong>Growth area</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"dbe3d27adec7" class=
+=3D"confluenceTh">
+<p local-id=3D"af52b68d7389"><strong>Details or examples</strong></p></th>
+</tr>
+<tr data-local-id=3D"135853f75092">
+<td data-local-id=3D"f33515597f6d" class=3D"confluenceTd">
+<p local-id=3D"9b806a4f86e5"></p></td>
+<td data-local-id=3D"c3c851192d95" class=3D"confluenceTd">
+<p local-id=3D"a10edf12a281"></p>
+<p local-id=3D"c977d9299943"></p></td>
+</tr>
+<tr data-local-id=3D"6f5e725f47a5">
+<td data-local-id=3D"4ddda579d318" class=3D"confluenceTd">
+<p local-id=3D"ac67bae11935"></p></td>
+<td data-local-id=3D"ff4c4d7572e0" class=3D"confluenceTd">
+<p local-id=3D"889df8a3a4ea"></p></td>
+</tr>
+<tr data-local-id=3D"dd76c05c0b3c">
+<td data-local-id=3D"0c46a31ec846" class=3D"confluenceTd">
+<p local-id=3D"d098bc0b2299"></p></td>
+<td data-local-id=3D"46de1a26ca0c" class=3D"confluenceTd">
+<p local-id=3D"71cf1903e0ff"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"dcca16160ec9"></p>
+<h2 local-id=3D"719cd68db30f" id=3D"Careerdevelopmentplan-Goals"><img src=
+=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/plac=
+eholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;ver=
+sion=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &q=
+uot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac=
+%3Aemoticon+ac%3Aname%3D%22dart%22+ac%3Aemoji-shortname%3D%22%3Adart%3A%22+=
+ac%3Aemoji-id%3D%221f3af%22+ac%3Alocal-id%3D%2293539d598e1a%22+ac%3Aemoji-f=
+allback%3D%22%F0%9F%8E%AF%22+%2F%3E">&nbsp;Goals</h2>
+<p local-id=3D"a93873560a83">Choose SMART goals for your growth: they shoul=
+d be <strong>S</strong>pecific, <strong>M</strong>easurable, <strong>A</str=
+ong>chievable, <strong>R</strong>elevant, and <strong>T</strong>ime-bound. =
+Keep the number of goals low and track opportunities that will help you ach=
+ieve the goals you set. If you're not sure where to start, look at your gro=
+wth areas from the previous section.</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"960" data-layout=3D"wide" data-local-id=3D"36886=
+81cfd6d" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"a60a8adb837f">
+<th data-highlight-colour=3D"#ffebe6" data-local-id=3D"efad4ecda62e" class=
+=3D"confluenceTh">
+<p local-id=3D"41186730769e"><strong>Goal</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" data-local-id=3D"895cddc98e0c" class=
+=3D"confluenceTh">
+<p local-id=3D"df4509a91d86"><strong>Success measures</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" data-local-id=3D"d0109187a60f" class=
+=3D"confluenceTh">
+<p local-id=3D"cf635fa37828"><strong>Opportunities</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" data-local-id=3D"ef84393f8518" class=
+=3D"confluenceTh">
+<p local-id=3D"40187f70e235"><strong>Support needed</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" data-local-id=3D"2dbb9b0b8b96" class=
+=3D"confluenceTh">
+<p local-id=3D"44eff9acfea3"><strong>Last updated</strong></p></th>
+</tr>
+<tr data-local-id=3D"f4386a6b85cb">
+<td data-local-id=3D"79c84a23df32" class=3D"confluenceTd">
+<p local-id=3D"04fc51923292"></p></td>
+<td data-local-id=3D"b8fae717eec5" class=3D"confluenceTd">
+<p local-id=3D"242c31b55fee"></p></td>
+<td data-local-id=3D"823a91c4abf2" class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"196610">
+<li data-inline-task-id=3D"1"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+<td data-local-id=3D"3f2001cfe5e3" class=3D"confluenceTd">
+<p local-id=3D"f0be744a68bd"></p></td>
+<td data-local-id=3D"c0fbff4e718f" class=3D"confluenceTd">
+<p local-id=3D"6913d71918a2"></p></td>
+</tr>
+<tr data-local-id=3D"70a58118ba02">
+<td data-local-id=3D"3a737db0240a" class=3D"confluenceTd">
+<p local-id=3D"0065fbd60e7c"></p></td>
+<td data-local-id=3D"914770c3bd17" class=3D"confluenceTd">
+<p local-id=3D"0a282c4a3703"></p></td>
+<td data-local-id=3D"eb6440023978" class=3D"confluenceTd">
+<p local-id=3D"63ce234dd2a9"></p></td>
+<td data-local-id=3D"ffe4c24446f4" class=3D"confluenceTd">
+<p local-id=3D"f045d40a1921"></p></td>
+<td data-local-id=3D"bc8f6c4d9bc6" class=3D"confluenceTd">
+<p local-id=3D"54da65acebdf"></p></td>
+</tr>
+<tr data-local-id=3D"65d030d02bf7">
+<td data-local-id=3D"d9995316a58e" class=3D"confluenceTd">
+<p local-id=3D"b471eeae49a4"></p></td>
+<td data-local-id=3D"dc4b7df12c1b" class=3D"confluenceTd">
+<p local-id=3D"396f865feeba"></p></td>
+<td data-local-id=3D"57ffa8a56882" class=3D"confluenceTd">
+<p local-id=3D"5b673d5a5124"></p></td>
+<td data-local-id=3D"1937337667c0" class=3D"confluenceTd">
+<p local-id=3D"a5190c2ce85d"></p></td>
+<td data-local-id=3D"e59818ae4bd6" class=3D"confluenceTd">
+<p local-id=3D"f78cf95f486f"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"2e42bfcf4f5e"></p>
+<hr local-id=3D"532eb0f54c4e">
+<h3 local-id=3D"3ac43c696113" id=3D"Careerdevelopmentplan-Links"><img src=
+=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/plac=
+eholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;ver=
+sion=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &q=
+uot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac=
+%3Aemoticon+ac%3Aname%3D%22link%22+ac%3Aemoji-shortname%3D%22%3Alink%3A%22+=
+ac%3Aemoji-id%3D%221f517%22+ac%3Alocal-id%3D%2267388b108202%22+ac%3Aemoji-f=
+allback%3D%22%F0%9F%94%97%22+%2F%3E">&nbsp;Links</h3>
+<p local-id=3D"a2d3f397010e"></p>
+<ul local-id=3D"f4554fa3469e">
+<li local-id=3D"fb0725890743">
+<p local-id=3D"b1a0fde3be07">Job profile</p></li>
+<li local-id=3D"cd621e7bcfdb">
+<p local-id=3D"ffb2e7e7097c">Peer feedback</p></li>
+<li local-id=3D"a5c7f2f531dc">
+<p local-id=3D"b1f9027a287d">Manager feedback</p></li>
+</ul>
+<hr local-id=3D"8392f9322c85">
+<p local-id=3D"736eecb2838c"></p>
+    </div>
+</body>
+</html>
+------=_Part_4_329176245.1774728191826
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/b7f06c24664fb32dc4a6f120f716dc7fec7f460b2aabe2e3add60ce7e64f7303
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcEw7iMM7iMM7iMM7iMP7
+yFb/3F07iMP+1VrqlknvlkX91Fk7iMM7iMP/2lzmmk/+1lo7iMPvlkX/3F3/3F07iMM7iMP/3F3+
+2Vv/21zvlkX80Vjwl0XxnEf0x1fvlkX801n/3F35ylVzoKbvlkX/3F36ylXypEr0qkv2uFDxn0f5
+xVT4vVH1sU47iMPwmkb82F390llkk6qzsX6Eo5p6jZhGi7zDlWaSj4amkXhbjK3Rk1rNrGnVvmqZ
+sZLUynOG6wrEAAAAJHRSTlMA1Zww7zDvExD2wSB2YIBAv0kgWZ+vv9/Pj11Dma/2dHCvpN+N/Q7H
+AAADA0lEQVR4Xt2Y13LaQBSGMc2SsQFTYmpxcrar0YtL3v+twiKWlUTX5iKT70o3+ubfo39m5yiT
+nue852UfM8ZkPcmDsenFC8kael69PQ9mnlzeUxh5HrWnaeR58BT5nInoh3fgxfDDK55NPM/akzUs
+kKJpXiDzVufyCY95gfI5wwIp/qsCZf//AuXTeUr1crsxqpgVyKo33pAkmHgHXu+OMmohxSR9gerv
+SDNLWyCrXEQRvrXnl5Veg6baM0PF8s2qwhuK8Vt7JtJbrN+YJ+lZeIqNzZCkWrhF1I57Au2Z2wAo
+pG1d71/MIlxdoBUACOW/fr4GUowdAnDwTD4AKEaad+u2QILDlrk61RLAxSjGW/eGQGMKktUuy2pt
+c1cE6IjyhQqFHscHydqbr5ecMjFGp6mePV5ZagIKO/wpExhdpHWuCLJDYwIA4VkCdI3iaVNdevzo
+XFOaGjsPlSMxMxW3Hl+WztDU3XpIgO6lZR1/M+KiFLSToipzUSpKSVFKD2okRH2UkmJC1EJpSdbx
+L4nekWbsUB8IFUEaURUpAhcU7thAJHz4WE9mGDuM+j67W9RWHrDnnrchxAcghHNyNRSOeUqD8AUG
+Hwt59QAhrksIAKH4isiJiX7iweT7+3O5XG09i08H72AEtojLIhoLhLG+ehZfew3nruMwDhcHNe7H
+A0Xu+CmWCAI0fODgXgo0jAX6OvJwYDjEhQsmAbWIaDTY6LtZYInMEyIoAJz7eAyeYiWaaU/4PgNf
+qHmfLWcgOEAlKtID2thONJAgoOEMB5EhC+oDxAM9LpRn5nO8Fzmhz+5sE9c6PXsvoy6TUB7K7VpU
+1Dx4mJowB+lxIsk7fThB5eReOMOU4xDYPbix5LWhDXHsSmIPUx7HVpUGNzzZMBOj0HsCTa92cnGe
+YtazcAgJvxnX0XWuzvBJ0usojQoUW+ZaWEL3owK4czHUO0ZhIBu4P6GA/r0LlN6drG63UCipSVXu
+C3T8k6ssPYP+HZ7HMytG92d1ZN35r+OHHI8xr82XzD/EH303ZrJq70UkAAAAAElFTkSuQmCC
+------=_Part_4_329176245.1774728191826--

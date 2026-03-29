@@ -1,0 +1,816 @@
+Date: Sat, 28 Mar 2026 20:02:37 +0000 (UTC)
+Message-ID: <359738411.37.1774728157706@607dff2765ff>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_36_720868820.1774728157705"
+
+------=_Part_36_720868820.1774728157705
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>HR Knowledge Base</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>HR Knowledge Base</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h1 local-id=3D"644e8d82dcfd" id=3D"HRKnowledgeBase-OurHRpolicies"><img src=
+=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/plac=
+eholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;ver=
+sion=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &q=
+uot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac=
+%3Aemoticon+ac%3Aname%3D%22notepad%22+ac%3Aemoji-shortname%3D%22%3Anotepad_=
+spiral%3A%22+ac%3Aemoji-id%3D%221f5d2%22+ac%3Alocal-id%3D%2201f24086bc46%22=
++ac%3Aemoji-fallback%3D%22%F0%9F%97%92%22+%2F%3E">&nbsp;Our HR policies</h1=
+>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1774728157611 {padding: 0px;}
+div.rbtoc1774728157611 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1774728157611 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1774728157611">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#HRKnowledgeBase-Leave/timeoff">Leave/time off</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#HRKnowledgeBase-Vacationpolicy">=F0=9F=8C=B4 Vacation polic=
+y</a></li>
+<li><a href=3D"#HRKnowledgeBase-Sicktimepolicy">=F0=9F=8C=A1 Sick time poli=
+cy</a></li>
+<li><a href=3D"#HRKnowledgeBase-Maternityandpaternityleave">=F0=9F=91=B6 Ma=
+ternity and paternity leave</a></li>
+<li><a href=3D"#HRKnowledgeBase-Paidholidays">Paid holidays</a></li>
+</ul></li>
+<li><a href=3D"#HRKnowledgeBase-Healthandwellness">Health and wellness</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#HRKnowledgeBase-Wellnessbenefits">=F0=9F=A7=98=F0=9F=8F=BC=
+=E2=80=8D=E2=99=80=EF=B8=8F Wellness benefits</a></li>
+<li><a href=3D"#HRKnowledgeBase-Reimbursehealthclaims">=F0=9F=93=91 Reimbur=
+se health claims</a></li>
+<li><a href=3D"#HRKnowledgeBase-Fitnesscredit">=F0=9F=8F=8B=EF=B8=8F=E2=80=
+=8D=E2=99=82=EF=B8=8F Fitness credit</a></li>
+</ul></li>
+<li><a href=3D"#HRKnowledgeBase-Others">Others</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#HRKnowledgeBase-Employeereferralpolicy">?? Employee referra=
+l policy</a></li>
+<li><a href=3D"#HRKnowledgeBase-Celebratingemployeeanniversaries">Celebrati=
+ng employee anniversaries</a></li>
+<li><a href=3D"#HRKnowledgeBase-401kprogram">=F0=9F=A7=93 401k program</a><=
+/li>
+</ul></li>
+</ul>
+</div>
+<p local-id=3D"14a4dde81996"></p>
+<h2 local-id=3D"22dc562e80f1" id=3D"HRKnowledgeBase-Leave/timeoff">Leave/ti=
+me off</h2>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"97f9fae9d901" id=3D"HRKnowledgeBase-Vacationpolicy"><img cl=
+ass=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f334" data-emoji-shor=
+tname=3D":palm_tree:" data-emoji-fallback=3D"=F0=9F=8C=B4" src=3D"abd0a6c3e=
+913c7ee1e2f6a7d180838510bee7c19bb7aaed7cd53aedb520010c1" width=3D"16" heigh=
+t=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Vacatio=
+n policy</h3>
+<p local-id=3D"843354757783"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"7915ac074374">Additional resources</p>
+<ul local-id=3D"88e441d792fe">
+<li local-id=3D"0e5eb44c40fa">
+<p local-id=3D"68b7121846aa"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"5d441f1f3c12">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"3c3fdc07be20" id=3D"HRKnowledgeBase-Sicktimepolicy"><img cl=
+ass=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f321" data-emoji-shor=
+tname=3D":thermometer:" data-emoji-fallback=3D"=F0=9F=8C=A1" src=3D"70dc898=
+b833d03e049ae118acb0f91f13e04306dd415794434782eb13aaa77cc" width=3D"16" hei=
+ght=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Sick =
+time policy</h3>
+<p local-id=3D"4cf50b9ad798"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"4dbef65e978e">Additional resources</p>
+<ul local-id=3D"e4c9b896c2dd">
+<li local-id=3D"835b3ecfa6d7">
+<p local-id=3D"d767598333e4"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"65027ec036cb">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"831222652c2b" id=3D"HRKnowledgeBase-Maternityandpaternityle=
+ave"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f476" dat=
+a-emoji-shortname=3D":baby:" data-emoji-fallback=3D"=F0=9F=91=B6" src=3D"1f=
+8ef17e9d4782cd7ca0a4ee442624e48f3828cb76029b63c135255a573af57d" width=3D"16=
+" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;=
+Maternity and paternity leave</h3>
+<p local-id=3D"e08f5535d121"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"5aabd289534e">Additional resources</p>
+<ul local-id=3D"d9a284e845a3">
+<li local-id=3D"709e25ad1b83">
+<p local-id=3D"3b902146dc12"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"ad778674fe2b">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"87371815fd47" id=3D"HRKnowledgeBase-Paidholidays"><img src=
+=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/plac=
+eholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;ver=
+sion=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &q=
+uot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac=
+%3Aemoticon+ac%3Aname%3D%22calendar%22+ac%3Aemoji-shortname%3D%22%3Adate%3A=
+%22+ac%3Aemoji-id%3D%221f4c5%22+ac%3Alocal-id%3D%22e798e0fe7ef8%22+ac%3Aemo=
+ji-fallback%3D%22%F0%9F%93%85%22+%2F%3E">&nbsp;Paid holidays</h3>
+<p local-id=3D"d2fbba473dfc"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"20fe5db9dea4">Additional resources</p>
+<ul local-id=3D"109b9629b8eb">
+<li local-id=3D"e399ed8f915c">
+<p local-id=3D"2908c4a9d3ca"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h2 local-id=3D"97400a9e5c6a" id=3D"HRKnowledgeBase-Healthandwellness">Heal=
+th and wellness</h2>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"f7bbbf327077" id=3D"HRKnowledgeBase-Wellnessbenefits">:woma=
+n_in_lotus_position::skin-tone-3:&nbsp;Wellness benefits</h3>
+<p local-id=3D"262db00f40f5"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"5be8ffef0d53">Additional resources</p>
+<ul local-id=3D"27a5be6a4625">
+<li local-id=3D"58df790ccdfc">
+<p local-id=3D"a2a9b815f690"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"f58fb7678598">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"d92191b0d84e" id=3D"HRKnowledgeBase-Reimbursehealthclaims">=
+<img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f4d1" data-emo=
+ji-shortname=3D":bookmark_tabs:" data-emoji-fallback=3D"=F0=9F=93=91" src=
+=3D"b9bc6d62f213233b2817cf594d3be62bf4afaf91651d634717d57fc94c97a770" width=
+=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">=
+&nbsp;Reimburse health claims</h3>
+<p local-id=3D"d623b02f915a"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"68e547e66503">Additional resources</p>
+<ul local-id=3D"5cd0e29c4ca6">
+<li local-id=3D"7789ed92d136">
+<p local-id=3D"0eb4beb0d425"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"12b63f840d09">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"d786da98211c" id=3D"HRKnowledgeBase-Fitnesscredit"><img cla=
+ss=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f3cb-fe0f-200d-2642-fe=
+0f" data-emoji-shortname=3D":man_lifting_weights:" data-emoji-fallback=3D"=
+=F0=9F=8F=8B=EF=B8=8F=E2=80=8D=E2=99=82=EF=B8=8F" src=3D"9b38afd3a9604eda4b=
+2264321ea400959a7afa4b30e971e23d9cea410e63013f" width=3D"16" height=3D"16" =
+data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Fitness credit</=
+h3>
+<p local-id=3D"f8630fcf6b2c"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"85d94bf44ef3">Additional resources</p>
+<ul local-id=3D"9ed94aee91ee">
+<li local-id=3D"fc273eb4eba2">
+<p local-id=3D"81bcfa0c801c"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h2 local-id=3D"37fad980c67c" id=3D"HRKnowledgeBase-Others">Others</h2>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"9bf92a4cc73d" id=3D"HRKnowledgeBase-Employeereferralpolicy"=
+><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f4b0" data-em=
+oji-shortname=3D":moneybag:" data-emoji-fallback=3D"??" src=3D"eb805e1a2b96=
+107de7b6396128ec90f27e613b7d011ab693162c1ca20d098853" width=3D"16" height=
+=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Employee=
+ referral policy</h3>
+<p local-id=3D"208202a01f46"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"c3184a32eaf7">Additional resources</p>
+<ul local-id=3D"d4a8522f65b4">
+<li local-id=3D"31ef1119ddba">
+<p local-id=3D"89dfcc43d6de"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"785ef6125e1f">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"36641c8bace0" id=3D"HRKnowledgeBase-Celebratingemployeeanni=
+versaries"><img src=3D"https://madisongrand.atlassian.net/wiki/plugins/serv=
+let/confluence/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;loc=
+ale=3Den_GB&amp;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(in=
+t)&quot; because &quot;href&quot; is null" class=3D"transform-error" data-e=
+ncoded-xml=3D"%3Cac%3Aemoticon+ac%3Aname%3D%22tada%22+ac%3Aemoji-shortname%=
+3D%22%3Atada%3A%22+ac%3Aemoji-id%3D%221f389%22+ac%3Alocal-id%3D%2275b0133ec=
+ef5%22+ac%3Aemoji-fallback%3D%22%F0%9F%8E%89%22+%2F%3E">&nbsp;Celebrating e=
+mployee anniversaries</h3>
+<p local-id=3D"f91445a4d8a8"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"21365c2463ee">Additional resources</p>
+<ul local-id=3D"e3063537c125">
+<li local-id=3D"24cb45c08a82">
+<p local-id=3D"c2ceeed8f73c"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<hr local-id=3D"3a52a30517d7">
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"572ef8d20005" id=3D"HRKnowledgeBase-401kprogram"><img class=
+=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f9d3" data-emoji-shortna=
+me=3D":older_adult:" data-emoji-fallback=3D"=F0=9F=A7=93" src=3D"282bbff08e=
+c6f0952325d736af8d8b6003d5a9ee19097fb5101c3340915e459f" width=3D"16" height=
+=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;401k pro=
+gram</h3>
+<p local-id=3D"745c39b7483c"></p>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<p local-id=3D"3d08f0907d6d">Additional resources</p>
+<ul local-id=3D"67ebeebdb376">
+<li local-id=3D"4823edb728b8">
+<p local-id=3D"86017a243daf"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<p local-id=3D"da8942d6224b"></p>
+<h1 local-id=3D"079c2f50c151" id=3D"HRKnowledgeBase-FAQs"><img class=3D"emo=
+ticon emoticon-question" data-emoji-id=3D"atlassian-question_mark" data-emo=
+ji-shortname=3D":question_mark:" data-emoji-fallback=3D":question_mark:" sr=
+c=3D"102462405d22d5987e524b5ef544d7f05ac9f24c4c94574f5b4d7cf78d0a41f6" widt=
+h=3D"16" height=3D"16" data-emoticon-name=3D"question" alt=3D"(question)">&=
+nbsp;FAQs</h1>
+<div id=3D"expander-342031660" class=3D"expand-container">
+<div id=3D"expander-control-342031660" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"63ada0ac74e4a6193d607c8b239e4438469a5d=
+dfc41a66a2e0b9bef6332580f2" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text"> Example: Who do I contact if I have questions?</s=
+pan>
+</div>
+<div id=3D"expander-content-342031660" class=3D"expand-content">
+<p local-id=3D"281a6969eea8"></p>
+</div>
+</div>
+<div id=3D"expander-1832197665" class=3D"expand-container">
+<div id=3D"expander-control-1832197665" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"63ada0ac74e4a6193d607c8b239e4438469a5d=
+dfc41a66a2e0b9bef6332580f2" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Example: Do these policies begin on my start date,=
+ or do I have to wait a probationary period?</span>
+</div>
+<div id=3D"expander-content-1832197665" class=3D"expand-content">
+<p local-id=3D"cae835632a4c"></p>
+</div>
+</div>
+<div id=3D"expander-74754427" class=3D"expand-container">
+<div id=3D"expander-control-74754427" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"63ada0ac74e4a6193d607c8b239e4438469a5d=
+dfc41a66a2e0b9bef6332580f2" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Example: What if I need to change my plan mid year=
+?</span>
+</div>
+<div id=3D"expander-content-74754427" class=3D"expand-content">
+<p local-id=3D"fbf4089ee26b"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/abd0a6c3e913c7ee1e2f6a7d180838510bee7c19bb7aaed7cd53aedb520010c1
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcExckTs+ch1ckTs+ch1c
+kTtShzFckTs+ch1ShzHBaU8+ch1ckTtckTtckTs+ch1ckTtLgCs+ch3Ca1BckTs+ch3YnIBajzlc
+kTs+ch1bkDrDbVPYnIDIeV7ZnoI+ch3Ca1HZnoLBaU/ZnoLFcVbBaU/BaU8+ch3Je2DZnoI+ch3V
+noDZnoLBaU+NfkXTknbBaU/UknXOhGnJeV7ZnoLRjHE+ch1ckTvXmn7FcleucUtUiDNHeyZNgitZ
+jjhujkER1MCSAAAAMHRSTlMA7zAQz98gvxBAv2eAz2DvMFCAQHCPuZ+Pv6+CQBAor++AVtdwq9ef
+s1Tfmu8g98+WkOk5AAAC4klEQVR4XqXW2WKiMBSA4QACIhSLa91t1WrXSQK4dJl5/7caqaaB5KSF
++F968RHCIYgq5rWyIgddlLfesmp+XZsxB9t8TV/T6W7FaqYGU69tgXwdB6z7I2B6fivy6oIDt1Yq
+0azJtqBrMmjGgNJr8h+L2xmdcACoDWatweB4URN+wGKD7A4fRaTloXOO7wDLOfpSTRP5xR/WZrVB
+4VJhh7q/TvR6q4it8+Pz2DC61lkP7+N9xzKGoaV2/B+Zz7+7QsaNo3BMaBGf76c4wzMCcFX1RzYc
+Wc3craizPcUGzXzz2+0La4DrSI6zbbbqnPWuduXqS1LhuAsYoCPxLHdXoVDtQLf19vb6aoOQ4VRw
+/r1hHBPkdKBruBUcHNN9kjxkDyWQ1+WB0BBwjkhWD30V2mWW1JGdq6fk3ATBFPASXwOO9cCgB8V8
+3MiQCzhoenbSTe6K+a20JSeEHISejwqhBzxHufo5SZoAG3TQJj7gr9qKq0aC48EOGuFzI5QvMhgU
+CFBfcOyTg5YnJk57wqNh0lCADGH42WMdpzQl2TA9Kx6yK/0MT+w0YU0FKQShjvLQSvgkCQUQdFNw
+hgiAbpHYEIBcYaN5ixOzTzcSZNkwBL/SPUIIpTHGDSTlwRD8+jTwKTbb4o4MlZBtwRAGIMsQB9JV
+zvyGOQf46AllCD6qbpM9yWKDJOQgFeRJEGuMShQov1VP1aCO8njpVYM8YUHaEFJ+XuYxpSlJKY3b
+pSBX8XWZ4O/KQR3Fx7xdFXIyx0BSy7gihK7gj1Qv2ac0zqKoXCH82XxOvoMA+P2zZWeaVIZQAN3Z
+rQZkQX95/3BngS7oBR9iSvg/G+1GmNe4BLrHvBXSb0xiDo10BH4WEcqspb4zSU7tybH9WB+6TfJN
+9aFFAdJ37mKScxYXPfsDZZb2PPIj7ZAdtYTqP/0VLtTWhhpFaKK/1wXnHul3N8fCC6Lb5O6eOfMX
+Bmhbo1WjsVr+tkP/Af9DeVW9OCeKAAAAAElFTkSuQmCC
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/282bbff08ec6f0952325d736af8d8b6003d5a9ee19097fb5101c3340915e459f
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAt1BMVEVHcEzR09TR09T/3F3R09TR
+09TR09TR09T/3F3R09TR09TR09TR09TR09TR09TR09T/3F3R09TR09T/3F3/3F3/3F3/3F3/3F3/
+3F3/3F3/3F3/3F3/3F3422/Y1MLR09T/3F3o2Jn02nvU1M3a1b7822Ti1qf522zcm1Xd1bb22nPr
+2JHx2YLX1MXJd1Hwv1pmIRPBaU/l16Du2Yqzfzjf1q/go1bosVj71VzFcFDsuFnUjVPzxlqq6W01
+AAAAH3RSTlMAUHAwQBDvv++AMM8g349gn6+fvxBAjyBw389Qr8/PuOgr/wAAAmxJREFUeF7t1tl2
+mzAQgGGBjTAhxnuadBux43XJvvT9n6uuaecYNCCJq/ac/he54OI7WiZK2N/T/65sz3VdDnD6GdhX
+HRVrwqHaMOhg9YdA5Y/MmGsbmhpqU9bUh9b8vobieBzUBY7KQUaRf91+2z7oxtvuz+KgH7canREY
+xa+MHHOpD8b5DjWBHMwLCMiFLsmbs6BTrgQNoVt95YKSTAua1KCpBK3TWEuqXZx0ZdtUrLSkkWKG
+IiFQMtibXXcehNCUeAXyJKcsfVJLlfdkUmHiB4FttjoDQI91shKXRVkM2HYTLmuQ3QSFQmq1zhIo
+S1KRh5Wj82gojkRDUXjGkhOcJ2oIHapV9mfFmQpai/aiLcTpCUqTdmgpVKXLcjbymIQ83Ji6p/I2
+1iRk44LUpVEJbqHMIt7rzRkI5UGgvt9TA+mUVy/OAYYG9X2FkPRALk0ghImHLRQmWxNLChohpN8T
+9fxf41lrhiucsmrD2hQ9Hg6PCBDfELJr0KQGHU6hQH8Lyb9HXleI+hfiwQyK8KzrIxl2gGxWDyHt
+w17j01/JRcjk+n0mFQBkBPB8PPdMQBm5M2bRr8jxdwS0BOAOk+MQm0E41vIk5SZby/Goaznc7Jdt
+g6+sfEr3JtA9DB1GFyQmUAIWa8rL9Z0cAtbcTf2gi9cSeC3qB752WUufpKvfFfsf+32xk0bgu8Pa
+GtcgrA59Q0djSUXVKS6hHgI6p/S+O2K790vnhqma34nLXj7efilvHy/isrs5U9YbCGUD3Ji5ZO6g
+1N3B5l/bnNmc6beYNTGfvzCzFmNig4PxgnWodzueoTaYjW977F/qJxd7iqUYixwsAAAAAElFTkSu
+QmCC
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/70dc898b833d03e049ae118acb0f91f13e04306dd415794434782eb13aaa77cc
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAn1BMVEVHcEzM1t3M1t3M1t3M1t3M
+1t3M1t3M1t2NlpwpLzPM1t3M1t1ob3QpLzN0fIFPVlqmr7YpLzPdLkTM1t1mbnNtLzmPl52DLzzZ
+WGrSl6TaTmHSLkNWLzfcOU5oWWBhLziTbXeaLj7Roq27LkHbQ1d4LzqlLj/OwcrCzNJITlNLLzYz
+OT7NzNNJREmtt700LzSOLj3Pt8CwLkCzgo1ALzW+nJF6AAAAEXRSTlMAn3Cvj+/PEM8QUCDPz8/P
+z+aL4I8AAAHDSURBVHhe3dXHdsMgEIZRWULClkuCumsv6f39ny02GhJCsuGHhU9mzz0SHxLBJQzn
+HpA+S/LTJKzvxHCWfw3jDk6Sa5NwdweXyDGGQU7v6iY3p484Q3H7S2KQI6S02WXZbkNQYt/r+l5I
+aZzJGZME9HqS0uO0heYEAb1IuiPpFYGko6SZASHd35/Pkv5qCdR9nG1PUqlvNkO6n3tt65cpObYH
+kneF3v1nfGbVqxKqu+kkdr1Iou66w+0cJS1xpzegNasz9IE7Q1Hkbfe1oO6gI86S7P5G3QGHuhfS
+QfbZ7L6AHbN7mfnqvnfoPtK7zy6r+2FZw91H3roX3roXvrqTVDt079KahXP3irqXzt0r6l7PSrj7
+QNaqvHVfeeu+9tb9gDk8jGJaQd2XiMM7RGjda8BJY42RvfZQd6YzQHffTurJ4bEiGgVg3anXcZK5
+OZycuaMThC00cXWCiFK5OkEsocbZCdoFmTHWDu31gwkZjitEjvurKQDf7EY6MQF4fooWEYAfyEnb
+LFQA+onMj+ZeYx/thJyOBgC/kUYd6tgmvv5jMycNrIf95TACcAl36DrSJ04xx7wgOxwgzCs7jkIe
+/IP5BJrWiH16YjY3AAAAAElFTkSuQmCC
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/eb805e1a2b96107de7b6396128ec90f27e613b7d011ab693162c1ca20d098853
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAaVBMVEVHcEz92Ij92Ij92Ij92Ij9
+2Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ii/aVL92IhndX96gYCNjoH00oeyp4Rwe4Dh
+xYbqzIefmoLYv4bOuYWpoIPFs4WDiIGWlIK/aVK7rYQ/6loZAAAAEXRSTlMAgGBQ348QzyDvMECf
+v3CvgLj/t0oAAAI5SURBVHjaxZjbdoMgEEXVeI0x6YD3a9L//8jWYhYWkCOrD91PvriXHJhhlt4B
+94woWh+ChL5JLutzRJTdPSfutPLIrw/aeOS5eA6cRCEdErp4YrLwDyK0NBd8OsR3EsXh4QfFnhPX
+jIxkV08Hm7AH8/Ey8uEseh3wDyK0NGfSzJB16rmTkIHE3RORkcjVc6EDLn8PCMeEA8Ix4YBwTDgg
+EJNrQFXJGG9hTDignn3DYUw4IPZDC2ICAUnR4BxTmmGRHhM+QWMvRMs0usV0oz0zZ5KmrkhyA3e+
+svG/aUaS3K0d/5dnYRp7k+0eKNQDtFLWdf92NiQpjj0B7ejEq1sw3aalHcG5G79mK5/0ZuDqCQ/R
+BwlKtTSqupw6OvNJoS4qSQV/UhqRLmItaih4kJnENukm66mME1LpmKDvLKb4TI+u2cZzBGtDA9ok
+a6NvT60tJTPjrmaX2bJv8NKo6kaquEmVgoSkat9JygqERFaGXmbVWmfcmABVzd9JkcJDEUHeYak5
+FcrSMO3CTMWXaWFjk9qQBEmsbD+mNIooAQey68vZIFpIw7eXCF/farUifoJDqackO/bmEWHPYGC6
+mkSiXMfVNUxi+zma4XxjE9EZyIT9AExMZyYkMtYYVzR8ICwyMj4b0JCQSDJ8btvXgYEZiPRBC2x/
+8hdReq7aGnRR+qD9a+MxTkg/kZaB3dJGYEpdB9aFLm3MLXX7H+L6eyMnR3IwsgHQwIZN2CPJw9P5
+5J6doKATFIGa8xe4+dzA9QkE6gAAAABJRU5ErkJggg==
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/b9bc6d62f213233b2817cf594d3be62bf4afaf91651d634717d57fc94c97a770
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAjVBMVEVHcEx0TqrM1t10TqrM1t3M
+1t3h6O3h6O3M1t3M1t3h6O3M1t3M1t2ZqrV0TqqzwMlmdX/h6O1rZo+LiLGWp7Kmtb+5xs7G0dij
+sr2ro8rP2d+5xc69ydGcrbh5WqvL1dx2hpCJgrDBxdemm8dwf4mRm7ByU6VpeIJ5iZPG0Ndse4WG
+lqGZpq55h5G5xMumO1U7AAAADHRSTlMA3+9Qv2BQYCDP3xDnh1PyAAABQ0lEQVR4Xu3Y2W7CQAyF
+YUISSqhnJglr931f3v/xCuoFEk7OzCm+a/4H+CR7UJA8+q0sBOS2NbPJKNq0EolCTXMSdcaSAsWl
+SlKguFRKMoSlgoCgJASEpFMCAhIHYYmBtMRDSOIhLfEQlHhISxoKThUUhKT9ADoFKYmHgMSPpiV+
+2edAoqDLpqMJCS130k2jm5HQyu266JiOXLZsXE/k88v6ygiS9QZAxGjbVss4dET/DQouuQAhR2QP
+2Y9mv+zhdzS/9qos559/7jvLAcQ4PgOjIUfHLfvMExDt8NC9N4IeEMQs+y4ZcrgnK2jRGo3mXlqj
+5/+sWxtIvnqljIPe3vuknIPku67b5/hnJLhoH/VBf/47erWCFo8JUEiSbgF0RAM0QOrIwleAsw9V
+CQ5RTBU4jTGNp+BYR1QpZ38+JCoO9vMDGZbU4NUInY8AAAAASUVORK5CYII=
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/102462405d22d5987e524b5ef544d7f05ac9f24c4c94574f5b4d7cf78d0a41f6
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AABuugAAbroB1t6xFwAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1s
+bnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMj
+Ij4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6
+dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmll
+bnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAg
+PC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAApZJREFUOBGlU01IVFEU/u59785o2jSINZGp
+iKXVJjIjSAgUArVFEv1tpEUQQdGiXQvDRUHQpkXuctOmlg6VCi5sIy3GCRfaRlGkkjGcaEYN35t3
+3+2c+55Q0K4D797Deec759zvfleAbXhY0hdavz/bCYNb5HcDpsXGIFZon4bAKMYvzdpYjBF/gXvH
+XsBRd+EkAe2hGgHVAnbgYjcGXRnB5MC93SLCOrz0ZyegUr3wf4YSQjcmhbO6zS7QvEeGq57RNJGD
+RFqiUp6kSfoYJnkBd7bgkichRWigVuc8eaDGAZQE+zUCitIF/JJncxlDJqhzJ4SbQ+iHghLqHCOK
+RY13j0/iwvkWGGPwdmoJV4fmkWlQWLenohYyIWGCM7QQYXxmGvtwAqL42cfTm0242NOKmdwX5ObW
+cKW/HUODDVhf9nFI8aGEthjCEjummwkjcwJmjAYNdIiFxQ30nJsBOqpg8o040pwCFjSSR5k24sJi
+TLdA3xihRYKCXAS1xMrWNt3oV422jmqMP+tCS2Mal+9PITu3ibq0ix+ac20hPyLRQqPQFmHb6mgw
+cl49PIXWpjQePf+I7IcSGigegWMAbVxgBZIAADETmccd1oGqpIv8fAFPHizjWHsS33xj+3JujFkh
+pJgmQtoRVuieo2vdZO+0g9fvl+A61KOrGgWPitLUcRMmUSIMplkoozEhdOnC/t9LHj5p3LlxArev
+HwfyAfZxzBrnxCQS1sHimzW0XtuPZPos9I5PRZzQGOFnJHY2SpjJFzBb8aEVachYsE9qVKj8GsHE
+wEumMrI/pAwjdMqFU/4esE6QyrhhOYCmAf8hZX5VbKxtrzTCChOJWlU2StZnFOoPKrDPMas+zonf
+AT/EaIL/eM6/AdiQIDpicH/MAAAAAElFTkSuQmCC
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/1f8ef17e9d4782cd7ca0a4ee442624e48f3828cb76029b63c135255a573af57d
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAq1BMVEVHcEz/3F3/3F3/3F3/3F3/
+3F3/3F3/3F3/3F3/3F3/3F3/3F3/3F3/3F3vlkXvlkXvlkXvlkXvlkXvlkXvlkX3uVHvlkXvlkXv
+lkXwnEfvlkX/3F3ZrkvvlkWzfzlmIhT3uVH+2Fz1sE5wLhnwmkfzqEvxn0j////6xlb5wlT8z1mp
+czT7y1f901ryo0q8npiWXCufaC+DRSLPokb4vVP2tVD10Fj0rE3iuU/UlpiVAAAAG3RSTlMAYK+A
+n4+/EM/vIFAwQIDfQCCPYK+/MO9QrxDebZFkAAACMklEQVR4Xu2Y2XajMAxAwx5Kk3SZXexk37p3
+5v+/bDCBirgocmLmbe4T9sM9ErKwzeA0tzfj8Y+bgSa3d5PowJd7Dc2vu6jF5OKwvk2iY8YXpvW9
+Fsxnjenn6BLRuLLMllCyTqfVaAWm4Z3puf5aaqZbqMl+R2K8AwD7+hyNC/AWzdaA5MKUg8BVVXk2
+dLAXIdUDWynBwIcullFJk6sf8B4HCMQLf4UGh0trCC122x0OxDJIcTj01D3bslBrQoQm3gP5UQyH
+lSSZOA/GkB+97DUomSQPpKJD6kE2xwGa+HphEDmmiXmerF0An5gf+i3braqnaQYyQUfBfGIRIkv4
+hO+pLcQULXXJ2OSuoJPVtNFMl9DJlSRyoZss3QvN/jWDblwiIAY2JBsuxiZKxsAUzgANjAFiggbm
+AAEt0DMCLXC/s0ALqymZ5YMWvuXh50yPoTARnrhIkiImZ2QTuYSek4pnakbGILo1TmpickbuXeik
+aEQFNSNDiJIPiJl/LtJPrbeX3Vv5+1qQvbVIn00r0DP1/anV//j3vR3pb5D8lv0Sx/FLGIZ/wrB6
+VDlF2GTHIQUREBvSeyLBBiRwTogWJYTIUTr68SLfUzqMPh2LnoA4jLLJhbXoYbF4KEUhmRh7/Nsk
+LTYg43JXCOQRPZiYymWEjmnDeFhTWAX1GHIe3oTQHrJ2PI7S5ZjFDxSv6wy2d8YPBBr3rH8RZFQ2
+atTwDBNkiJ8sPCPLHELN0LRGAy3+8xeCSG06+oMUHQAAAABJRU5ErkJggg==
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/9b38afd3a9604eda4b2264321ea400959a7afa4b30e971e23d9cea410e63013f
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAt1BMVEVHcEz/01U+eq7/3F3/3Fz/
+3F3/2luZnHP/z1L/3F1CicE+eq1CicFCicH/3F0pLzP/3F1CicE6ZpP/2Vr/yEz/rDM6ZpOltY3/
+rDOmp3aBkH+5vYM6ZpP/3F1CicHiqVVkmK/AaU/WyXa/vo39zlL/rDOZqrXwwllxnqiYVULv1Wo6
+ZpP/uT6Pq5n/xUnMjkopLzOnaFdQe552dHxvQja3q4/Jq3izfzhmIRMzV32doXgUFxqUYlY9FY+I
+AAAAHXRSTlMAYGa/74BLECajh0LtpXCA3yKoz5Xpv3vKr8dAjzAlj20AAALcSURBVHjatZcJc+og
+FIWvMYYsarXVri/RuO92b9/y/3/XA44ZSNJGhfe+mWaAuZw5HMqARHTx+Hgh/sgAfS57PEBno+b+
+UyGyEKL/LeQFHbfu+nQUn5d1Ai8nNJtlndlsFAvGswJv7+9v+ZGxLBzpc3NC41XMWeVVBlPJQB9E
+3TgnpNurx4KatoRef5rR15Zck4X1bzNinZjjq3pIlJV8Uddh3++aJwoCOuBN8/QpIxB1XtX2x7ql
+22mBmjLEoSohV7c0LXKrG3JLQvrBCzRLvpy80ZV0QwFVHfi2rGlrjia7gpAqqoLJmisltInjSVHo
+ShYxqkRfW1/oCHbZ+nIrq4bJuHsk6G0mccZkstttEHZDRl1lSAWAg+tz0fkeQvs5N1bD6PGEVAKu
+RySPzMcnhD4/DtF5LlI8joeZNQQ2GaA74Kts4JQhxBMIMiWkEc8Hg7lsNKCjkj4hbyh5MJOmsOVB
+B0kfB0ag1IElGOpAB9ZOA/PHSegJQxJhyBmOD4rgtLxHwyRJQp7XPuXseS4hHxiO5BJPJlhtE0nU
+duM5J3bbEUa2q4BOxx8moBneIJabsJmAoU9n0EoyFhBaJBktOodukjGEkLAIukRmlkbyCjMwBCJl
+aYQtPBDRmSDbEk06l/BroZCAQdzAKGoQ2hsCrPlFQowMaJWFWmSCUxZyyISuZdSKpv0/EWjZRwRC
++80HjnXW+sF9fhbftfxGZAZL0/TpJRX8fhVfMiVdvv55eVpybIWeltzRcllwZL80Zrpra87zWvDz
+p/ia7trlusAlmbEuQUZE2fRItQwjAtdE12vgWEX0A03zkJQNZc4qa0bErNLWl3NpL4SdimyE7n8J
+7tC5k517MgFv0jo6Ll6h9kLZO9eEWlnIIxP8shAjI3ShOh7YRmByT2sHZEZb+2HWQERmPGwXi8UD
+2je8uWU291qoXd9dm7u/qb26QrJ5jTi4vSFq8z5yYE5SUf0X1wPcIXh4zzoAAAAASUVORK5CYII=
+
+------=_Part_36_720868820.1774728157705
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/63ada0ac74e4a6193d607c8b239e4438469a5ddfc41a66a2e0b9bef6332580f2
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_36_720868820.1774728157705--

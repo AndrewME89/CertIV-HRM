@@ -1,0 +1,519 @@
+Date: Tue, 17 Mar 2026 19:45:35 +0000 (UTC)
+Message-ID: <151388109.1.1773776735160@d56611d3e0de>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_1424225098.1773776735143"
+
+------=_Part_0_1424225098.1773776735143
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Employee Handook</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Employee Handook</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">
+<style>[data-colorid=3Dz3qtmocdus]{color:#97a0af} html[data-color-mode=3Dda=
+rk] [data-colorid=3Dz3qtmocdus]{color:#505968}</style>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1773776735064 {padding: 0px;}
+div.rbtoc1773776735064 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1773776735064 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1773776735064">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#EmployeeHandook-Welcometo<Company>!">Welcome to !</a></li>
+<li><a href=3D"#EmployeeHandook-Generalinformation">=E2=84=B9 General infor=
+mation</a></li>
+<li><a href=3D"#EmployeeHandook-Codeofconduct">Code of conduct</a></li>
+<li><a href=3D"#EmployeeHandook-Policiesandprocedures">Policies and procedu=
+res</a></li>
+<li><a href=3D"#EmployeeHandook-Compensationandbenefits">=F0=9F=92=B0 Compe=
+nsation and benefits</a></li>
+<li><a href=3D"#EmployeeHandook-Travelandexpenses">=E2=9C=88 Travel and exp=
+enses</a></li>
+</ul>
+</div>
+<h2 local-id=3D"a9d6133fc08a" id=3D"EmployeeHandook-Welcometo<Company>!"><i=
+mg src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluenc=
+e/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&a=
+mp;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; beca=
+use &quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D=
+"%3Cac%3Aemoticon+ac%3Aname%3D%22wave%22+ac%3Aemoji-shortname%3D%22%3Awave%=
+3A%22+ac%3Aemoji-id%3D%221f44b%22+ac%3Alocal-id%3D%2267d08e34e623%22+ac%3Ae=
+moji-fallback%3D%22%F0%9F%91%8B%22+%2F%3E">&nbsp;Welcome to !</h2>
+<p local-id=3D"32677422bbe6"></p>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout three-equal" data-layout=3D"three-equal">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"c493898d520d" id=3D"EmployeeHandook-History"><img src=3D"ht=
+tps://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/placeholde=
+r/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;version=
+=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &quot;=
+href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac%3Ae=
+moticon+ac%3Aname%3D%22book%22+ac%3Aemoji-shortname%3D%22%3Abook%3A%22+ac%3=
+Aemoji-id%3D%221f4d6%22+ac%3Alocal-id%3D%22c28058d8bf82%22+ac%3Aemoji-fallb=
+ack%3D%22%F0%9F%93%96%22+%2F%3E"><strong>&nbsp;</strong>History</h3>
+<hr local-id=3D"7ec47bc7d81b">
+<p local-id=3D"b3d49d9b1e4f"></p>
+<p local-id=3D"3e014701efe9"></p>
+</div>
+</div>
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"74864ba28c8e" id=3D"EmployeeHandook-Values"><img class=3D"e=
+moticon emoticon-blue-star" data-emoji-id=3D"2696" data-emoji-shortname=3D"=
+:scales:" data-emoji-fallback=3D"=E2=9A=96" src=3D"e276915fb3916e8b6b5052df=
+eaccaac840e1aa746a8563a02ec822609d880577" width=3D"16" height=3D"16" data-e=
+moticon-name=3D"blue-star" alt=3D"(blue star)"><strong> </strong>&nbsp;Valu=
+es</h3>
+<hr local-id=3D"b3d2bdfcf88d">
+<ul local-id=3D"106485801d1e">
+<li local-id=3D"9b893b09d052">
+<p local-id=3D"66e65bab2989"></p></li>
+</ul>
+</div>
+</div>
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h3 local-id=3D"d4d1c6e1caa5" id=3D"EmployeeHandook-Goals"><img src=3D"http=
+s://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/=
+error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;version=3D2=
+" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &quot;href=
+&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac%3Aemoti=
+con+ac%3Aname%3D%22dart%22+ac%3Aemoji-shortname%3D%22%3Adart%3A%22+ac%3Aemo=
+ji-id%3D%221f3af%22+ac%3Alocal-id%3D%2284e0fe9b68bb%22+ac%3Aemoji-fallback%=
+3D%22%5CuD83C%5CuDFAF%22+%2F%3E"><strong> </strong>&nbsp;Goals</h3>
+<hr local-id=3D"d9aa36af0496">
+<ul local-id=3D"a3d9a7891247">
+<li local-id=3D"029aee86b39f">
+<p local-id=3D"6583e46d0372"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h2 local-id=3D"74fae0faa15f" id=3D"EmployeeHandook-Generalinformation"><im=
+g class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"2139" data-emoji-s=
+hortname=3D":information_source:" data-emoji-fallback=3D"=E2=84=B9" src=3D"=
+6cb530381d02751f4ee8af3d565c38e70edc0bb76b7833e60385ad972ffb178d" width=3D"=
+16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbs=
+p;General information</h2>
+<p local-id=3D"648e8c2c5c6c"></p>
+<p local-id=3D"93ed5e8e60f2"></p>
+<h2 local-id=3D"409ea9fe3745" id=3D"EmployeeHandook-Codeofconduct"><img src=
+=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence/plac=
+eholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&amp;ver=
+sion=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; because &q=
+uot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"%3Cac=
+%3Aemoticon+ac%3Aname%3D%22handshake%22+ac%3Aemoji-shortname%3D%22%3Ahandsh=
+ake%3A%22+ac%3Aemoji-id%3D%221f91d%22+ac%3Alocal-id%3D%225df24942d45c%22+ac=
+%3Aemoji-fallback%3D%22%F0%9F%A4%9D%22+%2F%3E">&nbsp;Code of conduct</h2>
+<p local-id=3D"5130951d30d7"></p>
+<p local-id=3D"9cfa4e07aff4"></p>
+<h2 local-id=3D"67af5785c961" id=3D"EmployeeHandook-Policiesandprocedures">=
+<img src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/conflue=
+nce/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB=
+&amp;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; be=
+cause &quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=
+=3D"%3Cac%3Aemoticon+ac%3Aname%3D%22shield%22+ac%3Aemoji-shortname%3D%22%3A=
+shield%3A%22+ac%3Aemoji-id%3D%221f6e1%22+ac%3Alocal-id%3D%22489d6d8c25e7%22=
++ac%3Aemoji-fallback%3D%22%F0%9F%9B%A1%22+%2F%3E">&nbsp;Policies and proced=
+ures</h2>
+<p local-id=3D"c561b61bd49a"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"76=
+51b5f953fa" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 189.0px;">
+<col style=3D"width: 491.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"78a73975c011">
+<td data-highlight-colour=3D"#e6fcff" data-local-id=3D"6824e2425b1b" class=
+=3D"confluenceTd">
+<p local-id=3D"fef98d187274"></p></td>
+<td data-local-id=3D"8a562670d1d9" class=3D"confluenceTd">
+<ul local-id=3D"856c23b4feb4">
+<li local-id=3D"5f36253ea8e8">
+<p local-id=3D"4ec1cb43f63a"></p></li>
+<li local-id=3D"984863af1834">
+<p local-id=3D"9fde6b8cfefc"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"09e8001fba77">
+<td data-highlight-colour=3D"#e6fcff" data-local-id=3D"043726d29ba5" class=
+=3D"confluenceTd">
+<p local-id=3D"4550392e4637"></p></td>
+<td data-local-id=3D"4ba42570b02d" class=3D"confluenceTd">
+<p local-id=3D"57ffa95f43b7"></p></td>
+</tr>
+<tr data-local-id=3D"35ea77fb1210">
+<td data-highlight-colour=3D"#e6fcff" data-local-id=3D"003988b74621" class=
+=3D"confluenceTd">
+<p local-id=3D"71fde213e373"></p></td>
+<td data-local-id=3D"75c6e6d4fee3" class=3D"confluenceTd">
+<p local-id=3D"f2ecb19b8dc1"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"f6652a87983b"></p>
+<h2 local-id=3D"595401026d5c" id=3D"EmployeeHandook-Compensationandbenefits=
+"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f4b0" data-e=
+moji-shortname=3D":moneybag:" data-emoji-fallback=3D"=F0=9F=92=B0" src=3D"0=
+f3e9eba17056e507dbb66fca69ab1814d859a21fb93d2a44ba101bc0a935859" width=3D"1=
+6" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp=
+;Compensation and benefits</h2>
+<p local-id=3D"791082b8b751"><span data-colorid=3D"z3qtmocdus"> </span></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"e1=
+43c988252b" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 189.0px;">
+<col style=3D"width: 491.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"0809403cb0be">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"b4bee3c4ce72" class=
+=3D"confluenceTd">
+<p local-id=3D"9c898467ebec"></p></td>
+<td data-local-id=3D"e74774db9b53" class=3D"confluenceTd">
+<ul local-id=3D"d1a9d52410df">
+<li local-id=3D"9ef279c22f00">
+<p local-id=3D"7653f81c3e68"></p></li>
+<li local-id=3D"325fb62d58b7">
+<p local-id=3D"9bc16da783d8"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"86f6dc61d5db">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"55b497644884" class=
+=3D"confluenceTd">
+<p local-id=3D"3ca8f19f0406"></p></td>
+<td data-local-id=3D"fa297c604a68" class=3D"confluenceTd">
+<p local-id=3D"c8a3aa2999ae"></p></td>
+</tr>
+<tr data-local-id=3D"48a5c00287e1">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"d39c784a2a9c" class=
+=3D"confluenceTd">
+<p local-id=3D"8dee29ea637a"></p></td>
+<td data-local-id=3D"cf85fcd4bdc5" class=3D"confluenceTd">
+<p local-id=3D"89bc1d7d5929"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"93733853c852"></p>
+<h2 local-id=3D"b428defe5b78" id=3D"EmployeeHandook-Travelandexpenses"><img=
+ class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"2708" data-emoji-sh=
+ortname=3D":airplane:" data-emoji-fallback=3D"=E2=9C=88" src=3D"2f42b68d7b0=
+b8be15ee65f433c05dae45e09cb8ff300dbcd3f17229c6ce40ecf" width=3D"16" height=
+=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Travel a=
+nd expenses</h2>
+<p local-id=3D"a4bbbc1df1b9"></p>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_0_1424225098.1773776735143
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/e276915fb3916e8b6b5052dfeaccaac840e1aa746a8563a02ec822609d880577
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAY1BMVEVHcEz/rDP/rDNmdX//rDP/
+rDNmdX//rDP/rDP/rDP/rDP/rDNmdX9mdX//rDNmdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX//rDNm
+dX//rDNmdX+Zh2b/rDP/rDNmdX+WhmfspT0RT3Q9AAAAHXRSTlMAz++fYFBggN9AIDDP368Q748w
+QK9QcL+AjyDvEHBwC8MAAAHbSURBVHhe7ZbbbuowEEUh2DghNFx6MdCO6f9/ZZ0o6caag7dc0Gkf
+WA8VSEsL2ZmpMrsDD2wtUts7dGTg9lItA/XNIRn5KyEc7dcvG9ibOyvrOi/f+M7ZVXmlPdaikfrY
+FmUMKrplSpYiAxaG7VUnlI7sn5UiLBs+DhtSKYSGvHfOmWZEIs2Icc55jxDZK51nXsrmXQbeNyrE
+vJRlOH+KfJ7DUoWYl/ISQnh6in9edIh74BQih0OInFSIe+BtSAzamwpxD/SHWs9m6/6AudAaXtQ1
++xBZ9lcZ2asQ88CuFzZxCHphp0LMA9soLHpzEYWtChEPvIbIKz6lIeoB9PGbCBEP4MS4hSREPIBn
+gOeCkBBPD0f6BSHiAcwpZvcyRDyAzcE2XYaIB7DL2O8klPXAM64NV/qchLiH4dDjixD39HeUESKe
+Ook6K0Lcw53p20eIe6aSHGYKGSGe5KnGEPeEgFCe+4W6vNCNIe61eaGdQtwz5KGNIeblDYM5ol6k
+nf9bmLcYSOJNGCjIGOyaMA+0x8SZ48UcIeKBxroB26jXGu5xENL8/1Dj/PTi6V3z08rKVZJQudVP
+OshcpoozH9eG76MwNHV0qfBccpWy01W5f6olSIbfCfE7KufBF700xvZ2b1gjAAAAAElFTkSuQmCC
+
+------=_Part_0_1424225098.1773776735143
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/2f42b68d7b0b8be15ee65f433c05dae45e09cb8ff300dbcd3f17229c6ce40ecf
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcExVrO5VrO5VrO5VrO5V
+rO5VrO5VrO7M1t1VrO5VrO5VrO7M1t1mdX9mdX9VrO7M1t3M1t1VrO5Vq+vM1t3M1t1VrO5mdX/M
+1t3M1t3M1t1mdX9VrO5mdX9mdX+kyOPM1t1mdX+kyOPM1t2vusLM1t1kfY+RweakyONVrO5mdX/M
+1t1se4XF095cr+22zuCMmaKmsrpksey2wcijyOOEvehrtOuCj5m/ytGTn6hekbdig5uYxOTG0Nd6
+uelgiqlNiWZyAAAAKXRSTlMAEM+AIGCfv59w7zDvMO9AMGCvjxDPUCBwj79g30AQ7yCfv4C/UHC/
+j7N3QhkAAAKlSURBVHhezdbZdpswEIDhMWBjwA4J3h07W5O2Et73rH3/t2pAEUI5Gg+Um/639vmQ
+ZMAD/0fdp9G4F8fjH9WUYS+WVZDumnGu8T87w1asRQHt6cDoiOUUh645v2hjzozz2eoknB7pJBKy
+Hp4024ozohwhmfe1XR8TKV3TiHKENMDOZ/0prRLoiXJEU5MjpVkCdSlH1MZ/ryPnubMOI5995btp
+Uecl6TXtJ6iGsd46hYbCqbMiuUm/4m9t+SzbmcMKt4+NNSHNq+q07gTUr+SIExK5xZwD4jRBVusU
+cuaoo3I6VkVHVes3JhUdleNFiLMhnWILWywJx1xgW9UdtUnaGRKI2qR/1vkNxQs7E8Z2ZmfvQqmC
+W8RhJaEm5gioojM/sJLQCHNKQleYI6Dqjqiis9ywryo6C1YSuqQcJmYV0mlRDlOzSmlnl3eYnDDK
+O7dM65WWukanGRogMatgTs/oAPgGiE9LOiMAaJigdjnnSo0bOnQNWJlz+u5ATYd0py42PnHdhm2H
+YSAf+PcVP+UcUZSH/miOg/zDb2d8lXcMk8uLdIxDzVINh+9ybLk0X/YlcTBoL5xnzvlWOSorDyUO
+srWFGBVWn87a5ECHqToA2EfsLXOejQ4ETGWDXkM5G+lkB93rgp6PQPox7ShHXhZ5aQeWXBDpQB+D
+RLY8odQ54g7UzkMQJBPpXF/PCExFGCTz/A/NWR4c8/coCJyH+Dlz5nvGQvPXSAjG68x5WzAMAouE
+HuV9uNvo9wl2ByPOzUX6XMzfBINCIQXd84vH8cMHy2qAOf88NOD3NwCOz8jDjM5DN4PU82iorkFo
+bgZNEMhBIexFAUhWIQhsEvKKQWBRUM1PnQig4OaIRfeBil56A7nNzK9BH/ACOwAoKtWheuB4nlMK
++AtMy4GynxGGywAAAABJRU5ErkJggg==
+------=_Part_0_1424225098.1773776735143
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/6cb530381d02751f4ee8af3d565c38e70edc0bb76b7833e60385ad972ffb178d
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAQlBMVEVHcEw7iMM7iMM7iMM7iMM7
+iMM7iMN4rdb///+dxOHa6fRHj8dgns7n8PhsptJUl8u20unz+PuRvN3O4fDC2uypy+VNH0VfAAAA
+BnRSTlMAv+9gIM+kpfmZAAAAuUlEQVR4Xu3YWQrDMAxFUTuO5Tlz97/VkrELeA9aiu4Czo8RyDJ7
+zgqQdeas9wLm+8PpBK7bJS+EvDFOKDljOZA1QooBKTRsrW0DDqV49EKhEK8CCLUbahg0xqcRguoH
+qhAk8wMJBk23M4FQyaczFxCSsu7OWgkjUpel/un0h5QCCj3PlgsMXc+ff2b60w2l70MKKaSQQgop
+pBC++ePbCL4f8Tc2/YoqRDuy0M4+rEMU7TTGO9bRzodv4yN8wB6d3B0AAAAASUVORK5CYII=
+------=_Part_0_1424225098.1773776735143
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0f3e9eba17056e507dbb66fca69ab1814d859a21fb93d2a44ba101bc0a935859
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAaVBMVEVHcEz92Ij92Ij92Ij92Ij9
+2Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ij92Ii/aVL92IhndX96gYCNjoH00oeyp4Rwe4Dh
+xYbqzIefmoLYv4bOuYWpoIPFs4WDiIGWlIK/aVK7rYQ/6loZAAAAEXRSTlMAgGBQ348QzyDvMECf
+v3CvgLj/t0oAAAI5SURBVHjaxZjbdoMgEEXVeI0x6YD3a9L//8jWYhYWkCOrD91PvriXHJhhlt4B
+94woWh+ChL5JLutzRJTdPSfutPLIrw/aeOS5eA6cRCEdErp4YrLwDyK0NBd8OsR3EsXh4QfFnhPX
+jIxkV08Hm7AH8/Ey8uEseh3wDyK0NGfSzJB16rmTkIHE3RORkcjVc6EDLn8PCMeEA8Ix4YBwTDgg
+EJNrQFXJGG9hTDignn3DYUw4IPZDC2ICAUnR4BxTmmGRHhM+QWMvRMs0usV0oz0zZ5KmrkhyA3e+
+svG/aUaS3K0d/5dnYRp7k+0eKNQDtFLWdf92NiQpjj0B7ejEq1sw3aalHcG5G79mK5/0ZuDqCQ/R
+BwlKtTSqupw6OvNJoS4qSQV/UhqRLmItaih4kJnENukm66mME1LpmKDvLKb4TI+u2cZzBGtDA9ok
+a6NvT60tJTPjrmaX2bJv8NKo6kaquEmVgoSkat9JygqERFaGXmbVWmfcmABVzd9JkcJDEUHeYak5
+FcrSMO3CTMWXaWFjk9qQBEmsbD+mNIooAQey68vZIFpIw7eXCF/farUifoJDqackO/bmEWHPYGC6
+mkSiXMfVNUxi+zma4XxjE9EZyIT9AExMZyYkMtYYVzR8ICwyMj4b0JCQSDJ8btvXgYEZiPRBC2x/
+8hdReq7aGnRR+qD9a+MxTkg/kZaB3dJGYEpdB9aFLm3MLXX7H+L6eyMnR3IwsgHQwIZN2CPJw9P5
+5J6doKATFIGa8xe4+dzA9QkE6gAAAABJRU5ErkJggg==
+------=_Part_0_1424225098.1773776735143--

@@ -1,0 +1,662 @@
+Date: Sat, 28 Mar 2026 20:03:44 +0000 (UTC)
+Message-ID: <697867950.41.1774728224001@607dff2765ff>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_40_2050872487.1774728224001"
+
+------=_Part_40_2050872487.1774728224001
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Hiring Process Template</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Hiring Process Template</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"b0=
+78f4e4aaf0" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 163.0px;">
+<col style=3D"width: 328.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"4cb2ee3cabb2">
+<th data-local-id=3D"a5090b65bfaa" class=3D"confluenceTh">
+<p local-id=3D"5378421aa80e"><strong>Hiring manager</strong></p></th>
+<td data-local-id=3D"6136d1afea39" class=3D"confluenceTd">
+<p local-id=3D"da40b72b52f4"></p></td>
+</tr>
+<tr data-local-id=3D"7ed19cef4631">
+<th data-local-id=3D"d23e2252aa96" class=3D"confluenceTh">
+<p local-id=3D"c7fb3427aa70"><strong>Recruiting lead</strong></p></th>
+<td data-local-id=3D"c99cac2cff45" class=3D"confluenceTd">
+<p local-id=3D"5770a07a0fb3"></p></td>
+</tr>
+<tr data-local-id=3D"6cf73ad2b5b5">
+<th data-local-id=3D"eb3bcaaceec8" class=3D"confluenceTh">
+<p local-id=3D"cb609e99fa84"><strong>Interviewers</strong></p></th>
+<td data-local-id=3D"9467486ed5b5" class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"360493">
+<li data-inline-task-id=3D"1"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+<li data-inline-task-id=3D"2"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+<li data-inline-task-id=3D"3"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"27e06784a425">
+<th data-local-id=3D"88a2d7d1821f" class=3D"confluenceTh">
+<p local-id=3D"8f4ea9f42cf6"><strong>Job title</strong></p></th>
+<td data-local-id=3D"f7bbf5dee3a0" class=3D"confluenceTd">
+<p local-id=3D"6dcfa339aea1"></p></td>
+</tr>
+<tr data-local-id=3D"80fe01af98a8">
+<th data-local-id=3D"34c091bf72fc" class=3D"confluenceTh">
+<p local-id=3D"b14a8f65d158"><strong>Job level</strong></p></th>
+<td data-local-id=3D"37ac3ac60a5a" class=3D"confluenceTd">
+<p local-id=3D"e07e2e147709"></p></td>
+</tr>
+<tr data-local-id=3D"6ecc638518be">
+<th data-local-id=3D"ede08642765a" class=3D"confluenceTh">
+<p local-id=3D"e0d7c2f0bc0c"><strong>Job rec link</strong></p></th>
+<td data-local-id=3D"c8a8e8957c03" class=3D"confluenceTd">
+<p local-id=3D"32815bb251eb"></p></td>
+</tr>
+<tr data-local-id=3D"b363d4ab891b">
+<th data-local-id=3D"c578ebc1cff9" class=3D"confluenceTh">
+<p local-id=3D"f143ce1164e8"><strong>Job location</strong></p></th>
+<td data-local-id=3D"9640e34cf756" class=3D"confluenceTd">
+<p local-id=3D"2f8c4869c959"></p></td>
+</tr>
+<tr data-local-id=3D"70e12410ffb4">
+<th data-local-id=3D"5095beb981ff" class=3D"confluenceTh">
+<p local-id=3D"ac87c560a01f"><strong>Target hire deadline</strong></p></th>
+<td data-local-id=3D"4bd358244a19" class=3D"confluenceTd">
+<p local-id=3D"8efc5fabd30f"><time datetime=3D"2026-03-18" class=3D"date-pa=
+st">18 Mar 2026</time></p></td>
+</tr>
+<tr data-local-id=3D"60e2791ee10f">
+<th data-local-id=3D"8f16ebc43780" class=3D"confluenceTh">
+<p local-id=3D"7d97714c6b29"><strong>Referrer</strong></p></th>
+<td data-local-id=3D"8ed3dfa36eac" class=3D"confluenceTd">
+<p local-id=3D"cbbb36573e75"></p></td>
+</tr>
+<tr data-local-id=3D"c3802195e1b3">
+<th data-local-id=3D"5d5448deda41" class=3D"confluenceTh">
+<p local-id=3D"01343c03c7e9"><strong>On this page</strong></p></th>
+<td data-local-id=3D"824ca688c7d1" class=3D"confluenceTd">
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1774728223986 {padding: 0px;}
+div.rbtoc1774728223986 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1774728223986 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1774728223986">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#HiringProcessTemplate-Roleoverview">Role overview</a></li>
+<li><a href=3D"#HiringProcessTemplate-Roleprofile">=F0=9F=91=8C Role profil=
+e</a></li>
+<li><a href=3D"#HiringProcessTemplate-Assessmentprocess">=F0=9F=8E=A2 Asses=
+sment process</a></li>
+<li><a href=3D"#HiringProcessTemplate-Candidatetracking">=F0=9F=9A=8A Candi=
+date tracking</a></li>
+<li><a href=3D"#HiringProcessTemplate-Helpfulresources">=F0=9F=92=96 Helpfu=
+l resources</a></li>
+</ul>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"193014dbae12"></p>
+<h2 local-id=3D"c9352f85f5aa" id=3D"HiringProcessTemplate-Roleoverview"><im=
+g src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence=
+/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&am=
+p;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; becau=
+se &quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"=
+%3Cac%3Aemoticon+ac%3Aname%3D%22clipboard%22+ac%3Aemoji-shortname%3D%22%3Ac=
+lipboard%3A%22+ac%3Aemoji-id%3D%221f4cb%22+ac%3Alocal-id%3D%22c78d622e4ab5%=
+22+ac%3Aemoji-fallback%3D%22%F0%9F%93%8B%22+%2F%3E">&nbsp;Role overview</h2=
+>
+<p local-id=3D"703345ab5040"></p>
+<p local-id=3D"68fd4099ec00"></p>
+<h2 local-id=3D"b0e4014ff128" id=3D"HiringProcessTemplate-Roleprofile"><img=
+ class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f44c" data-emoji-s=
+hortname=3D":ok_hand:" data-emoji-fallback=3D"=F0=9F=91=8C" src=3D"961728b9=
+5767352232f3d33a9697c2fb04e47665da85dac49c6f1c5b0aea86dc" width=3D"16" heig=
+ht=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Role p=
+rofile</h2>
+<p local-id=3D"a62ea8a1b830"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"0b=
+44ac603a48" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 156.0px;">
+<col style=3D"width: 604.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"f8312b002363">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"bbf4ce83554a" class=
+=3D"confluenceTh">
+<p local-id=3D"1a501238d450"><strong>Must-haves</strong></p></th>
+<th data-highlight-colour=3D"#ffffff" data-local-id=3D"a0a7c90bd6da" class=
+=3D"confluenceTh">
+<ul local-id=3D"a7ebe55b1f9d">
+<li local-id=3D"7567e4458a0f">
+<p local-id=3D"1be2f5a29707"></p></li>
+</ul></th>
+</tr>
+<tr data-local-id=3D"717f17f0f982">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"33190585f5a0" class=
+=3D"confluenceTh">
+<p local-id=3D"ba1f3cb785bd"><strong>Nice to haves</strong></p></th>
+<td data-local-id=3D"424785b05d33" class=3D"confluenceTd">
+<ul local-id=3D"5cda975187d0">
+<li local-id=3D"9325da8c7d00">
+<p local-id=3D"0d0a03121cb3"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"af5452504b43">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"a75fc31673c4" class=
+=3D"confluenceTh">
+<p local-id=3D"45b557c0c708"><strong>Selling points</strong></p></th>
+<td data-local-id=3D"4419d074478e" class=3D"confluenceTd">
+<ul local-id=3D"b4fcbed83b6f">
+<li local-id=3D"bd4e67787416">
+<p local-id=3D"acc60803dcfc"></p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"103aa2bf4a91"></p>
+<h2 local-id=3D"0ef79efe43c0" id=3D"HiringProcessTemplate-Assessmentprocess=
+"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f3a2" data-e=
+moji-shortname=3D":roller_coaster:" data-emoji-fallback=3D"=F0=9F=8E=A2" sr=
+c=3D"10ccae721b50a5d325c2cfedc4c8a543b030ffcf17f0513fa96bfdc25820f9ce" widt=
+h=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)"=
+>&nbsp;Assessment process</h2>
+<p local-id=3D"c2f3a9dbc91a"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"b7=
+f143467103" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"11123e5414d2">
+<th data-local-id=3D"4c990e075b09" class=3D"confluenceTh">
+<p local-id=3D"55e8863daae3"><strong>Interview stage</strong></p></th>
+<th data-local-id=3D"f024f2804eaf" class=3D"confluenceTh">
+<p local-id=3D"a2f641d98a1e"><strong>Who is involved</strong></p></th>
+<th data-local-id=3D"2f50040d4cb7" class=3D"confluenceTh">
+<p local-id=3D"6df60ed3f69f"><strong>Details / Sample Questions</strong></p=
+></th>
+</tr>
+<tr data-local-id=3D"e69191143feb">
+<td data-local-id=3D"9189ff713e8d" class=3D"confluenceTd">
+<p local-id=3D"ad1d4b55fbf8"></p></td>
+<td data-local-id=3D"ed4fa9cec044" class=3D"confluenceTd">
+<p local-id=3D"6521a15b280b"></p></td>
+<td data-local-id=3D"5b8022467c36" class=3D"confluenceTd">
+<p local-id=3D"31d8e94f5131"></p>
+<ul local-id=3D"70b048714acb">
+<li local-id=3D"1183f98fdb7d">
+<p local-id=3D"3b9b8379debe"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"44b2d9382ed1">
+<td data-local-id=3D"6ff8e44d7855" class=3D"confluenceTd">
+<p local-id=3D"4e1a63e40113"></p></td>
+<td data-local-id=3D"f875049a7e13" class=3D"confluenceTd">
+<p local-id=3D"52e424e0bd07"></p></td>
+<td data-local-id=3D"81ff2d03b4f9" class=3D"confluenceTd">
+<p local-id=3D"45e2ed3ef9bf"></p></td>
+</tr>
+<tr data-local-id=3D"6c15b7709a10">
+<td data-local-id=3D"5f1b558281da" class=3D"confluenceTd">
+<p local-id=3D"2c9b6a4fb1ec"></p></td>
+<td data-local-id=3D"c5ff4e7da00d" class=3D"confluenceTd">
+<p local-id=3D"7ce1733ec3f2"></p></td>
+<td data-local-id=3D"07825cc71e5c" class=3D"confluenceTd">
+<p local-id=3D"ddc756fe3e52"></p></td>
+</tr>
+<tr data-local-id=3D"c1733b982580">
+<td data-local-id=3D"e2e586ba6f1a" class=3D"confluenceTd">
+<p local-id=3D"6b4664c49f3e"></p></td>
+<td data-local-id=3D"32a70e87c42c" class=3D"confluenceTd">
+<p local-id=3D"45f49e3f8722"></p></td>
+<td data-local-id=3D"5e584810948c" class=3D"confluenceTd">
+<p local-id=3D"55eabbccbe52"></p></td>
+</tr>
+<tr data-local-id=3D"6084a80465cf">
+<td data-local-id=3D"0443a1a8e5a5" class=3D"confluenceTd">
+<p local-id=3D"bcd37d561b53"></p></td>
+<td data-local-id=3D"e19276144ef3" class=3D"confluenceTd">
+<p local-id=3D"a0df74063201"></p></td>
+<td data-local-id=3D"aad8223ee183" class=3D"confluenceTd">
+<p local-id=3D"a4ed1f30276d"></p></td>
+</tr>
+<tr data-local-id=3D"2b18e3e8e64a">
+<td data-local-id=3D"4e4ed33e2353" class=3D"confluenceTd">
+<p local-id=3D"f2011f8b072e"></p></td>
+<td data-local-id=3D"6b5d5bed7d4d" class=3D"confluenceTd">
+<p local-id=3D"ac4c902fe204"></p></td>
+<td data-local-id=3D"efba28a27353" class=3D"confluenceTd">
+<p local-id=3D"f96a756a1665"></p></td>
+</tr>
+<tr data-local-id=3D"abe1a3e7cbe3">
+<td data-local-id=3D"c7de33b2ec3b" class=3D"confluenceTd">
+<p local-id=3D"20185244a6e7"></p></td>
+<td data-local-id=3D"de0db0667c64" class=3D"confluenceTd">
+<p local-id=3D"930e35316ed2"></p></td>
+<td data-local-id=3D"3c71df8b1319" class=3D"confluenceTd">
+<p local-id=3D"281d70ba2bc1"></p></td>
+</tr>
+<tr data-local-id=3D"7c7054d5c910">
+<td data-local-id=3D"9db4fe790941" class=3D"confluenceTd">
+<p local-id=3D"65b6cc123e29"></p></td>
+<td data-local-id=3D"5b87652f5773" class=3D"confluenceTd">
+<p local-id=3D"7069ff151fe0"></p></td>
+<td data-local-id=3D"0d650a6876fc" class=3D"confluenceTd">
+<p local-id=3D"74abc982a574"></p></td>
+</tr>
+<tr data-local-id=3D"edef745f9444">
+<td data-local-id=3D"00985fb23bb8" class=3D"confluenceTd">
+<p local-id=3D"006a1032c593"></p></td>
+<td data-local-id=3D"f0d32789cb8c" class=3D"confluenceTd">
+<p local-id=3D"c99e3343b3cf"></p></td>
+<td data-local-id=3D"a91efea13d4a" class=3D"confluenceTd">
+<p local-id=3D"2ed6808fb123"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"0239442b98ff"></p>
+<h2 local-id=3D"eaaaf764fe18" id=3D"HiringProcessTemplate-Candidatetracking=
+"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f68a" data-e=
+moji-shortname=3D":tram:" data-emoji-fallback=3D"=F0=9F=9A=8A" src=3D"e5ec7=
+d08616f59699ba6cfd0c86edf58750eb34536eeddba22b41423a55d2bff" width=3D"16" h=
+eight=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Can=
+didate tracking</h2>
+<p local-id=3D"28bed984b1d6"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"0a=
+aebab152c9" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 590.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"00d372e97199">
+<td data-highlight-colour=3D"#e3fcef" data-local-id=3D"70248fa787cd" class=
+=3D"confluenceTd">
+<p local-id=3D"62649141e770"><strong>Expected Timeline</strong></p></td>
+<td data-local-id=3D"7b9a9a0edd97" class=3D"confluenceTd">
+<p local-id=3D"01dbe788aaa7"></p>
+<ul local-id=3D"54a754a6f6d9">
+<li local-id=3D"affcec969984">
+<p local-id=3D"10c2585ff590"><time datetime=3D"2026-03-18" class=3D"date-pa=
+st">18 Mar 2026</time></p></li>
+<li local-id=3D"285294f9d4ed">
+<p local-id=3D"16cb6b08b1d1"><time datetime=3D"2026-03-18" class=3D"date-pa=
+st">18 Mar 2026</time></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"1409d1db9ed3">
+<td data-highlight-colour=3D"#e3fcef" data-local-id=3D"21b6c9322aca" class=
+=3D"confluenceTd">
+<p local-id=3D"e654ca46b2a6"><strong>Communication Plan</strong></p></td>
+<td data-local-id=3D"1a654bfbc94b" class=3D"confluenceTd">
+<p local-id=3D"3e47cb766e46"></p>
+<ul local-id=3D"146283c0fe64">
+<li local-id=3D"89cb6a3bfe48">
+<p local-id=3D"0637a9db89a0"></p></li>
+<li local-id=3D"9c5358999801">
+<p local-id=3D"6f35fda00c8a"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"0a8eae8e0e91">
+<td data-highlight-colour=3D"#e3fcef" data-local-id=3D"9a86c9ec95b7" class=
+=3D"confluenceTd">
+<p local-id=3D"fcd3cf503cb5"><strong>Indeed Link</strong></p></td>
+<td data-local-id=3D"5f8096693bf0" class=3D"confluenceTd">
+<p local-id=3D"59f5d8fb116a"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"0725dd4927c7"></p>
+<h2 local-id=3D"d37d79bbbc8a" id=3D"HiringProcessTemplate-Helpfulresources"=
+><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f496" data-em=
+oji-shortname=3D":sparkling_heart:" data-emoji-fallback=3D"=F0=9F=92=96" sr=
+c=3D"93377a9173e93b4735aa0603f32ed5a193e0141d771e7b63bb80d03d2357004b" widt=
+h=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)"=
+>&nbsp;Helpful resources</h2>
+<p local-id=3D"9cdc256b5c8a"></p>
+<ul local-id=3D"8d3f65e52d37">
+<li local-id=3D"77bb5c6521e7">
+<p local-id=3D"13656eb40246"></p></li>
+<li local-id=3D"595006aa8ad9">
+<p local-id=3D"756b2f46c06a"></p></li>
+<li local-id=3D"f980ae9b5ed2">
+<p local-id=3D"3c088fdf5662"></p></li>
+</ul>
+<p local-id=3D"80dc75c284c9"></p>
+<div class=3D"panel" style=3D"background-color: #EAE6FF;border-color: #998D=
+D9;border-width: 1px;">
+<div class=3D"panelContent" style=3D"background-color: #EAE6FF;">
+<p local-id=3D"c472a6e4f53b">Template all set? Pat yourself on the back! No=
+w you need to get this out to a pool of candidates. Visit&nbsp;<a class=3D"=
+external-link" href=3D"http://www.indeed.com/partner/confluence" rel=3D"nof=
+ollow">www.indeed.com/partner/confluence</a>&nbsp;for $100 off your first j=
+ob posting.</p>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_40_2050872487.1774728224001
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/961728b95767352232f3d33a9697c2fb04e47665da85dac49c6f1c5b0aea86dc
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAgVBMVEVHcEz/3F3/3F3/3F3/3F3/
+3F3/3F3/3F3/3F3/3F3/3F3/3F3/3F3/3F3/3F3/3F3vlkXvlkXvlkXvlkXvlkXvlkXvlkXvlkXv
+lkXvlkXvlkX90lr/3F3vlkX5wlTwmkf+2Fz901rxn0j2tVDyo0rzqEv3uVH7y1f1sE78z1n0rE3M
+2z12AAAAHHRSTlMAzyBQgL/fEO+fMEBwr2CPEEDfUJ/vgL9gMCBwO0uiqQAAAkJJREFUeF6tlul2
+ozAMRgGvmG22djYp6Trb+z/gpEmpDCd8eOy5fznnQ4hrWVUqY01kdVVMS2dqV5gz0itTWc47SzNN
+Sc7HG3pjKMlhJqHLD/rAfCdBJjvnPTP/IEGVBB2jkmxJED+S0Of+e37hXoJ8rpWf+MQfEnJPyld+
+4SdRsZWf+cQzCW2+kScOJIR8JZkfqNzKL8wrK7tMA274P1l5y2srx2wpy60UKfk538rw2tVvPFuZ
+U5LTnsiOIiU/5VgZ2lmaZp4BYmX6QVEmaqyapeQHUSDlRnG9pQXTLGVspd+LaSZPa2p3KmltpcKt
+GegaPtxKl1La7Txdx3/nM78Sv83QJo+XdqddKJoAh/icYJU6ghyOS5UsaBDm93HRJAppDbJTqDq7
+ToqbpFMaZMZLlTXF3D3x/d7IbRYxMkzbVdKBhKtB/dJkYZW0e53o2OPVBrmFAkGyJ4Ak2O0O7Hct
+DFpj4imKk/D95uqoQTgJBwWljTGTA2+ZQeP2PBUHeZKS5LdL92E/CZqt3lQEF0LKTxsSdh+d4qNf
+yAjPIj5qfqNcKMAAR9GQPj1H6FudfC14h2eIw79sZ/aHvWXMYq0Fj5vUw4JiWvhtzsOCYhR8lQYF
+gSbY3mEX44LwS30bF97VeDbiNhg1lzMQAYdwSfKFTirFUgvO0hrfyvYGBhGSF+ObCjJRIqraoSYE
+VgiPZdAgTLAEkQWjvCbJwbiBIFOVjAKbpO2qf8DpjSgrPifi+iu3qg5VDs04GXupwwxa7YX8BVfs
+13OCFfT6AAAAAElFTkSuQmCC
+------=_Part_40_2050872487.1774728224001
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/10ccae721b50a5d325c2cfedc4c8a543b030ffcf17f0513fa96bfdc25820f9ce
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAvVBMVEVHcExYoNzqWW4dZJvh6O3L
+zdTc4OeHmafh6O2ou6vc5OmamKm3c4bb4+kte7MqaZ+ojdjI0tnEz9fdLkTZMUjhOU87kdUziMpu
+qd46jsviPVLHyt0zgb8rerjdLkTqWW70kAyqjdifz43iPVLh6O2qjdjpjhP0kAxtf4um04jh6O07
+lNnM1t3dLkTcPFHZfo3WmqbSZHmImab0kAzbVWets8HVrbiUweSm04jPusPhw8tfn8CTd6SjkmbG
+kT/52aYeAAAAKnRSTlMA/v79v/79QECAoxAg1DDK/sydqME4vVv94mhdivbrs0g4u4CAxc+Q10jZ
+ncVlAAACyElEQVR4Xu3UyXraMBQFYNkqZpCxITZDCKQJSZpEnpkztO//WJVk0JX5QmzhLrrgbLz7
+P92jK6N/l0ueek/3aOQ6dZ37HssNxi6pDfG4TGrWlHoisyAIruuN1+aOEYicN97d8x1CZGo/9XrB
+PsM9MHjwfN/3HiaDCg5ZLpe/iIvd+3EgQ7ji3UYyt175gZZcYi1fBxAHDfyoGFSapZCwwhgGMBrQ
+M4f+KM6WWgBoQDZzfitOSOm7HgQtLYAZW5SmsQRWSZJkcUXIuVbHojSRStoIRd4YXe4QcAzmvK8O
+zCZUkpZDI3B4Pfux4jQsphwaFuqJ8mRiqCs7R9aNE1B7N39FUzzKIajHyuA4nEEohxaLdvdLaMfS
+xhg7ChRCPSvR8Q1CADXJSWj3grE7cvZ3Zii3nnDGoq0ChL7MXEhCGOJZ8dZjflmNFq0EvXLnIxCZ
+YVYzq0cdq09QCTR4mBDkuM5cOHnwkA12uPVMtIxQGfTTNM0Jb3keyEyRL59EKluuAJkvmPcCkHdg
+4jdez6JZFTJdxTG2mXxabzBGaUfcyT4KjzSBZa4CwWxZUHAs2B4diJifwZePNA0l1P/BQmmXf05D
+w6N/mNxCgEIKOQlNi2MlSs39A3T1yEJph39OQTY4x4/0iuh0NFLr2Rxtc3UIJhvDI4Vt1j+RsYVH
+GktHC2rCrSuvIqQtXciBW4ea+1QHgj+9JW89SvKatSAoab1ZqTVbsMU6m40mgoB6LCqjs9m2zwmo
+p6FuscZmT245AfWsxeyaHcFx4JEuNCE4Dox1NjTwI3WscyHbi9TbOhdSmSjhY3W1IWDUljvkDEgy
+8jihVdjiqputMKu8neIWV95smCoVjFXYWI3NPjCJYDowu25HOZOX022hWlCcCqbxiFAdKEtzds3U
+OlADtrgeFP53UOemZIur/7NLtrj6P7tki6v/s2t3dIEu0F8zSNUAIVMCVwAAAABJRU5ErkJggg==
+
+------=_Part_40_2050872487.1774728224001
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/e5ec7d08616f59699ba6cfd0c86edf58750eb34536eeddba22b41423a55d2bff
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcEynqaxckTtxcnSnqayn
+qazKzc2nqaynqayWmJunqaynqaynqazR09TR09TR09RckTunqaxckTtbXF5ckTvR09RckTttbnFB
+QEKnqaxcXV9zdXdiY2V8fYCipKdsbW9ckTtllkeAgoXR09RAQUNwkqxZalF7h5JuimBtbnFgotSH
+h4eQjYVYWVtljU27x7ffw4SdoKKOkJNdpNr/2YNLT1IpLzNafEd3hnKLjIyTlZijuZi0urSYsouD
+pW9VrO7EnI43AAAAGXRSTlMA759Qt9/7EEkkj8+AIGC/OHC/v3DP79+AeYqP4AAAAnpJREFUeF7s
+0MluwjAQgGErkSxxgERAgKOX7Oz7Tt//rZoFh1TEzFitRFX1P46lT+MhcCPfH5GfyM/6e5A9TKqG
+9jec5EvmUseRL3I6SKbtSSCvjXKoBKMYyZOIPMR9SmDp7xrzl6UE38kpnZ22UnJASBapfbZJ1Vbt
+JItwEFULJLXU7C2Q3Gm+Zg5peh/08aLfCv1Dqd5JjaBADwVGkFjrnLUwgyIdFBlCImrcaR0JQygr
+eLp4GghhCukzhybjOqAmxtB4sdks6pSalNAZhOZ3KHMy6cGoSQnNGQjxQjqNN0WTGnSfnHKHwxDj
+lwy6TEpIPEHiUjgIiLErlXKl+9pKyitjCGiQSfxM6bH52Ed65rkzACGL5fHbVTR1uHFWZIGQy6pm
+cXx4FMezGatyCViXIeoSOBcDuQRRH3b6BJUFORZBZkEOttb+lbNvoaHeNNQ74bSHdexpVti41T7M
+32yc81lJGes2DMNAtAYUOHWyZDzHlgFuQaBB2pL//7AyVEsUqUyqb7Uh3zuaGodrMrkOY5dYACgZ
+EBB6xI5gjExXMMcOsQOAnAwygIMvN4HZRKAFS29gpi6xwgbYgeWKyjlicbEPWqIvd67xmTua3Ovc
+mLO5G2DyzGbzSm3kYQZjbcpJR3+jHW76C5wcsWeyAtE6J+YpcqYYFvkk7SKBF1hy4adNggnVWexu
+ygVMfCWHw8s9grk0xQZtGg7a99CSC9p0KjApSfsOO7uBTZokB5nHhuamjCL2SM7IdHDMQ+TGllic
+NZAXSfsOLbFV5Fdy+X7xr5wsPbIupA8lJuP9GpigTaMT7RvTu1hJ/z0oFZX7JRZrgwVdlDqXqHJf
+MzWlFZCJ6w4AAAAASUVORK5CYII=
+------=_Part_40_2050872487.1774728224001
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/93377a9173e93b4735aa0603f32ed5a193e0141d771e7b63bb80d03d2357004b
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAllBMVEVHcEzdLkTdLkTdLkTdLkTd
+LkTdLkTdLkTdLkTdLkTdLkTdLkTdLkTdLkTdLkTdLkT9y1j9y1j9y1j9y1j9y1j9y1j9y1j9y1j9
+y1j9y1j9y1j9y1j9y1j9y1jtfU7qbUzoZkvdLkT9y1jfOEXtfU7vhk/7wVf5t1bnX0r3rlThQkfx
+kFHzmlLjS0jlVUnrc03paUz1pFOaVECJAAAAIXRSTlMAIN+fz0AwEO+/j3Bgr1CA788gEI+AQHAw
+UJ/fr2Ag798SF3PEAAACUElEQVR4XuXY2XbiMAwG4D+rbUiA7ttsUliXLvP+LzfjQI7q44LrNHf9
+bsX5D5ZCIoJvpSyKsl9dJGOjqaXrcfJRve7qRuqeKieHmcAxMeTIKwhRpOQxBaRuyJN2daFG9KER
+jk7VFRyqPdXzkjcNuXIldeHWRanJ2jDzq/9JJ8ejZYRQKVlb/m9DfpKT40nldDm1Fmw9e0l1TWfl
+OJrSwYqtBUWbopXQwQu3lhQvgWXIWu/5aLl4pkimnZht82LJ721eG4pSAsiItl2M2FCUDIAmmrOP
+omigkDaL+JYXh9nPV+zaxPZ7ippa6530abXYUqwaho6arlMv1INBTp1mydae+shBYsfWmnqBlsJa
+xhVNw5BYyW82lnGC5szLbd+gKQl6mffMoSkmNIgJEhpEAmgagAaQ0QAyABUNoAKgaAAKAGr6shrW
+ZIjht1KK4m8JKazodvtbQoUDpSmCvyVodMYUwd8SxrB6dUm2BOlQ7OD8LWECAUMxdsxyVzZ4L9EU
+5D4luueETiAi+/3GnUY6HX245nXDYv8HIuZi6rYoMbu+h6ugENmiXBd3V3hvGsqRGC8KInyvnPNp
+3vofuAxPmcGlUjpJtijfxT1cKAOjky1KPF1fQgSSRPP21znT4y1EMMm13XHnp8y9V5I39b5J3enu
+cJbKKeA3H1zhPGXoLPNrxtYPBGWB5/wjWw8IqzSdoCsAD3I5h5QnGpWXsJ6Y+Rqfokbn/p3fMM8u
+8UlFeuZ9we2N5ER/qZFCX4mRGJPgKwojb0m+qMiIsgJDUArf2j85o7/vl6Sh1QAAAABJRU5ErkJg
+gg==
+------=_Part_40_2050872487.1774728224001--

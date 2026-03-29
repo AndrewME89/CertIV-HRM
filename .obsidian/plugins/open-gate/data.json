@@ -1,0 +1,27 @@
+{
+  "uuid": "py21ba5317ohal4uyll6wv",
+  "gates": {
+    "aHR0cHM6Ly9lbXBsb3llcm9mY2hvaWNlYXdhcmRzLmNvbS5hdS8=": {
+      "id": "aHR0cHM6Ly9lbXBsb3llcm9mY2hvaWNlYXdhcmRzLmNvbS5hdS8=",
+      "title": "Employer of Choice Awards",
+      "icon": "<svg viewBox=\"0 0 100 100\"><image href=\"https://icon.horse/icon/employerofchoiceawards.com.au\" height=\"100\" width=\"100\" /></svg>",
+      "hasRibbon": false,
+      "position": "center",
+      "profileKey": "open-gate",
+      "url": "https://employerofchoiceawards.com.au/",
+      "zoomFactor": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    "aHR0cHM6Ly9hcHAuc29lLmVkdS5hdS9wbHVnaW5maWxlLnBocC82ODc4OC9tb2RfcGFnZS9jb250ZW50LzIvcmVjcnVpdG1lbnQtc2VsZWN0aW9uLWFuZC1hcHBvaW50bWVudC1wb2xpY3lfMC5wZGY=": {
+      "id": "aHR0cHM6Ly9hcHAuc29lLmVkdS5hdS9wbHVnaW5maWxlLnBocC82ODc4OC9tb2RfcGFnZS9jb250ZW50LzIvcmVjcnVpdG1lbnQtc2VsZWN0aW9uLWFuZC1hcHBvaW50bWVudC1wb2xpY3lfMC5wZGY=",
+      "title": "Recruitment, Selection and Appointment Policy",
+      "icon": "<svg viewBox=\"0 0 100 100\"><image href=\"https://icon.horse/icon/app.soe.edu.au\" height=\"100\" width=\"100\" /></svg>",
+      "hasRibbon": false,
+      "position": "center",
+      "profileKey": "open-gate",
+      "url": "https://app.soe.edu.au/pluginfile.php/68788/mod_page/content/2/recruitment-selection-and-appointment-policy_0.pdf",
+      "zoomFactor": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+  }
+}

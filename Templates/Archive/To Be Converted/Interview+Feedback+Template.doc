@@ -1,0 +1,537 @@
+Date: Sat, 28 Mar 2026 20:03:52 +0000 (UTC)
+Message-ID: <2051734791.7.1774728232834@4e8ffeabb9b0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6_658591608.1774728232833"
+
+------=_Part_6_658591608.1774728232833
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Interview Feedback Template</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Interview Feedback Template</h1>
+    <div class=3D"Section1">
+        <div class=3D"plugin-tabmeta-details">
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"060100a19534" class=3D"conf=
+luenceTable">
+<colgroup>
+<col style=3D"width: 158.0px;">
+<col style=3D"width: 568.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"019b27581c20">
+<th data-local-id=3D"e11d48a05bc4" class=3D"confluenceTh">
+<p local-id=3D"0e76bebd4dc4"><strong>Candidate</strong></p></th>
+<td data-local-id=3D"bcb6a546c70c" class=3D"confluenceTd">
+<p local-id=3D"f92f5671cbbd"></p></td>
+</tr>
+<tr data-local-id=3D"910efee4b681">
+<th data-local-id=3D"5a12437c3838" class=3D"confluenceTh">
+<p local-id=3D"d706b539bbd1"><strong>Interviewer</strong></p></th>
+<td data-local-id=3D"fa87d26c68f4" class=3D"confluenceTd">
+<p local-id=3D"dfa730c9ef96"></p></td>
+</tr>
+<tr data-local-id=3D"46ef6a745de8">
+<th data-local-id=3D"63dc045c5937" class=3D"confluenceTh">
+<p local-id=3D"265d0f929077"><strong>Recruiter</strong></p></th>
+<td data-local-id=3D"d4c9455e4e5c" class=3D"confluenceTd">
+<p local-id=3D"4379484d9236"></p></td>
+</tr>
+<tr data-local-id=3D"854f6150b186">
+<th data-local-id=3D"3bf07a0a16e1" class=3D"confluenceTh">
+<p local-id=3D"742571814b7e"><strong>Job title</strong></p></th>
+<td data-local-id=3D"bb0e33ae3913" class=3D"confluenceTd">
+<p local-id=3D"681facbcdeec"></p></td>
+</tr>
+<tr data-local-id=3D"5d6beb7f9041">
+<th data-local-id=3D"cc6f04a66578" class=3D"confluenceTh">
+<p local-id=3D"cc5548d175eb"><strong>Job level</strong></p></th>
+<td data-local-id=3D"73b5a414a2d3" class=3D"confluenceTd">
+<p local-id=3D"c7506ca85d45"></p></td>
+</tr>
+<tr data-local-id=3D"7489b0e6f02d">
+<th data-local-id=3D"d4dc68e16556" class=3D"confluenceTh">
+<p local-id=3D"2ac481dc31fb"><strong>Recommendation</strong></p></th>
+<td data-local-id=3D"c72c6ce57cb2" class=3D"confluenceTd">
+<p local-id=3D"baa0cfe40dbd"><span class=3D"status-macro aui-lozenge aui-lo=
+zenge-visual-refresh aui-lozenge-success">HIRE</span> / <span class=3D"stat=
+us-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">NO HIRE<=
+/span></p></td>
+</tr>
+<tr data-local-id=3D"daf2e848302f">
+<th data-local-id=3D"56516176bcea" class=3D"confluenceTh">
+<p local-id=3D"bfeb1cedc9b9"><strong>Summary justification</strong></p></th=
+>
+<td data-local-id=3D"da6b9cb78e04" class=3D"confluenceTd">
+<p local-id=3D"5e6db7aeee60"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 local-id=3D"1d8b9b28aeba" id=3D"InterviewFeedbackTemplate-Candidateback=
+ground"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=3D"1f5c2" =
+data-emoji-shortname=3D":dividers:" data-emoji-fallback=3D"=F0=9F=97=82" sr=
+c=3D"a094e8e11c818746575f88d399b1c2d9711324aab95bd26b47847f16faca7d90" widt=
+h=3D"16" height=3D"16" data-emoticon-name=3D"blue-star" alt=3D"(blue star)"=
+>&nbsp;Candidate background</h2>
+<p local-id=3D"ff44efb84d69"></p>
+<p local-id=3D"9f09e521500d"></p>
+<h2 local-id=3D"57f9fdb96111" id=3D"InterviewFeedbackTemplate-Interviewnote=
+s"><img src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/conf=
+luence/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den=
+_GB&amp;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot;=
+ because &quot;href&quot; is null" class=3D"transform-error" data-encoded-x=
+ml=3D"%3Cac%3Aemoticon+ac%3Aname%3D%22pencil%22+ac%3Aemoji-shortname%3D%22%=
+3Apencil2%3A%22+ac%3Aemoji-id%3D%22270f%22+ac%3Alocal-id%3D%2238b3b0643361%=
+22+ac%3Aemoji-fallback%3D%22%E2%9C%8F%22+%2F%3E">&nbsp;Interview notes</h2>
+<p local-id=3D"4f719ae368ee">Add your questions to the table below ahead of=
+ time, then take notes on the candidate's responses during your interview w=
+ith them.</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"fb=
+8f9c3537f7" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 372.0px;">
+<col style=3D"width: 388.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"e2092a6b1109">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"80839c268d80" class=
+=3D"confluenceTh">
+<p local-id=3D"705f8f522c2f"><strong>Question</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"92a21ff76f02" class=
+=3D"confluenceTh">
+<p local-id=3D"9cb1befcbc46"><strong>Notes</strong></p></th>
+</tr>
+<tr data-local-id=3D"959c9368895c">
+<td data-local-id=3D"5421c45ce81e" class=3D"confluenceTd">
+<p local-id=3D"eb5658130e5a"></p>
+<p local-id=3D"d15039814b4b"></p></td>
+<td data-local-id=3D"8f45742d7616" class=3D"confluenceTd">
+<p local-id=3D"69f19cb6bc3a"></p></td>
+</tr>
+<tr data-local-id=3D"2622a5d57c4d">
+<td data-local-id=3D"ad256edacc0d" class=3D"confluenceTd">
+<p local-id=3D"32ff24be6eab"></p></td>
+<td data-local-id=3D"c304f59f4bb4" class=3D"confluenceTd">
+<p local-id=3D"d62eb93d4166"></p></td>
+</tr>
+<tr data-local-id=3D"2aba192686dc">
+<td data-local-id=3D"c60a1f813b1c" class=3D"confluenceTd">
+<p local-id=3D"f02cd86ff7f9"></p></td>
+<td data-local-id=3D"2dab7ffcc643" class=3D"confluenceTd">
+<p local-id=3D"24738e7e8ba2"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"ae26d05034bb"></p>
+<h2 local-id=3D"84af39862f64" id=3D"InterviewFeedbackTemplate-Feedback"><im=
+g src=3D"https://madisongrand.atlassian.net/wiki/plugins/servlet/confluence=
+/placeholder/error?i18nKey=3Deditor.placeholder.error&amp;locale=3Den_GB&am=
+p;version=3D2" title=3D"Cannot invoke &quot;String.indexOf(int)&quot; becau=
+se &quot;href&quot; is null" class=3D"transform-error" data-encoded-xml=3D"=
+%3Cac%3Aemoticon+ac%3Aname%3D%22white-check-mark%22+ac%3Aemoji-shortname%3D=
+%22%3Awhite_check_mark%3A%22+ac%3Aemoji-id%3D%222705%22+ac%3Alocal-id%3D%22=
+a650948b636b%22+ac%3Aemoji-fallback%3D%22%E2%9C%85%22+%2F%3E"> Feedback</h2=
+>
+<p local-id=3D"74686f3dc4d8">For each skill or ability, give the candidate =
+a score from 1 (poor) to 5 (excellent). Be conscious of the potential for b=
+ias, and support your score with 1-2 specific examples from your interview.=
+</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"960" data-layout=3D"wide" data-local-id=3D"12e70=
+5e6d944" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 272.0px;">
+<col style=3D"width: 241.0px;">
+<col style=3D"width: 68.0px;">
+<col style=3D"width: 340.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"b0bd543a462f">
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"0725f7aa6355" class=
+=3D"confluenceTh">
+<p local-id=3D"baab8a77e2fc"><strong>Skill or capability</strong></p></th>
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"e4cd0639cc6c" class=
+=3D"confluenceTh">
+<p local-id=3D"2097e6f32976"><strong>Scoring rubric</strong></p></th>
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"e319a4b99103" class=
+=3D"confluenceTh">
+<p local-id=3D"0ab0af8db8a1"><strong>Score (1-5)</strong></p></th>
+<th data-highlight-colour=3D"#e3fcef" data-local-id=3D"1bd4fc63f819" class=
+=3D"confluenceTh">
+<p local-id=3D"191266f22df9"><strong>Justification</strong></p></th>
+</tr>
+<tr data-local-id=3D"4f4bac274d0e">
+<td data-local-id=3D"93340f49f64b" class=3D"confluenceTd">
+<p local-id=3D"9e03551f5c56"></p></td>
+<td data-local-id=3D"d210d62ea8c0" class=3D"confluenceTd">
+<p local-id=3D"c51d47afca48"></p></td>
+<td data-local-id=3D"49619200e150" class=3D"confluenceTd">
+<p local-id=3D"590489a2dd6c"></p></td>
+<td data-local-id=3D"c5aafb03c06a" class=3D"confluenceTd">
+<p local-id=3D"7dfe028bc8a0"></p>
+<p local-id=3D"ba4f533470d8"></p></td>
+</tr>
+<tr data-local-id=3D"8b8429a3bfdd">
+<td data-local-id=3D"9a702fbe9238" class=3D"confluenceTd">
+<p local-id=3D"cfa6da15c155"></p></td>
+<td data-local-id=3D"36fe1658cf27" class=3D"confluenceTd">
+<p local-id=3D"a1e6eb03153a"></p></td>
+<td data-local-id=3D"52e317d20b73" class=3D"confluenceTd">
+<p local-id=3D"ea35579a9556"></p></td>
+<td data-local-id=3D"e5b151fd288d" class=3D"confluenceTd">
+<p local-id=3D"2936e80107ee"></p></td>
+</tr>
+<tr data-local-id=3D"72ff7e52c404">
+<td data-local-id=3D"3fe50eb4ce80" class=3D"confluenceTd">
+<p local-id=3D"41c9650cb785"></p></td>
+<td data-local-id=3D"e34071c314a3" class=3D"confluenceTd">
+<p local-id=3D"4939b5eb8eab"></p></td>
+<td data-local-id=3D"ff147288e230" class=3D"confluenceTd">
+<p local-id=3D"8e6dc65bdbb6"></p></td>
+<td data-local-id=3D"8d2e93fe7089" class=3D"confluenceTd">
+<p local-id=3D"1d1b0dc091c4"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"expander-1177798048" class=3D"expand-container">
+<div id=3D"expander-control-1177798048" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"63ada0ac74e4a6193d607c8b239e4438469a5d=
+dfc41a66a2e0b9bef6332580f2" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">=F0=9F=93=8CNotes on bias</span>
+</div>
+<div id=3D"expander-content-1177798048" class=3D"expand-content">
+<p local-id=3D"bad5b80e2e9c">It's easy for bias to creep in when we're inte=
+rviewing and evaluating job candidates. Awareness of bias can help you avoi=
+d it in your feedback. Some common biases are:</p>
+<ul local-id=3D"8e0dd9ed48e7">
+<li local-id=3D"93a6308e4382">
+<p local-id=3D"14094798a99b"><strong>Similarity bias.</strong> We tend to p=
+refer candidates with similar backgrounds, experiences, or characteristics =
+to ourselves.</p></li>
+<li local-id=3D"afeeb808405d">
+<p local-id=3D"cd89222b8613"><strong>Halo / horns bias. </strong>We often g=
+ive too much weight to a single example or incident from an interview, allo=
+wing it to strongly influence our opinion about a candidate.</p></li>
+<li local-id=3D"e26840a37003">
+<p local-id=3D"7a167d6c7108"><strong>Confirmation bias.</strong> We sometim=
+es form opinions about a candidate before we meet them based on their resum=
+e, work samples, etc., and look for evidence that confirms our opinions whe=
+n we're interviewing the candidate.</p></li>
+<li local-id=3D"dcc085b3c3c7">
+<p local-id=3D"000e990e97e1"><strong>Performance bias.</strong> This type o=
+f bias occurs when people who are part of dominant groups, such as whites o=
+r men, are judged by their expected potential, while those who are part of =
+less dominant groups, such as people of color or women, are judged by prove=
+n accomplishments.</p></li>
+<li local-id=3D"0780d7b353b1">
+<p local-id=3D"ac1d19185183"><strong>Performance attribution bias.</strong>=
+ When it comes to decision-making, unconscious biases cause some people to =
+be perceived as "naturally talented," while others are presumed to have "go=
+tten lucky." People on the receiving end of these biases are less likely to=
+ receive credit for their ideas, are interrupted more often during team int=
+eractions and have less influence on teams.</p></li>
+<li local-id=3D"90d09407479e">
+<p local-id=3D"eac76b9ff1af"><strong>Competence / likability tradeoff bias.=
+</strong> Research shows that success and likeability are positively correl=
+ated for men and negatively correlated for women. Women are expected to be =
+nurturing and caretaking, while men are expected to be assertive and action=
+-oriented. Having to produce results and be liked makes it harder for women=
+ to get hired and promoted, negotiate on their own behalf, and exhibit lead=
+ership.</p></li>
+</ul>
+<p local-id=3D"a989ad220afc">The best way to prevent unconscious bias from =
+affecting decision-making is to develop a standard set of role-relevant beh=
+avioral interview questions and a framework for evaluating responses to tho=
+se questions. Structured, behavioral interviews remain the best approach fo=
+r mitigating the influence of bias in the decision making process.</p>
+</div>
+</div>
+<p local-id=3D"643ed53305e2"></p>
+<h2 local-id=3D"5d22608576d6" id=3D"InterviewFeedbackTemplate-Openquestions=
+"><img class=3D"emoticon emoticon-question" data-emoji-id=3D"atlassian-ques=
+tion_mark" data-emoji-shortname=3D":question_mark:" data-emoji-fallback=3D"=
+:question_mark:" src=3D"102462405d22d5987e524b5ef544d7f05ac9f24c4c94574f5b4=
+d7cf78d0a41f6" width=3D"16" height=3D"16" data-emoticon-name=3D"question" a=
+lt=3D"(question)">&nbsp;Open questions</h2>
+<p local-id=3D"daf98f82c2f5"></p>
+<p local-id=3D"708184148919"></p>
+<p local-id=3D"1c6adbb87832"></p>
+    </div>
+</body>
+</html>
+------=_Part_6_658591608.1774728232833
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/102462405d22d5987e524b5ef544d7f05ac9f24c4c94574f5b4d7cf78d0a41f6
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AABuugAAbroB1t6xFwAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1s
+bnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMj
+Ij4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6
+dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmll
+bnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAg
+PC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAApZJREFUOBGlU01IVFEU/u59785o2jSINZGp
+iKXVJjIjSAgUArVFEv1tpEUQQdGiXQvDRUHQpkXuctOmlg6VCi5sIy3GCRfaRlGkkjGcaEYN35t3
+3+2c+55Q0K4D797Deec759zvfleAbXhY0hdavz/bCYNb5HcDpsXGIFZon4bAKMYvzdpYjBF/gXvH
+XsBRd+EkAe2hGgHVAnbgYjcGXRnB5MC93SLCOrz0ZyegUr3wf4YSQjcmhbO6zS7QvEeGq57RNJGD
+RFqiUp6kSfoYJnkBd7bgkichRWigVuc8eaDGAZQE+zUCitIF/JJncxlDJqhzJ4SbQ+iHghLqHCOK
+RY13j0/iwvkWGGPwdmoJV4fmkWlQWLenohYyIWGCM7QQYXxmGvtwAqL42cfTm0242NOKmdwX5ObW
+cKW/HUODDVhf9nFI8aGEthjCEjummwkjcwJmjAYNdIiFxQ30nJsBOqpg8o040pwCFjSSR5k24sJi
+TLdA3xihRYKCXAS1xMrWNt3oV422jmqMP+tCS2Mal+9PITu3ibq0ix+ac20hPyLRQqPQFmHb6mgw
+cl49PIXWpjQePf+I7IcSGigegWMAbVxgBZIAADETmccd1oGqpIv8fAFPHizjWHsS33xj+3JujFkh
+pJgmQtoRVuieo2vdZO+0g9fvl+A61KOrGgWPitLUcRMmUSIMplkoozEhdOnC/t9LHj5p3LlxArev
+HwfyAfZxzBrnxCQS1sHimzW0XtuPZPos9I5PRZzQGOFnJHY2SpjJFzBb8aEVachYsE9qVKj8GsHE
+wEumMrI/pAwjdMqFU/4esE6QyrhhOYCmAf8hZX5VbKxtrzTCChOJWlU2StZnFOoPKrDPMas+zonf
+AT/EaIL/eM6/AdiQIDpicH/MAAAAAElFTkSuQmCC
+------=_Part_6_658591608.1774728232833
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/a094e8e11c818746575f88d399b1c2d9711324aab95bd26b47847f16faca7d90
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAb1BMVEVHcEz+57j9y1h4sVn+57j9
+y1h4sVn92Ih4sVn92Ij+57igeMjcv779y1j92IifdsLctZ3zlyz5uEiSaMp4sVnxjyb5wWnTw1j6
+xnD3tFfcxVi7vlmJtFmAs1nylCzzmDL8x1X1yVj804L7ynbkxliRNkKTAAAACnRSTlMA398QUFDf
+31BQHVJ+oAAAAQpJREFUeNrt1llygzAQRVFEMNgNEnPiIbO9/zWmyomQ6JaxJH5Srr4LOPU+X8I9
+ZNt8sMq30c6AipVyDOVxztNASu62SSXpi0JSl25uONKVAzK5Jb2Hdjy9uaHUCcmFLkZ6lVb3oK4d
+rdpOytMEvQRA3Yjq5FHv0Y4X1GKolaYA6HMk+UO7Qk19U0jdqtghR9ktQLS5VCjc/vDuBxUzSDk6
+G+lDLYShpu6t6kapwwQ9B0BNj2rUXu/RjhdUY6hWphCoJ4VDmQAACoFvIvtzAMIg2q8k1kPiCsG1
+EjslBGRBFYaqSAiqcrangjiIxhBDDDHEEEMMMcTQ40FivSP0YV+bvv5i5Z4s+Y/9AOZttDEQSG9u
+AAAAAElFTkSuQmCC
+------=_Part_6_658591608.1774728232833
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/63ada0ac74e4a6193d607c8b239e4438469a5ddfc41a66a2e0b9bef6332580f2
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_6_658591608.1774728232833--

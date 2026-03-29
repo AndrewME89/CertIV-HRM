@@ -1,0 +1,354 @@
+Date: Sat, 28 Mar 2026 20:07:57 +0000 (UTC)
+Message-ID: <754959864.43.1774728477076@e99af58fb8b9>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_42_1595893739.1774728477076"
+
+------=_Part_42_1595893739.1774728477076
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Employee promotion letter</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Employee promotion letter</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<style>[data-colorid=3Dgmohqil55c]{color:#00b8d9} html[data-color-mode=3Dda=
+rk] [data-colorid=3Dgmohqil55c]{color:#26deff}[data-colorid=3Dqsrk7qzppp]{c=
+olor:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Dqsrk7qzppp]{colo=
+r:#26deff}[data-colorid=3Dqgne926pxp]{color:#00b8d9} html[data-color-mode=
+=3Ddark] [data-colorid=3Dqgne926pxp]{color:#26deff}[data-colorid=3Dvw2pdc82=
+xg]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Dvw2pdc82xg]=
+{color:#26deff}[data-colorid=3Dofrppeujgf]{color:#00b8d9} html[data-color-m=
+ode=3Ddark] [data-colorid=3Dofrppeujgf]{color:#26deff}[data-colorid=3Dxgy6o=
+04lit]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Dxgy6o04l=
+it]{color:#26deff}[data-colorid=3Dcijx34ha8h]{color:#97a0af} html[data-colo=
+r-mode=3Ddark] [data-colorid=3Dcijx34ha8h]{color:#505968}[data-colorid=3Dyy=
+fhnc9hos]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3Dyyfhn=
+c9hos]{color:#26deff}[data-colorid=3Dfto64ylr40]{color:#00b8d9} html[data-c=
+olor-mode=3Ddark] [data-colorid=3Dfto64ylr40]{color:#26deff}[data-colorid=
+=3Dciq6da3p7b]{color:#00b8d9} html[data-color-mode=3Ddark] [data-colorid=3D=
+ciq6da3p7b]{color:#26deff}</style><span class=3D"aui-icon aui-icon-small au=
+i-iconfont-info confluence-information-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"a75af42cb855">We recommend you export this letter as a pdf o=
+r word document once you are finished.</p>
+</div>
+</div>
+<p local-id=3D"5cd3a80d4963"></p>
+<p local-id=3D"9e84b12b5304"><span data-colorid=3D"qsrk7qzppp">&lt;Type // =
+to add a date&gt;</span></p>
+<h2 local-id=3D"9819292a1f17" id=3D"Employeepromotionletter-Dear<Employeena=
+me>,"><img class=3D"emoticon emoticon-laugh" data-emoji-id=3D"1f600" data-e=
+moji-shortname=3D":grinning:" data-emoji-fallback=3D"\uD83D\uDE00" src=3D"1=
+7ebb4ac8aef77cec9a0156ecda5283ba9a94904f7721b6bbe79d63a064e890a" width=3D"1=
+6" height=3D"16" data-emoticon-name=3D"laugh" alt=3D"(big grin)">&nbsp;Dear=
+ <span data-colorid=3D"ofrppeujgf">&lt;Employee name&gt;</span>,</h2>
+<p local-id=3D"07d4b849bd29">Congratulations on your promotion to the posit=
+ion of <span data-colorid=3D"qgne926pxp">&lt;Job title&gt;</span>, effectiv=
+e <span data-colorid=3D"vw2pdc82xg">&lt;Type // to add a date&gt;</span>. W=
+e appreciate your hard work and commitment to the <span data-colorid=3D"fto=
+64ylr40">&lt;Company name&gt;</span> team for the last <span data-colorid=
+=3D"xgy6o04lit">&lt;Add number&gt;</span> years.</p>
+<p local-id=3D"e581f198d348">The annual salary for this position will be <s=
+pan data-colorid=3D"ciq6da3p7b">&lt;Salary number&gt;</span> paid on a <spa=
+n data-colorid=3D"yyfhnc9hos">&lt;weekly/biweekly/monthly/annual&gt;</span>=
+ basis. You will report directly to <span data-colorid=3D"gmohqil55c">&lt;N=
+ame of manager, Job title&gt;. &lt;Name of manager&gt;</span> is excited ab=
+out your new role and will be reaching out to discuss any new job responsib=
+ilities and transition plans.</p>
+<p local-id=3D"0465280cabc7">Again, congratulations on the new position. Pl=
+ease let me know if you have any questions regarding your compensation and =
+benefits package.</p>
+<p local-id=3D"13d4502babe7">Sincerely,</p>
+<p local-id=3D"27d95456e571"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"cd=
+7b44c0db1a" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 226.0px;">
+<col style=3D"width: 534.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"a2742c55049d">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"63ecff801eb2" class=
+=3D"confluenceTd">
+<p local-id=3D"4b9d80ad1f0b"><strong>HR or manager signature</strong></p></=
+td>
+<td data-local-id=3D"65cf6ac2fb7b" class=3D"confluenceTd">
+<p local-id=3D"3c1f9fa6b507"></p></td>
+</tr>
+<tr data-local-id=3D"f689b81e4bf6">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"79808dc44f39" class=
+=3D"confluenceTd">
+<p local-id=3D"83ade4944ae4"><strong>HR or manager name</strong></p></td>
+<td data-local-id=3D"506178ea9c27" class=3D"confluenceTd">
+<p local-id=3D"534cddd73029"></p></td>
+</tr>
+<tr data-local-id=3D"ae99e3584a4b">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"5c2afc351402" class=
+=3D"confluenceTd">
+<p local-id=3D"c4d2420b9bd6"><strong>Job title</strong></p></td>
+<td data-local-id=3D"ae1e12393047" class=3D"confluenceTd">
+<p local-id=3D"bea11570e6fb"></p></td>
+</tr>
+<tr data-local-id=3D"6d4d38389c5f">
+<td data-highlight-colour=3D"#fffae6" data-local-id=3D"783c4ada8c81" class=
+=3D"confluenceTd">
+<p local-id=3D"3e9a860a08c9"><strong>cc</strong></p></td>
+<td data-local-id=3D"c2f7f55ffa38" class=3D"confluenceTd">
+<p local-id=3D"53089b002b3e"><span data-colorid=3D"cijx34ha8h">Other key pe=
+rsonnel</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_42_1595893739.1774728477076
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/17ebb4ac8aef77cec9a0156ecda5283ba9a94904f7721b6bbe79d63a064e890a
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAKfwAACn8AG1cEgF
+AAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpu
+czptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9
+Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRm
+OkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8v
+bnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3Rp
+ZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+Cjwv
+eDp4bXBtZXRhPgpMwidZAAACpElEQVQ4EXVTTUuUURR+zn1f5wPNbKYPo43UBJVUuslaRKRSqzGp
+bbUwKIJW9QfsB7SuoA8Il0F+LMJIXbQQK3UIog8ybRFYOZOZNu/MvO+9PfdOUhldeF8u55zn3Oc8
+5xwBjzG9SqRXu3uu+wC06aG1g44mGAiUzPI/ClG3paX/6Z8YWQUbGzidvQ5fXUDCA4oRUHE5gRoF
+JGkLaAtxE60DF0WY3j5czUZwrusR1sc6Tb5kUREDiACR7mg+QDQ8SccVvpUfo2XwmE1SDbAvO3BQ
+El9E4l4Ng1fBNoOyNusz+aBkYx1bOsTYmpWZMCWtpUYkvxDIq/dfcahlC7wqQUTaYDz3Cbu3b0B6
+Y8KYijESVwpa2hS951zNpM18MvzkAw6ff4Y3s4ugHu6zd2uzPhvDX+QwFFux+nYnmK2ZhfKx/x7n
+YwwxnsOwU6KfZ0Om9CgpJOZhsVDGy3cFtO3b9FcJEy++oDmTQkMqBlOOyIMoQShmMlthr33LbKXI
+a1RAXUOKLJL8LFt7LK0ilhcLEC+F2iQ1rjIJLXAOvmQQan33/ltVjLejFrPwg4dIxBwaQZntT3Ri
+BXuRLI3h0pk9mrNB/cycz7pGVcLL4IcXhcGM2tp8GcezV9m4GoRh6DL4vg/oCoaHHmBh8hZ9+yki
+27wSjVTbKGaCLPXM3JKc6B6T01fO4mBHF9KbG12Cwud5jI8Mou/aPQz0HzU7murdgMNImwswU9kb
+ZuaUMbmuYKrviD6ZgalnlTt/ffZubdZnY1wsMRbsVLINcKNczwn7XtH5fCmafr3sfZwP3DRua0zo
+1l11UTod97COi7H0e5T/XSaPy1RHlctciaCqARLUIMZcyxWOkOYyDa1dpr/XWUdRDzXpIKTJsjPC
+tiiMKOXdWbvOPwGDSlGfWQ/k4wAAAABJRU5ErkJggg==
+------=_Part_42_1595893739.1774728477076--

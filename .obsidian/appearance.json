@@ -1,0 +1,15 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Border",
+  "accentColor": "#7077a9",
+  "enabledCssSnippets": [
+    "Cards Shadow",
+    "Cards_[updated]",
+    "custom-rainbow-colors",
+    "Dashboard",
+    "Dashboard-readlinelength",
+    "Image Align",
+    "MCL Multi Column",
+    "supercharged-links-gen"
+  ]
+}

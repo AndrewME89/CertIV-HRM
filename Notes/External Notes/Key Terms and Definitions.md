@@ -1,0 +1,59 @@
+---
+tags: resource
+---
+As a future [[Human Resources (HR)|HR]] professional, it’s essential to understand the language and terminology used within the field of human resource management. These terms will help you interpret policies, engage with stakeholders, and contribute to effective people management in your workplace.
+
+- **Applicant Tracking System ([[Applicant Tracking System (ATS)|ATS]]):** Software used to manage recruitment processes, including job postings, applications, and candidate tracking.
+- **Award:** A legally binding document that sets minimum pay rates and employment conditions for specific industries or occupations in Australia.
+- **Better Off Overall Test ([[Better Off Overall Test (BOOT)|BOOT]]):** A test applied by the Fair Work Commission to ensure employees are better off under an enterprise agreement than the relevant award.
+- **Casual Employment:** A type of employment with no guaranteed hours, typically paid a loading in lieu of leave entitlements.
+- **Code of Conduct:** A set of rules outlining expected behaviours, ethical standards, and responsibilities for employees within an organisation.
+- **Conflict Resolution:** The process of resolving workplace disputes in a constructive and respectful manner.
+- **Contract of Employment:** A legally binding agreement outlining the terms and conditions of employment between an employer and employee.
+- **Diversity, Equity and Inclusion ([[Diversity, Equity and Inclusion (DEI)|DEI]]):** Organisational initiatives aimed at promoting fair treatment, equal access, and a diverse workforce.
+- **Disciplinary Action:** Formal steps taken by an employer in response to employee misconduct or performance issues.
+- **Employee Engagement:** The level of commitment, motivation, and emotional investment an employee has toward their organisation.
+- **Employee Relations (ER):** The management of relationships between employers and employees, including handling disputes, grievances, and workplace conduct.
+- **Employee Value Proposition ([[Employee Value Proposition (EVP)|EVP]]):** The unique benefits and opportunities offered by an employer to attract and retain employees.
+- **Employment Termination Payment ([[Employment Termination Payment (ETP)|ETP]]):** A lump sum payment made to an employee when their employment ends, subject to taxation rules.
+- **Enterprise Agreement ([[Enterprise Agreement (EA)|EA]]):** A collective agreement made at the enterprise level that outlines terms and conditions of employment, approved by the Fair Work Commission.
+- **Equal Employment Opportunity ([[Equal Employment Opportunity (EEO)|EEO]]):** The principle that employment decisions should be based on merit without discrimination.
+- **Exit Interview:** A structured discussion with an employee who is leaving the organisation to gather feedback on their experience.
+- **Fair Work Act 2009 (FWA):** The primary legislation governing workplace relations in Australia.
+- **Fair Work Commission ([[Fair Work Commission (FWC)|FWC]]):** The national workplace relations tribunal responsible for matters such as unfair dismissal and agreement approvals.
+- **Full-Time Equivalent ([[Full-Time Equivalent (FTE)|FTE]]):** A unit that indicates the workload of an employed person relative to a full-time schedule.
+- **General Protections:** Legal provisions under the Fair Work Act that protect employees from adverse action for exercising workplace rights.
+- **Grievance Procedure:** A formal process through which employees can raise and resolve workplace complaints.
+- **Hazard:** A potential source of harm or risk in the workplace.
+- **Human Resources (HR):** The function responsible for managing people within an organisation, including recruitment, development, and employee relations. ^mlmzu1
+- **Human Resources Information System ([[Human Resource Information System (HRIS)|HRIS]]):** Software used to manage employee data, payroll, and HR processes.
+- **Induction:** The initial process of introducing a new employee to the organisation, its policies, and their role.
+- **Industrial Relations ([[Industrial Relations (IR)|IR]]):** The management of relationships between employers, employees, and unions, including negotiations and agreements.
+- **Job Description ([[Job Description (JD)|JD]]):** A document outlining the duties, responsibilities, and requirements of a specific role.
+- **Key Performance Indicators ([[Key Performance Indicators (KPIs)|KPIs]]):** Measurable values used to evaluate employee or organisational performance.
+- **Learning Management System ([[Learning Management System (LMS)|LMS]]):** Software used to deliver, track, and manage employee training and development programs.
+- **Learning and Development (L&D):** Organisational efforts to improve employee skills, knowledge, and capabilities.
+- **Misconduct:** Behaviour that breaches workplace policies or standards.
+- **Modern Award:** A legally enforceable document that sets minimum employment conditions for specific industries or occupations.
+- **National Employment Standards ([[National Employment Standards (NES)|NES]]):** Eleven minimum entitlements that apply to most employees in Australia.
+- **Offboarding:** The process of managing an employee’s exit from the organisation.
+- **Onboarding:** The process of integrating a new employee into the organisation and preparing them for their role.
+- **On-Target Earnings ([[On-Target Earnings (OTE)|OTE]]):** The total expected earnings for a role, including base salary and variable components such as bonuses or commissions.
+- **Performance Improvement Plan ([[Resources/Glossary/Performance Improvement Plan (PIP)|PIP]]):** A formal plan designed to address and improve an employee’s underperformance.
+- **Performance Management:** A continuous process of setting expectations, monitoring performance, and providing feedback.
+- **Position Description ([[Position Description (PD)|PD]]):** A formal document outlining the duties, responsibilities, and reporting relationships of a role.
+- **Probation Period:** An initial period of employment during which an employee’s suitability for the role is assessed.
+- **Redundancy:** The termination of employment when a role is no longer required by the organisation.
+- **Recruitment:** The process of attracting, selecting, and hiring suitable candidates for a role.
+- **Remuneration:** The total compensation provided to an employee, including salary and benefits.
+- **Return on Investment ([[Return on Investment (ROI)|ROI]]):** A financial metric used to evaluate the effectiveness of an investment by comparing the benefit gained to the cost incurred. In HR, ROI is often used to assess initiatives such as training programs, recruitment strategies, or employee engagement activities by measuring outcomes like increased productivity, reduced turnover, or cost savings relative to the investment made.
+- **Risk Assessment:** The process of identifying and evaluating potential workplace hazards and risks.
+- **Selection Criteria:** The key qualifications, skills, and experience required for a role, used to assess candidates.
+- **Serious Misconduct:** Severe behaviour that may justify immediate dismissal, such as theft, fraud, or violence.
+- **Show Cause Letter:** A formal request for an employee to explain why disciplinary action should not be taken against them.
+- **Succession Planning:** The process of identifying and developing employees to fill key roles in the future.
+- **Superannuation Guarantee ([[Superannuation Guarantee (SG)|SG]]):** The mandatory employer contribution to an employee’s retirement savings in Australia.
+- **Talent Acquisition ([[Talent Acquisition (TA)|TA]]):** A strategic approach to identifying, attracting, and hiring talent.
+- **Training and Development:** Activities designed to enhance employee skills, knowledge, and performance.
+- **Unfair Dismissal:** A termination that is harsh, unjust, or unreasonable under the Fair Work Act.
+- **Workplace Health and Safety ([[Work Health and Safety (WHS)|WHS]]):** Policies and procedures designed to ensure the health, safety, and welfare of employees.

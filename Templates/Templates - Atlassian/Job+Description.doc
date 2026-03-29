@@ -1,0 +1,575 @@
+Date: Tue, 17 Mar 2026 19:45:53 +0000 (UTC)
+Message-ID: <72493549.3.1773776753022@d56611d3e0de>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_2_957108153.1773776753022"
+
+------=_Part_2_957108153.1773776753022
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Job Description</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Job Description</h1>
+    <div class=3D"Section1">
+        <div class=3D"plugin-tabmeta-details">
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 197.0px;">
+<col style=3D"width: 529.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Hiring Manager</strong></p></th>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Recruiter</strong></p></th>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Job title</strong></p></th>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Job level</strong></p></th>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Type</strong></p></th>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Desired start date</strong></p></th>
+<td class=3D"confluenceTd">
+<p><time datetime=3D"2026-03-18" class=3D"date-upcoming">18 Mar 2026</time>=
+</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id=3D"JobDescription-Companybackground"><img class=3D"emoticon emoticon=
+-blue-star" data-emoji-id=3D"1f3e2" data-emoji-shortname=3D":office:" data-=
+emoji-fallback=3D"=F0=9F=8F=A2" src=3D"6e8bb3cdaac58ee0bd12633942f85bd225c2=
+8f29cef7ec184365db6d5c6cce44" width=3D"16" height=3D"16" data-emoticon-name=
+=3D"blue-star" alt=3D"(blue star)">&nbsp;Company background</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>This first section will likely be something you agree on company-wide. C=
+ollaboration between HR, Marketing, and Leadership is key to present the ri=
+ght voice.</p>
+</div>
+</div>
+<p></p>
+<ul>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+</ul>
+<h2 id=3D"JobDescription-RoleSpecifics"><img class=3D"emoticon emoticon-blu=
+e-star" data-emoji-id=3D"1f9d0" data-emoji-shortname=3D":face_with_monocle:=
+" data-emoji-fallback=3D"=F0=9F=A7=90" src=3D"bc2fa245c21679c4b5d39dbdfaf29=
+f252c74a81eb95a9f486f0e5cbf1405f7b0" width=3D"16" height=3D"16" data-emotic=
+on-name=3D"blue-star" alt=3D"(blue star)">&nbsp;Role Specifics</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>The below section should be customized to the role and the team. It's cr=
+itical that the recruiter, hiring manager, and any interviewers involved in=
+ the process have a clear vision for the role and ideal candidate.</p>
+</div>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 179.0px;">
+<col style=3D"width: 436.0px;">
+<col style=3D"width: 171.0px;">
+<col style=3D"width: 174.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh">
+<p><strong>What</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh">
+<p><strong>Content</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh">
+<p><strong>Contributors</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh">
+<p><strong>Approver</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Day in the life</p></td>
+<td class=3D"confluenceTd">
+<p>In this role you'll get ...</p>
+<ul>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<p></p>
+<p></p>
+<p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"98481">
+<li data-inline-task-id=3D"1"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Must-haveskills</p></td>
+<td class=3D"confluenceTd">
+<p>On day one we'll expect you to...</p>
+<ul>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<p></p>
+<p></p>
+<p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"98481">
+<li data-inline-task-id=3D"2"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>What separates the best from the rest</p></td>
+<td class=3D"confluenceTd">
+<p>Added bonuses you have...</p>
+<ul>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<p></p>
+<p></p>
+<p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"98481">
+<li data-inline-task-id=3D"3"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Team culture</p></td>
+<td class=3D"confluenceTd">
+<p></p>
+<ul>
+<li>
+<p></p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<p></p>
+<p></p>
+<p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"98481">
+<li data-inline-task-id=3D"4"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Selling points</p></td>
+<td class=3D"confluenceTd">
+<p></p>
+<ul>
+<li>
+<p></p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<p></p>
+<p></p>
+<p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"98481">
+<li data-inline-task-id=3D"5"><span class=3D"placeholder-inline-tasks"></sp=
+an></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>These final two sections are also likely things you'll agree on to use c=
+ompany-wide. Be sure to also have legal review any include any formalities =
+here that are important to the specific region where the company is operati=
+ng or hiring.</p>
+</div>
+</div>
+<h2 id=3D"JobDescription-Moreaboutouremployees"><img class=3D"emoticon emot=
+icon-blue-star" data-emoji-id=3D"1f604" data-emoji-shortname=3D":smile:" da=
+ta-emoji-fallback=3D"=F0=9F=98=84" src=3D"1d57629a8e7f792eda5d82f4eab58b3df=
+ce3551fdce6e5077cdd1d2f9449b916" width=3D"16" height=3D"16" data-emoticon-n=
+ame=3D"blue-star" alt=3D"(blue star)">&nbsp;More about our employees</h2>
+<p></p>
+<ul>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+</ul>
+<h2 id=3D"JobDescription-Moreaboutourbenefits"><img class=3D"emoticon emoti=
+con-blue-star" data-emoji-id=3D"1f496" data-emoji-shortname=3D":sparkling_h=
+eart:" data-emoji-fallback=3D"=F0=9F=92=96" src=3D"f48c047ee1d6f99e19b7f514=
+f6c0f8600b4dcebdac6addfb8bd085cd37b0ae53" width=3D"16" height=3D"16" data-e=
+moticon-name=3D"blue-star" alt=3D"(blue star)">&nbsp;More about our benefit=
+s</h2>
+<p></p>
+<ul>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+<li>
+<p></p></li>
+</ul>
+<p></p>
+<div class=3D"panel" style=3D"background-color: #EAE6FF;border-color: #998D=
+D9;border-width: 1px;">
+<div class=3D"panelContent" style=3D"background-color: #EAE6FF;">
+<p>Template all set? Pat yourself on the back! Now you need to get this out=
+ to a pool of candidates. Visit&nbsp;<a class=3D"external-link" href=3D"htt=
+p://www.indeed.com/partner/confluence" rel=3D"nofollow">www.indeed.com/part=
+ner/confluence</a>&nbsp;for $100 off your first job posting.</p>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_2_957108153.1773776753022
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/1d57629a8e7f792eda5d82f4eab58b3dfce3551fdce6e5077cdd1d2f9449b916
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAh1BMVEVHcEz/zE3/zE3/zE3/zE3/
+zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3GmTCMZxNmRQDisz+DXg5wTQX1xEh5VgqziSfZqjrs
+u0OWbxjPojWfeB2pgCK8kSvs6N/Z0b+zooCWf1CDaDB5XCD18+/////i3M+8ro+MdECfi2BwURDG
+uZ/Pxa9Pcc+sAAAADnRSTlMAIGCPv9//UJ/vQK+Az1vcyGwAAAJDSURBVHgBpNPVoUQhDATQyWUZ
+EqT/cp+uC5bzD3F0yBFOkWfxFA7BhqSRL6ImLJFg/MCCYFYu7CoZM0Q5pIKhapxgFX3SOKkJOpJx
+mqVOWVxS8YFykfr/OVP/P2fa6Y+zT4mbEh6IcZMJ7jVua/4GndVOYbvFKV0UZ5lOGf8Kncq5Q3QT
+/Ap0C/hldLPzcfgl9+zPFEAk/aJ/ZmeCg2c+xzfzZaEfPQgE8c+lEgaP27m8//M1v/NbstTl354F
+GBx2Ric/ERgQSfw5WQC/gmdS4YCS/HPCr3CspcYJLfnndLRZHVIieE6gQkbhCmviz1khB4KLP2eF
+NADh/A4nAOj4c15IO3PRUac1/5wKvZwvLvT7bXR+B1tE+icUMz4NtsjPcD3azOUpp5HmLrMAhCGb
+9voYKXBCidJVfke6e69cKRROFOQYuT7Y8AzIwXY12ualQr93hz8Rqpu268Ey6dqmpkL/6HWEgX46
+G5g3i7Zd7uiXe9p20cxnA9OeCv2lF6TFwGr2CCsMWHpBXi2AAsc28Uz7YNZ+BkFEjh3rhtdp1tiR
+kyCChDUWe7p6XKbusMeSsIYGWgmOLDfToFObJY4kNNCioZ/CmWW7nR9F5tt2iTOKzH0YjEo8CTke
+ad+FnYuTcC7ini6BOAUN2GnnnqhUsBaCbBSHKI5uDt5m5RosOqf+IWb8TAaGzDzTQnqBEYR/gamV
+hSadKiRvRON21DthscMK559s1x9G8QAC5UMalA+yUD7sQ8+BKMJDY3QZrKN8+BAAXe+ec4BPStgA
+AAAASUVORK5CYII=
+------=_Part_2_957108153.1773776753022
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/6e8bb3cdaac58ee0bd12633942f85bd225c28f29cef7ec184365db6d5c6cce44
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABIBAMAAACnw650AAAAJFBMVEVHcEzayLHayLHx3MHx3MHa
+yLHayLHx3MHayLFVrO47iMNmdX/znOVGAAAAB3RSTlMAUN9Q3xBgGOcEgQAAALRJREFUeF7t1DEK
+xCAQBdAJYbe2zBEs0+UIHiiCdazmCl4hV/Byu0Y006y/Cbss8ZMB+bxiJCDdKoNm9gqgid/ZANIJ
++bZ58JE2emak0Ep4KZ2RByvlNFEIfHzUyhfQUK6kiGtEW35XziaQbFN0QV4g2aZwzYcj0WjcmROJ
+0s60OITcSgYjSw4j9w9o39P8HIVQRiDRXoo66qij616VG9wuxjrMMeYR7aXIYGRpwWil0SBk5xct
+pSBxAwAzRQAAAABJRU5ErkJggg==
+------=_Part_2_957108153.1773776753022
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/bc2fa245c21679c4b5d39dbdfaf29f252c74a81eb95a9f486f0e5cbf1405f7b0
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcEz/y0wpLzP/y0z/y0z/
+y0z/y0z/y0z/y0z/y0z/y0z/y0z/y0z/y0wpLzOHdUIpLzMpLzMpLzP/y0xndX/2xEtzUx+MaCeC
+YCSyiTTEmTnsu0bdrUHIrF5lRxtsfIbpvlMpLzPZtlm93fSkl2ubdSt9j5uSp7axzuN9gni0oGZx
+enzPoj2XkG+41+2ogTDx9fmNi3KFmqjT2d2fuct0hpKow9ecsL2yusD09/mUfUBTXmbS5/bH4vVw
+fYc5QUY6s77XAAAAE3RSTlMAgIBAj99QIJ/vr79gz8/3EO9QqqpTVwAAAy1JREFUeF6l2Od2ozAQ
+BWCyptpOsruiV/deUsv293+rNVKuDFgGbN2/Puc7w2gksJSaGH21p5HPaD21byhXRDdhFKKZ+mWK
+oVrkTCy1fV2dLqlNt9OuGpM0xmxR1Y1FWsS6aSrnlrTMbW1RukVax9JrHotclLOPZ5ILY9Y7URgE
+wca5VoIT+inLNL5GQn8iLz1mfwoMRslqNRrV9EmnTuymxfhOWZks7c9sE/xUWTvDovVAEEmDR7uY
+9YpBVnme2BwGFPBChzihyyTurOxqlgM2mYIBinMnJDTOlEoBYxxezutsxqmk2iYDAx24fkwQKrnM
+Yc3J5m/jPIuXGSQ8XO0kTvmzbakz34153jIqjUoz0CHiOF7qxrw/Ga0G+f38l7acrgbOpy6pz4A6
+i5Lz44FJkxzqMscgDZnk0EvZOeTZzkOXjnVJPQWiQ3vcoFjQU9mh+eAlqRSyqgwG3C9M0OLUeXiY
+5V2iC4fNUQn2LavpEQUdHQb9WfCF04Vrv8EOcemaoEMnznj8mg/4NmEToAnmBwnRooXQGT/ZNBOi
+CdfM5dD0AI1ySOyM5zbLihhK/xRKeTxAYodDS9JX1FaQ2OGQTVSlVw+hR0KHQ2vSU7S6Hu35qokc
+tmrotnDXIxs+R0InnyNsXREUw3H5ZGc7gYMW/XKIGCLecYzQpLnA2WW5MhwOyTnI8TFFNI9UqjgY
+x39iCFLgpj6rBwNgf1Sdd5sVBKhFJlR6Fzjr+0sgnP2z56OzYNss+XkRRAZrKmUvOzCYnyOktZOW
+/LV2SMb3Koc0bJGmOFu7mnVCjlAPm7Y5ybLsTAakAKk4RlpRx6qWlClAfRxs7eKMVnkSqpQgA0ft
+lQGk4fCXhUy8jmQhHS9IScjCK1sWUilkyENG82dNFO69Q/ZhVAN1az+08PWO+OFZqNPw6Re5aSlu
+dAYqfoyKEkBAgiZIuamDfM/zGyHk9tyjeexvkrPx0tSNmyHxwzlxVGBjhzRBEhsFUEObmnNfga49
+BcwvgOQkUwEk++cYkOzfdUCyFwiApK80AElfsgCSvvYBJH0RBUj6agyQ7GUdoDsAMteHX++G377n
+wH8MIYG2acWXVQAAAABJRU5ErkJggg==
+------=_Part_2_957108153.1773776753022
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/f48c047ee1d6f99e19b7f514f6c0f8600b4dcebdac6addfb8bd085cd37b0ae53
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAllBMVEVHcEzdLkTdLkTdLkTdLkTd
+LkTdLkTdLkTdLkTdLkTdLkTdLkTdLkTdLkTdLkTdLkT9y1j9y1j9y1j9y1j9y1j9y1j9y1j9y1j9
+y1j9y1j9y1j9y1j9y1j9y1jtfU7qbUzoZkvdLkT9y1jfOEXtfU7vhk/7wVf5t1bnX0r3rlThQkfx
+kFHzmlLjS0jlVUnrc03paUz1pFOaVECJAAAAIXRSTlMAIN+fz0AwEO+/j3Bgr1CA788gEI+AQHAw
+UJ/fr2Ag798SF3PEAAACUElEQVR4XuXY2XbiMAwG4D+rbUiA7ttsUliXLvP+LzfjQI7q44LrNHf9
+bsX5D5ZCIoJvpSyKsl9dJGOjqaXrcfJRve7qRuqeKieHmcAxMeTIKwhRpOQxBaRuyJN2daFG9KER
+jk7VFRyqPdXzkjcNuXIldeHWRanJ2jDzq/9JJ8ejZYRQKVlb/m9DfpKT40nldDm1Fmw9e0l1TWfl
+OJrSwYqtBUWbopXQwQu3lhQvgWXIWu/5aLl4pkimnZht82LJ721eG4pSAsiItl2M2FCUDIAmmrOP
+omigkDaL+JYXh9nPV+zaxPZ7ippa6530abXYUqwaho6arlMv1INBTp1mydae+shBYsfWmnqBlsJa
+xhVNw5BYyW82lnGC5szLbd+gKQl6mffMoSkmNIgJEhpEAmgagAaQ0QAyABUNoAKgaAAKAGr6shrW
+ZIjht1KK4m8JKazodvtbQoUDpSmCvyVodMYUwd8SxrB6dUm2BOlQ7OD8LWECAUMxdsxyVzZ4L9EU
+5D4luueETiAi+/3GnUY6HX245nXDYv8HIuZi6rYoMbu+h6ugENmiXBd3V3hvGsqRGC8KInyvnPNp
+3vofuAxPmcGlUjpJtijfxT1cKAOjky1KPF1fQgSSRPP21znT4y1EMMm13XHnp8y9V5I39b5J3enu
+cJbKKeA3H1zhPGXoLPNrxtYPBGWB5/wjWw8IqzSdoCsAD3I5h5QnGpWXsJ6Y+Rqfokbn/p3fMM8u
+8UlFeuZ9we2N5ER/qZFCX4mRGJPgKwojb0m+qMiIsgJDUArf2j85o7/vl6Sh1QAAAABJRU5ErkJg
+gg==
+------=_Part_2_957108153.1773776753022--

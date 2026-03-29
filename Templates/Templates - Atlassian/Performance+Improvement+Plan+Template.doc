@@ -1,0 +1,478 @@
+Date: Tue, 17 Mar 2026 19:49:49 +0000 (UTC)
+Message-ID: <2100011463.5.1773776989998@4c733d11d033>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_219120619.1773776989997"
+
+------=_Part_4_219120619.1773776989997
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Performance Improvement Plan Template</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Performance Improvement Plan Template</h1>
+    <div class=3D"Section1">
+        <h2 local-id=3D"7a1b2977e4c2" id=3D"PerformanceImprovementPlanTempl=
+ate-Sampleemail"><img class=3D"emoticon emoticon-blue-star" data-emoji-id=
+=3D"1f4ec" data-emoji-shortname=3D":mailbox_with_mail:" data-emoji-fallback=
+=3D"=F0=9F=93=AC" src=3D"3973baa29d31200966625e41db6a459a3c22880801ec35cee4=
+2401c93d4d66ef" width=3D"16" height=3D"16" data-emoticon-name=3D"blue-star"=
+ alt=3D"(blue star)">&nbsp;Sample email</h2>
+<hr local-id=3D"01e520307490">
+<p local-id=3D"9efe93fe5696"><strong>From:</strong>&nbsp;</p>
+<p local-id=3D"d95e7daf1c17"><strong>To:</strong>&nbsp;</p>
+<p local-id=3D"311f171e2ce9"><strong>CC:</strong>&nbsp;</p>
+<p local-id=3D"ee266fd5e388"><strong>Date:</strong>&nbsp;</p>
+<p local-id=3D"33a7f1836381"><strong>Subject:</strong>&nbsp;Performance Imp=
+rovement Plan</p>
+<p local-id=3D"dbbc6d2e4c3c"><br>
+Dear ,</p>
+<p local-id=3D"a95d52f963af">The purpose of this letter is to clarify expec=
+tations regarding your role, document performance issues that are preventin=
+g you from meeting those expectations, and give you the opportunity to addr=
+ess those issues and raise your performance to a satisfactory level.</p>
+<p local-id=3D"3e664bc6167e">Starting on , you are being placed on a perfor=
+mance improvement plan to address the issues outlined below. Over the next =
+days, you must constructively address these concerns and meet all expectati=
+ons for performance. If you don't make adequate progress or we identify add=
+itional problems, we may terminate your employment at .</p>
+<p local-id=3D"d8c9f8346cfe">Review the information outlined below and ask =
+me if you have any questions. I will meet with you regularly to review your=
+ progress, offer guidance, and provide feedback on your performance. For yo=
+ur next meeting, please prepare an action plan explaining how you plan to m=
+eet the expectations outlined below and what steps you will take during thi=
+s period to improve your performance.</p>
+<p local-id=3D"ebd8770de760">If you have questions about your performance i=
+mprovement plan, please feel free to contact me or your HR Business Partner=
+, , at .</p>
+<hr local-id=3D"f098972cf873">
+<p local-id=3D"fbcb8e30d63b"></p>
+<h2 local-id=3D"0b80387baa8f" id=3D"PerformanceImprovementPlanTemplate-Perf=
+ormanceimprovementplanfor<Employeename>"><img class=3D"emoticon emoticon-bl=
+ue-star" data-emoji-id=3D"2600" data-emoji-shortname=3D":sunny:" data-emoji=
+-fallback=3D"=E2=98=80" src=3D"0b78d81b09e15b144d5ee2e193eb3e7d89061a76ae9d=
+18ca0a192ffbd01b22ef" width=3D"16" height=3D"16" data-emoticon-name=3D"blue=
+-star" alt=3D"(blue star)">&nbsp;Performance improvement plan for</h2>
+<p local-id=3D"cb3bbb4bcd9a"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"e0=
+1c049324c6" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 170.0px;">
+<col style=3D"width: 340.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"839cd1f30a4b">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"462c119d41c1" class=
+=3D"confluenceTh">
+<p local-id=3D"f32c6116d385"><strong>Expectation</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"6d37bb3434d6" class=
+=3D"confluenceTh">
+<p local-id=3D"b1af1f1260cc"><strong>Deficit</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"149d62127cc8" class=
+=3D"confluenceTh">
+<p local-id=3D"687bdea275d3"><strong>Examples</strong></p></th>
+</tr>
+<tr data-local-id=3D"abc6543c8dbe">
+<td data-local-id=3D"67787ae829e3" class=3D"confluenceTd">
+<p local-id=3D"b37ed7d4b899"></p></td>
+<td data-local-id=3D"ac86b8411a48" class=3D"confluenceTd">
+<p local-id=3D"d6383297032f"></p></td>
+<td data-local-id=3D"a8180219b186" class=3D"confluenceTd">
+<p local-id=3D"6d98475f211b"></p>
+<p local-id=3D"f007c7a4d3bb"></p></td>
+</tr>
+<tr data-local-id=3D"7a72b8f657bd">
+<td colspan=3D"3" data-local-id=3D"af120b4fe872" class=3D"confluenceTd">
+<p local-id=3D"217562ab36a2"><img class=3D"emoticon emoticon-blue-star" dat=
+a-emoji-id=3D"1f505" data-emoji-shortname=3D":low_brightness:" data-emoji-f=
+allback=3D"=F0=9F=94=85" src=3D"19f8f2802b82e41b8f78bbee7b0b4140d5de5af999b=
+67fcf04b465d2b330261d" width=3D"16" height=3D"16" data-emoticon-name=3D"blu=
+e-star" alt=3D"(blue star)">&nbsp;<strong>Objective:</strong></p>
+<p local-id=3D"829e6a8c74fa"></p>
+<p local-id=3D"a57ad2da8251"></p></td>
+</tr>
+<tr data-local-id=3D"cddd43ebb78f">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"fd34e8499464" class=
+=3D"confluenceTh">
+<p local-id=3D"bd672997d13d"><strong>Expectation</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"2d1e9fc65f9c" class=
+=3D"confluenceTh">
+<p local-id=3D"298827f63d39"><strong>Deficit</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"438c856fa9c7" class=
+=3D"confluenceTh">
+<p local-id=3D"888f0dd2997a"><strong>Examples</strong></p></th>
+</tr>
+<tr data-local-id=3D"a4d76213e21c">
+<td data-local-id=3D"2a736987e99e" class=3D"confluenceTd">
+<p local-id=3D"1e63ae6bad52"></p></td>
+<td data-local-id=3D"0b1927f29942" class=3D"confluenceTd">
+<p local-id=3D"01ee32dac40b"></p></td>
+<td data-local-id=3D"8b3ee5959445" class=3D"confluenceTd">
+<ul local-id=3D"f6f4348deaf0">
+<li local-id=3D"fc0cfc618605">
+<p local-id=3D"f88a9b3f1acb"></p></li>
+<li local-id=3D"9034dc0f37c2">
+<p local-id=3D"18fafa7a8df2"></p></li>
+<li local-id=3D"947c42b64b4f">
+<p local-id=3D"360e3847a47f"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"9ffe651fe29b">
+<td colspan=3D"3" data-local-id=3D"66eec955981e" class=3D"confluenceTd">
+<p local-id=3D"3539de402f93"><img class=3D"emoticon emoticon-blue-star" dat=
+a-emoji-id=3D"1f505" data-emoji-shortname=3D":low_brightness:" data-emoji-f=
+allback=3D"=F0=9F=94=85" src=3D"19f8f2802b82e41b8f78bbee7b0b4140d5de5af999b=
+67fcf04b465d2b330261d" width=3D"16" height=3D"16" data-emoticon-name=3D"blu=
+e-star" alt=3D"(blue star)">&nbsp;<strong>Objective:</strong></p>
+<p local-id=3D"a4523e7d0530"></p>
+<p local-id=3D"33747b66f9cf"></p>
+<p local-id=3D"f4301b57e0ec"></p>
+<p local-id=3D"0e4012ce0712"></p></td>
+</tr>
+<tr data-local-id=3D"f2650c42498c">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"a6513960aab3" class=
+=3D"confluenceTh">
+<p local-id=3D"99a6b60cb97f"><strong>Expectation</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"f41ed8abdbd2" class=
+=3D"confluenceTh">
+<p local-id=3D"20e0f9376468"><strong>Deficit</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"b5415c01e479" class=
+=3D"confluenceTh">
+<p local-id=3D"2771cec56511"><strong>Examples</strong></p></th>
+</tr>
+<tr data-local-id=3D"b69282f2142b">
+<td data-local-id=3D"a7aa1ae38a18" class=3D"confluenceTd">
+<p local-id=3D"8f125c407080"></p></td>
+<td data-local-id=3D"6a6c09983c64" class=3D"confluenceTd">
+<p local-id=3D"cd2be51fd904"></p></td>
+<td data-local-id=3D"4f957cb829d1" class=3D"confluenceTd">
+<ul local-id=3D"1360cbe775fb">
+<li local-id=3D"5a68e6fced47">
+<p local-id=3D"70a5458138b7"></p></li>
+<li local-id=3D"502134d85db9">
+<p local-id=3D"1037348e2524"></p></li>
+<li local-id=3D"36e58d2bbd3b">
+<p local-id=3D"e572245f7722"></p></li>
+</ul></td>
+</tr>
+<tr data-local-id=3D"2721e79f99ce">
+<td colspan=3D"3" data-local-id=3D"5ad0a9972ea0" class=3D"confluenceTd">
+<p local-id=3D"fbfd764f6351"><img class=3D"emoticon emoticon-blue-star" dat=
+a-emoji-id=3D"1f505" data-emoji-shortname=3D":low_brightness:" data-emoji-f=
+allback=3D"=F0=9F=94=85" src=3D"19f8f2802b82e41b8f78bbee7b0b4140d5de5af999b=
+67fcf04b465d2b330261d" width=3D"16" height=3D"16" data-emoticon-name=3D"blu=
+e-star" alt=3D"(blue star)">&nbsp;<strong>Objective:</strong></p>
+<p local-id=3D"49c79b314d7e"></p>
+<p local-id=3D"85007698bdcb"></p>
+<p local-id=3D"35ace4273d92"></p>
+<p local-id=3D"a4882deb29b6"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"8a552843fe68"></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"3e=
+387a087137" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 288.0px;">
+<col style=3D"width: 392.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"111ab3e41cb8">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"2dd20f4abdfe" class=
+=3D"confluenceTh">
+<p local-id=3D"cc1b69b62fe0"><strong>Manager signature</strong></p></th>
+<td data-local-id=3D"ad128ed54474" class=3D"confluenceTd">
+<p local-id=3D"1a2eb3694d41"></p></td>
+</tr>
+<tr data-local-id=3D"fa009cba7aee">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"9b113dd25092" class=
+=3D"confluenceTh">
+<p local-id=3D"d4bcad92a8fa"><strong>Employee signature</strong></p></th>
+<td data-local-id=3D"2ce691b98a0e" class=3D"confluenceTd">
+<p local-id=3D"96ab619cb963"></p></td>
+</tr>
+<tr data-local-id=3D"df3ddd3c746f">
+<th data-highlight-colour=3D"#fffae6" data-local-id=3D"bfa0ebb5cc21" class=
+=3D"confluenceTh">
+<p local-id=3D"e7ac7e928032"><strong>Date</strong></p></th>
+<td data-local-id=3D"bbde30ceae3d" class=3D"confluenceTd">
+<p local-id=3D"fbe933f3a6e4"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"e6f43cd52b05"></p>
+    </div>
+</body>
+</html>
+------=_Part_4_219120619.1773776989997
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/19f8f2802b82e41b8f78bbee7b0b4140d5de5af999b67fcf04b465d2b330261d
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAM1BMVEVHcEz/rDP/rDP/rDP/rDP/
+rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDPIzIGKAAAAEXRSTlMAUN//EGCAcCAw
+70Cfz7+vj6fJhH0AAAFuSURBVHgB7ddl2iMhEATgnilcc//LxoA4MPuk9/P3P4Ub/fmRlhVYF4Yc
+nL2ftOJspTcJVGxBbF37tMEWUmkzm36jlRQ0ZB2O5EO4oDsSR87SgHA48zTgceZGbZIoQuuDDBFn
+McjW44BCUp9CkUrVGXdyaWhCoahPtyKnmIQn6RTV4jX1GbTJFju8tBO0oDA0HaRAIqIjCgptiEZ8
+SHmpq+A1Z2nJKXjaQAxyrvM+1/o16N02d+OctT/S+W7EaROPKyWoEgpXnrZIaOLdfrIRTfq3BkXR
+HTtPc/l1zn1SpimD5sU5YdEYmpEY7UmFStJMQCWGd0GY3qdxPAoZRbyW6RzxGB8SGtW1TOfSmUyw
+R9W5qFAJsz0I1esgeiOIoWuMg80w/QwLkmeLsG1armOE7WDjOmrZDn+u64j1guS7svkeEWzPGraH
+FtvTj/0xyv885n+wX78QI+0LwfWp+fZ/WmL7iv6IP+34CfYT/TkAJJYX7TXG3bgAAAAASUVORK5C
+YII=
+------=_Part_4_219120619.1773776989997
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/0b78d81b09e15b144d5ee2e193eb3e7d89061a76ae9d18ca0a192ffbd01b22ef
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAMFBMVEVHcEz/rDP/rDP/rDP/rDP/
+rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDP/rDNIzNElAAAAD3RSTlMAYCCA7xBAz3DfjzCf
+r7/eJ7hYAAABgklEQVR42u2Y627DIAyFDZiQ5ub3f9tJaTcr9cIxIoqmqd+/lHCgwYZjCDKyCI/U
+TZCdQL08ZOdBvciL/OeE6CN05fLHlFL0B2RM0/66YeZnB5wiOgDPZIhsh8aZw3ZOSV4En86LZJoW
+aVAKci6U5IcIl0WMEGiMYSmyU5YQwaB2uhM9GVY5sA5GKDg+4LCJYRvMwqAlzZP8ypQ9oaJBlouc
+ULIGL86SmeUUnjU/EJmlAmdykotUKV6lSQATuRgEMpCHTSBbw4T6p7SKg5UgUVxE31aDCYRYxMVC
+hvB94DwHKeKimL6jNo56IGKI3vqyPnCj0LHvW2NsETo8VxqbhC77a5d97KuWvzsg+1PkhqTt30b6
+N7b+rbZ/87/3OMIHJCm3HNnYRHhBtgagfh4bLa0RgNWqWz+1WdjP18yoNX7Yz1t7bK0o9vM4XkOT
+n8c1An6hdUDg53GNgAstLfxQkYVLv1D5kWMtwwIsjjVwQX6AKw2tET53I//gbuSWyzr/9eEXUsdx
+IFCaGjcAAAAASUVORK5CYII=
+------=_Part_4_219120619.1773776989997
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/3973baa29d31200966625e41db6a459a3c22880801ec35cee42401c93d4d66ef
+
+iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcEyZqrXa4ujBaU/BaU+Z
+qrWZqrXBaU/dLkTdLkSZqrWZqrUpLzOZqrUpLzPBaU8pLzPBaU/BaU+ZqrWZqrUpLzMpLzMpLzMp
+LzMpLzPdLkTh6O3h6O3M1t3a4uierrmntsDBaU+ZqrUpLzPJ09vh6O2jsr2errnCztbG0djVPlK/
+y9Ont8HdLkScrbjU3OOSoq3M1t2ug5Ktu8Xb4uhodHxFTlRPWWC5xc4+RkszOj/L1dyEk512hIyd
+oq6isrzhjtUgAAAAIXRSTlMAICAwgL9gQFDfz4BQUL/vYJ9wMO/vMIDPIBCf75+vr+/Ze2U1AAAB
+pklEQVR42u3Ux3LCMBCAYQMGUxIIJb1Lbtj0nv7+b5VkhbKx8VoKPpHxf5M08420BxkHXLU2/KlW
+zeAMI+0v1aJQbV/nahjLSO/svMk5X63Wy1cW6T0ONbopzMkFx56Xk99SHGKsXiGYy6YQkHpLg74q
+F5Kco1O+03qSCrHeccKzeFJPExqCKjv34ZyQkqGAbcM7Fa+dtPrJ0ExCvYJ0bpz05glQAI6ovIXu
+HEULLwIxLDomR9lGAdUFNFZCCwXEugB5ammggBoAMbW0SYFw3CO19KKAGEA+StmgqVIae3oQSqSj
+B6FEOSM9CCXK8fUglChnqgehRDmaECGhowsREjp/hGyXSQkd5tr6EDoo4dcIkhaEjhvC69AZhS5I
+AAXCCUgIHVvMCR1/uw/QTEAzGkJHTLz/7fjgyBMGUgB/NQ2hIyT2MZ97wpFnDKMhdKQEgSMlPQgd
+qA8f66APC5TUkHQwOwyja72noUNma0H36JBpQYUHcLJBUPE2OyTjinKI7jGWQZRDOZRDOZRD/wgy
+o45p7J3Vbkml1baMTJWsjml2rJJxcH0Czl66KZOu3roAAAAASUVORK5CYII=
+------=_Part_4_219120619.1773776989997--
